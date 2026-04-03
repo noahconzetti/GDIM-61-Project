@@ -1,0 +1,95 @@
+{
+    "version": 1,
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "Coconut Controls",
+            "id": "84718ec5-c53f-4d31-adfc-7143de572a31",
+            "actions": [
+                {
+                    "name": "P1 Jump",
+                    "type": "Button",
+                    "id": "229eb316-6ab7-40d5-8c5a-dddd3d914a5a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "P1 Ability",
+                    "type": "Button",
+                    "id": "bfa97d47-a82d-4da7-a8c2-ff99538df94f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "P2 Jump",
+                    "type": "Button",
+                    "id": "8cfb46a8-2d1e-4225-a11b-417a4219c6ab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "P2 Ability",
+                    "type": "Button",
+                    "id": "cf3226dc-1125-4163-98b9-9dacfbfcd427",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "61096705-3afe-456e-ac67-34bafa236a20",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P1 Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04bd449c-720a-48e0-9668-b9b251f11513",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P1 Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb8f42c8-46da-4e25-9ddd-eec758020997",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P2 Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6778a6c3-856a-41cb-9984-0ab48f2f48d6",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "P2 Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
