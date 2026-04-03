@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2940099660932585832}
   - component: {fileID: 1655362399708885294}
   - component: {fileID: 6614507046938907824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player Coconut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerID: 0
   jumpForce: 10
-  jumpDirection: {x: 0.4, y: 1}
+  jumpDirection: {x: 0.1, y: 1}
+  jumpBufferTime: 0.3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundCastDistance: 0.7
 --- !u!1 &5002620619644531280
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8466942478358696660}
   - component: {fileID: 2807231108270737709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
