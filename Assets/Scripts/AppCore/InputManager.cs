@@ -12,11 +12,15 @@ namespace AppCore {
             playerInputs = new PlayerInputs();
             playerInputs.Enable();
         
-            playerInputs.CoconutControls.Enable();
-            playerInputs.CoconutControls.P1Jump.performed += ctx => OnPlayerJump?.Invoke(1);
-            playerInputs.CoconutControls.P1Ability.performed += ctx => OnPlayerAbility?.Invoke(1);
-            playerInputs.CoconutControls.P2Jump.performed += ctx => OnPlayerJump?.Invoke(2);
-            playerInputs.CoconutControls.P2Ability.performed += ctx => OnPlayerAbility?.Invoke(2);
+            playerInputs.CoconutControls.P1Jump.performed += _ => OnPlayerJump?.Invoke(1);
+            playerInputs.CoconutControls.P1Ability.performed += _ => OnPlayerAbility?.Invoke(1);
+            playerInputs.CoconutControls.P2Jump.performed += _ => OnPlayerJump?.Invoke(2);
+            playerInputs.CoconutControls.P2Ability.performed += _ => OnPlayerAbility?.Invoke(2);
+        }
+
+        private void OnDisable() {
+            playerInputs.CoconutControls.Disable();
+            playerInputs.Disable();
         }
     }
 }
