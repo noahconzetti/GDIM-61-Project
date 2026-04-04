@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 0
+  minXSpeed: 3
+  correctForce: 10
   jumpForce: 10
   forwardMomentumPreserved: 0.9
   jumpDirection: {x: 0.1, y: 1}

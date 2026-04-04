@@ -6,6 +6,11 @@ using UnityEngine;
 namespace Gameplay {
     public class Coconut : MonoBehaviour {
         [SerializeField] private int playerID;
+        [Header("General Physics Settings")]
+        [SerializeField] private float minXSpeed = 3f;
+        [SerializeField] private float maxSpeed = 10f;
+        // [SerializeField] private float maxXSpeed = 1000f;
+        [Header("Jump Settings")]
         [SerializeField] private float jumpForce = 2;
         [SerializeField] private float forwardMomentumPreserved = 0.9f;
         [Tooltip("This is normalized when jump is called")]
@@ -13,14 +18,11 @@ namespace Gameplay {
         [SerializeField] private float jumpBufferTime = .3f;
         [Header("Grounded Settings")]
         [SerializeField] private LayerMask groundLayer;
-        // [SerializeField] private Vector2 groundCastRelativeOrigin;
         [SerializeField] private float groundCastDistance = .2f;
         [SerializeField] private int numRaycasts = 10;
         [SerializeField] private float minRaycastAngle = 210;
         [SerializeField] private float maxRaycastAngle = 300;
-
-        private Vector2 _jumpDirectionNormalized;
-
+        
         private Rigidbody2D _rb;
 
         private bool _grounded = false;
@@ -41,18 +43,15 @@ namespace Gameplay {
 
         private void Awake() {
             TryGetComponent(out _rb);
-            _jumpDirectionNormalized = jumpDirection.normalized;
             raycastAngleDifference = (maxRaycastAngle - minRaycastAngle) / numRaycasts;
         }
 
         private void Update() {
-            _grounded = UpdateGrounded();
-            if (_grounded && _jumpBufferActive) {
-                Jump();
-            }
+            UpdateGrounded();
+            ApplySpeedConstraints();
         }
-
-        private bool UpdateGrounded() {
+        
+        private void UpdateGrounded() {
             RaycastHit2D? bestHit = null;
             for (int i = 0; i < numRaycasts; i++) {
                 float currentAngle = minRaycastAngle + raycastAngleDifference * i;
@@ -71,17 +70,25 @@ namespace Gameplay {
 
             if (bestHit.HasValue) {
                 _groundNormal = bestHit.Value.normal;
-                return true;
+                _grounded = true;
             } else {
-                return false;
+                _grounded = false;
+            }
+            
+            if (_grounded && _jumpBufferActive) {
+                Jump();
             }
         }
-
-        private void HandleAbility(int id) {
-            if (id != playerID) return;
-            Debug.Log("Using ability!");
+        
+        private void ApplySpeedConstraints() {
+            if (_rb.linearVelocityX < minXSpeed) {
+                _rb.linearVelocityX = minXSpeed;
+            }
+            if (_rb.linearVelocity.magnitude > maxSpeed) {
+                _rb.linearVelocity = Vector2.ClampMagnitude(_rb.linearVelocity, maxSpeed);
+            }
         }
-
+        
         private void HandleJumpInput(int id) {
             if (id != playerID) return;
             StopAllCoroutines();
@@ -106,6 +113,11 @@ namespace Gameplay {
             _jumpBufferActive = true;
             yield return new WaitForSeconds(jumpBufferTime);
             _jumpBufferActive = false;
+        }
+        
+        private void HandleAbility(int id) {
+            // if (id != playerID) return;
+            // Debug.Log("Using ability!");
         }
     }
 }
