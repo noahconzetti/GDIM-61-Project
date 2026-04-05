@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6614507046938907824}
   m_Layer: 6
   m_Name: Player Coconut
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerID: 0
   minXSpeed: 3
-  correctForce: 10
+  maxSpeed: 20
   jumpForce: 10
   forwardMomentumPreserved: 0.9
   jumpDirection: {x: 0.1, y: 1}

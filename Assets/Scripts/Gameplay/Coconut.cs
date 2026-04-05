@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using AppCore;
+using Gameplay.Abilities;
 using UnityEngine;
 
 namespace Gameplay {
@@ -9,6 +10,7 @@ namespace Gameplay {
         [Header("General Physics Settings")]
         [SerializeField] private float minXSpeed = 3f;
         [SerializeField] private float maxSpeed = 10f;
+        [SerializeField] private float maxSpeedEnforcementPerSecond = 1f;
         // [SerializeField] private float maxXSpeed = 1000f;
         [Header("Jump Settings")]
         [SerializeField] private float jumpForce = 2;
@@ -31,6 +33,8 @@ namespace Gameplay {
         
         private float raycastAngleDifference;
 
+        [SerializeField] private AbilityData currentHeldAbility;
+
         private void OnEnable() {
             InputManager.OnPlayerJump += HandleJumpInput;
             InputManager.OnPlayerAbility += HandleAbility;
@@ -46,7 +50,7 @@ namespace Gameplay {
             raycastAngleDifference = (maxRaycastAngle - minRaycastAngle) / numRaycasts;
         }
 
-        private void Update() {
+        private void FixedUpdate() {
             UpdateGrounded();
             ApplySpeedConstraints();
         }
@@ -85,7 +89,9 @@ namespace Gameplay {
                 _rb.linearVelocityX = minXSpeed;
             }
             if (_rb.linearVelocity.magnitude > maxSpeed) {
-                _rb.linearVelocity = Vector2.ClampMagnitude(_rb.linearVelocity, maxSpeed);
+                float currentMagnitude = _rb.linearVelocity.magnitude;
+                float adjustedMagnitude = currentMagnitude - maxSpeedEnforcementPerSecond * Time.deltaTime;
+                _rb.linearVelocity = Vector2.ClampMagnitude(_rb.linearVelocity, adjustedMagnitude);
             }
         }
         
@@ -116,8 +122,17 @@ namespace Gameplay {
         }
         
         private void HandleAbility(int id) {
-            // if (id != playerID) return;
-            // Debug.Log("Using ability!");
+            if (id != playerID) return;
+            if (currentHeldAbility == null) return;
+            currentHeldAbility.UseOn(this);
+            currentHeldAbility = null;
+            Debug.Log("Ability used");
+        }
+
+        public void TryPickupAbility(AbilityData abilityData) {
+            if (currentHeldAbility == null) {
+                currentHeldAbility = abilityData;
+            }
         }
     }
 }

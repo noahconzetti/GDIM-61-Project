@@ -2292,6 +2292,10 @@ PrefabInstance:
       propertyPath: playerID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6614507046938907824, guid: 9f1eb14994b724c7caffd61ced7e467c, type: 3}
+      propertyPath: currentHeldAbility
+      value: 
+      objectReference: {fileID: 11400000, guid: 01dc163d3e6e8450bbc91b2f67dbb936, type: 2}
     m_RemovedComponents:
     - {fileID: 6998581302543906054, guid: 9f1eb14994b724c7caffd61ced7e467c, type: 3}
     m_RemovedGameObjects:

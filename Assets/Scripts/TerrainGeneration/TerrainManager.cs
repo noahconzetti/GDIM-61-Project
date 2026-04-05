@@ -23,7 +23,6 @@ namespace TerrainGeneration {
 
                 _lastPosition += block.Size;
                 generationProgress += block.Width;
-                Debug.Log("Added block of size: " + block.Size + " with offset " + block.leftAttach.position + " New last Position: " + _lastPosition, newBlock);
             }
         }
 
