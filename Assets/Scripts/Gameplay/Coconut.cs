@@ -32,8 +32,14 @@ namespace Gameplay {
         private bool _jumpBufferActive = false;
         
         private float raycastAngleDifference;
+        
+        public int PlayerID => playerID;
 
         [SerializeField] private AbilityData currentHeldAbility;
+
+        public static event Action<Coconut, AbilityData> OnPickupAbility;
+        public static event Action<Coconut, AbilityData> OnUseAbility;
+        public static event Action<Coconut> OnJump;
 
         private void OnEnable() {
             InputManager.OnPlayerJump += HandleJumpInput;
@@ -113,6 +119,7 @@ namespace Gameplay {
             Vector2 adjustedForce = baseForce + new Vector2(forwardDifference * forwardMomentumPreserved, 0);
             _rb.linearVelocity = adjustedForce;
             _jumpBufferActive = false;
+            OnJump?.Invoke(this);
         }
 
         private IEnumerator SaveJumpInput() {
@@ -125,13 +132,14 @@ namespace Gameplay {
             if (id != playerID) return;
             if (currentHeldAbility == null) return;
             currentHeldAbility.UseOn(this);
+            OnUseAbility?.Invoke(this, currentHeldAbility);
             currentHeldAbility = null;
-            Debug.Log("Ability used");
         }
 
         public void TryPickupAbility(AbilityData abilityData) {
             if (currentHeldAbility == null) {
                 currentHeldAbility = abilityData;
+                OnPickupAbility?.Invoke(this, currentHeldAbility);
             }
         }
     }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3ee35653054af3968d2fd27cc34d1e, type: 3}
   m_Name: Boost
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 0}
+  uiIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   ability: 0
   boostForce: 350
