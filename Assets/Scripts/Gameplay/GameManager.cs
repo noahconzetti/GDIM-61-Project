@@ -1,6 +1,7 @@
 using System;
 using PlayerSelection;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Gameplay {
     public class GameManager : MonoBehaviour {
@@ -13,6 +14,7 @@ namespace Gameplay {
         public static event Action OnGameStart;
 
         public void StartGame() {
+            customizationManager.FinalizePlayers();
             SpawnCoconuts();
             OnGameStart?.Invoke();
         }
@@ -21,6 +23,7 @@ namespace Gameplay {
             foreach (var customizationData in customizationManager.Players) {
                 GameObject newPlayer = Instantiate(coconutPrefab, coconutStartPoint.position, coconutStartPoint.rotation, coconutParent);
                 newPlayer.GetComponent<Coconut>().Init(customizationData);
+                newPlayer.transform.position += new Vector3(Random.Range(0, 0.5f), 0, Random.Range(0, 0.5f));
             }
         }
     }

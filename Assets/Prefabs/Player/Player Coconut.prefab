@@ -113,11 +113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5d1d5790fc44165a5ef793c18db92c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minXSpeed: 3
+  minXSpeed: 4
   maxSpeed: 20
   maxSpeedEnforcementPerSecond: 1
   jumpForce: 10
-  forwardMomentumPreserved: 0.9
+  forwardMomentumPreserved: 1
   jumpDirection: {x: 0.1, y: 1}
   jumpBufferTime: 0.3
   groundLayer:

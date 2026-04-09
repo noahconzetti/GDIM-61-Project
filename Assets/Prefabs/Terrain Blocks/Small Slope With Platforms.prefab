@@ -389,6 +389,10 @@ PrefabInstance:
       value: Platform (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6130544373780093743, guid: d9706d38403c44a08abe4eda0cba18f6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130544373780093743, guid: d9706d38403c44a08abe4eda0cba18f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.02
       objectReference: {fileID: 0}

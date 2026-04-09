@@ -16,6 +16,7 @@ namespace PlayerSelection {
         public readonly List<PlayerStartData> Players = new(2);
 
         public static event Action<PlayerStartData> OnOptionsUpdated;
+        public static event Action<List<PlayerStartData>> OnOptionsFinalized;
         
         private void OnEnable() {
             CustomizationOptionButton.OnOptionSelected += ChangeOption;
@@ -67,6 +68,10 @@ namespace PlayerSelection {
             }
             
             OnOptionsUpdated?.Invoke(Players[coconutIndex]);
+        }
+
+        public void FinalizePlayers() {
+            OnOptionsFinalized?.Invoke(Players);
         }
     }
 }
