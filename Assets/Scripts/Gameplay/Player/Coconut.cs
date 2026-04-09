@@ -2,11 +2,11 @@ using System;
 using System.Collections;
 using AppCore;
 using Gameplay.Abilities;
+using PlayerSelection;
 using UnityEngine;
 
 namespace Gameplay {
     public class Coconut : MonoBehaviour {
-        [SerializeField] private int playerID;
         [Header("General Physics Settings")]
         [SerializeField] private float minXSpeed = 3f;
         [SerializeField] private float maxSpeed = 10f;
@@ -24,6 +24,9 @@ namespace Gameplay {
         [SerializeField] private int numRaycasts = 10;
         [SerializeField] private float minRaycastAngle = 210;
         [SerializeField] private float maxRaycastAngle = 300;
+
+        [Header("Links")]
+        [SerializeField] private CoconutCustomizer coconutCustomizer;
         
         private Rigidbody2D _rb;
 
@@ -33,13 +36,18 @@ namespace Gameplay {
         
         private float raycastAngleDifference;
         
-        public int PlayerID => playerID;
+        public int PlayerID { get; private set; }
 
         [SerializeField] private AbilityData currentHeldAbility;
 
         public static event Action<Coconut, AbilityData> OnPickupAbility;
         public static event Action<Coconut, AbilityData> OnUseAbility;
         public static event Action<Coconut> OnJump;
+        
+        public void Init(PlayerStartData playerStartData) {
+            PlayerID = playerStartData.PlayerIndex;
+            coconutCustomizer.SetData(playerStartData);
+        }
 
         private void OnEnable() {
             InputManager.OnPlayerJump += HandleJumpInput;
@@ -102,7 +110,7 @@ namespace Gameplay {
         }
         
         private void HandleJumpInput(int id) {
-            if (id != playerID) return;
+            if (id != PlayerID) return;
             StopAllCoroutines();
             if (!_grounded) {
                 StartCoroutine(SaveJumpInput());
@@ -129,7 +137,7 @@ namespace Gameplay {
         }
         
         private void HandleAbility(int id) {
-            if (id != playerID) return;
+            if (id != PlayerID) return;
             if (currentHeldAbility == null) return;
             currentHeldAbility.UseOn(this);
             OnUseAbility?.Invoke(this, currentHeldAbility);

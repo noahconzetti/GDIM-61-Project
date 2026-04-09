@@ -16,7 +16,7 @@ namespace PlayerSelection {
             CustomizationManager.OnOptionsUpdated -= HandleOptionsUpdated;
         }
 
-        private void HandleOptionsUpdated(CustomizationData newData) {
+        private void HandleOptionsUpdated(PlayerStartData newData) {
             if (newData.PlayerIndex != playerIndex) return;
             coconutBase.color = newData.PlayerColor;
             coconutHat.sprite = newData.PlayerHat;

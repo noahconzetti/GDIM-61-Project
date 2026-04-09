@@ -13,9 +13,9 @@ namespace PlayerSelection {
         public const int OPTION_COLOR = 1;
         public const int OPTION_HAT = 2;
 
-        public readonly List<CustomizationData> Players = new(2);
+        public readonly List<PlayerStartData> Players = new(2);
 
-        public static event Action<CustomizationData> OnOptionsUpdated;
+        public static event Action<PlayerStartData> OnOptionsUpdated;
         
         private void OnEnable() {
             CustomizationOptionButton.OnOptionSelected += ChangeOption;
@@ -49,7 +49,7 @@ namespace PlayerSelection {
         
         private void CreatePlayerDefaults() {
             for (int i = 0; i < coconutTabs.Length; i++) {
-                var currPlayer = new CustomizationData(i, data.colors[i], data.hats[i]);
+                var currPlayer = new PlayerStartData(i, data.colors[i], data.hats[i]);
                 Players.Add(currPlayer);
                 OnOptionsUpdated?.Invoke(currPlayer);
             }
