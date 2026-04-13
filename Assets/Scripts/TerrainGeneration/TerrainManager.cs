@@ -19,12 +19,13 @@ namespace TerrainGeneration {
         }
 
         private void HandleGameStart(RaceInfo raceInfo) {
-            GenerateChunks(raceInfo.RaceDistance + extraGenerationDistance);
+            GenerateChunks(raceInfo.RaceDistance);
         }
 
         private void GenerateChunks(float width) {
             float generationProgress = 0f;
-            while (generationProgress < width) {
+            bool baseWidthMet = false;
+            while (generationProgress < width + extraGenerationDistance) {
                 TerrainBlock currentBlock = ChooseRandomBlock();
                 GameObject newBlock = Instantiate(currentBlock.gameObject, Vector3.zero, Quaternion.identity);
                 TerrainBlock block = newBlock.GetComponent<TerrainBlock>();
@@ -33,8 +34,12 @@ namespace TerrainGeneration {
 
                 _lastPosition += block.Size;
                 generationProgress += block.Width;
+
+                if (!baseWidthMet && generationProgress > width) {
+                    baseWidthMet = true;
+                    OnTerrainGenerationComplete?.Invoke(_lastPosition);
+                }
             }
-            OnTerrainGenerationComplete?.Invoke(_lastPosition);
         }
 
         private TerrainBlock ChooseRandomBlock() {

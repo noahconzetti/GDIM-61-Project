@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using PlayerSelection;
 using TerrainGeneration;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Gameplay.RaceManagement {

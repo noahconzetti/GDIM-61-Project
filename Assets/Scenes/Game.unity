@@ -258,6 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229887755}
   - component: {fileID: 229887756}
+  - component: {fileID: 229887757}
   m_Layer: 0
   m_Name: End Camera
   m_TagString: Untagged
@@ -305,7 +306,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 67.72765
+    OrthographicSize: 20
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -323,6 +324,19 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!114 &229887757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229887754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1052a5cb4af940acadd90590931446f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 300
 --- !u!1 &261088811
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa1aaa550ef4202a7805fddb7eb9f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  extraGenerationDistance: 20
+  extraGenerationDistance: 100
   settings: {fileID: 11400000, guid: 1bfef24664ead4d3fbf15cdcd4c2dd10, type: 2}
 --- !u!1 &488642302
 GameObject:
@@ -745,7 +759,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 67.72765
+  orthographic size: 9.375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -770,7 +784,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.749231, y: 7.949754, z: -136.10527}
+  m_LocalPosition: {x: -2.5952938, y: 5.318104, z: -5.979753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1816,7 +1830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d95121e2d474a8d8243ae1281240771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raceLength: 600
+  raceLength: 150
   useSeed: 0
   seed: 0
   customizationManager: {fileID: 261088813}
@@ -1852,8 +1866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 50
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -2270,7 +2284,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
