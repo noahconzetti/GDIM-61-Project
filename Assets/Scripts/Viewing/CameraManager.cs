@@ -22,7 +22,7 @@ namespace Viewing {
             GameManager.OnGameStart -= AttachPlayers;
         }
 
-        private void AttachPlayers() {
+        private void AttachPlayers(RaceInfo raceInfo) {
             _group.Targets = new();
             foreach (Transform child in playerParent) {
                 var target = new CinemachineTargetGroup.Target {

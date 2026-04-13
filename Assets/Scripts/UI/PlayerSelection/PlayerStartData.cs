@@ -2,12 +2,12 @@ using UnityEngine;
 
 namespace PlayerSelection {
     public class PlayerStartData {
-        public readonly int PlayerIndex;
+        public readonly int PlayerID;
         public Color PlayerColor;
         public Sprite PlayerHat;
 
-        public PlayerStartData(int playerIndex, Color playerColor, Sprite playerHat) {
-            PlayerIndex = playerIndex;
+        public PlayerStartData(int playerID, Color playerColor, Sprite playerHat) {
+            PlayerID = playerID;
             PlayerColor = playerColor;
             PlayerHat = playerHat;
         }

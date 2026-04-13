@@ -50,10 +50,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.5
   m_LinearDamping: 0.1
   m_AngularDamping: 0.1
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,7 +116,9 @@ MonoBehaviour:
   minXSpeed: 4
   maxSpeed: 20
   maxSpeedEnforcementPerSecond: 1
-  jumpForce: 10
+  airGravity: 1.5
+  groundedGravity: 0.9
+  jumpForce: 14
   forwardMomentumPreserved: 1
   jumpDirection: {x: 0.1, y: 1}
   jumpBufferTime: 0.3

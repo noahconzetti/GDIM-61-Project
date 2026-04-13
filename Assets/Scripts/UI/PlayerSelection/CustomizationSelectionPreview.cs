@@ -17,7 +17,7 @@ namespace PlayerSelection {
         }
 
         private void HandleOptionsUpdated(PlayerStartData newData) {
-            if (newData.PlayerIndex != playerIndex) return;
+            if (newData.PlayerID != playerIndex) return;
             coconutBase.color = newData.PlayerColor;
             coconutHat.sprite = newData.PlayerHat;
         }

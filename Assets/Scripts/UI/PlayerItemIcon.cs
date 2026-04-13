@@ -14,18 +14,18 @@ public class PlayerItemIcon : MonoBehaviour {
     private void OnEnable() {
         Coconut.OnPickupAbility += HandlePickup;
         Coconut.OnUseAbility += HandleUse;
-        CustomizationManager.OnOptionsFinalized += SetBackgroundColor;
+        CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
     }
     
     private void OnDisable() {
         Coconut.OnPickupAbility += HandlePickup;
         Coconut.OnUseAbility += HandleUse;
-        CustomizationManager.OnOptionsFinalized += SetBackgroundColor;
+        CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
     }
 
     private void SetBackgroundColor(List<PlayerStartData> playerStartData) {
         foreach (var playerData in playerStartData) {
-            if (playerData.PlayerIndex == player) {
+            if (playerData.PlayerID == player) {
                 backgroundColor.color = playerData.PlayerColor;
             }
         }

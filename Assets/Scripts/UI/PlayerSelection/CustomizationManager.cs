@@ -16,7 +16,7 @@ namespace PlayerSelection {
         public readonly List<PlayerStartData> Players = new(2);
 
         public static event Action<PlayerStartData> OnOptionsUpdated;
-        public static event Action<List<PlayerStartData>> OnOptionsFinalized;
+        public static event Action<List<PlayerStartData>> OnPlayersFinalized;
         
         private void OnEnable() {
             CustomizationOptionButton.OnOptionSelected += ChangeOption;
@@ -71,7 +71,7 @@ namespace PlayerSelection {
         }
 
         public void FinalizePlayers() {
-            OnOptionsFinalized?.Invoke(Players);
+            OnPlayersFinalized?.Invoke(Players);
         }
     }
 }

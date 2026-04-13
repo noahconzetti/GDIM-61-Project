@@ -12,6 +12,9 @@ namespace Gameplay {
         [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float maxSpeedEnforcementPerSecond = 1f;
         // [SerializeField] private float maxXSpeed = 1000f;
+        [Header("Gravity Settings")]
+        [SerializeField] private float airGravity = 1.5f;
+        [SerializeField] private float groundedGravity = 0.9f;
         [Header("Jump Settings")]
         [SerializeField] private float jumpForce = 2;
         [SerializeField] private float forwardMomentumPreserved = 0.9f;
@@ -45,7 +48,7 @@ namespace Gameplay {
         public static event Action<Coconut> OnJump;
         
         public void Init(PlayerStartData playerStartData) {
-            PlayerID = playerStartData.PlayerIndex;
+            PlayerID = playerStartData.PlayerID;
             coconutCustomizer.SetData(playerStartData);
         }
 
@@ -96,6 +99,8 @@ namespace Gameplay {
             if (_grounded && _jumpBufferActive) {
                 Jump();
             }
+            
+            _rb.gravityScale = _grounded ? groundedGravity : airGravity;
         }
         
         private void ApplySpeedConstraints() {

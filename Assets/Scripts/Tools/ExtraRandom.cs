@@ -36,4 +36,8 @@ public static class ExtraRandom {
 
         return values[0];
     }
+
+    public static void SetSeed(int seed) {
+        Random.InitState(seed);
+    }
 }
