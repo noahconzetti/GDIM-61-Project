@@ -149,11 +149,13 @@ namespace Gameplay {
             currentHeldAbility = null;
         }
 
-        public void TryPickupAbility(AbilityData abilityData) {
-            if (currentHeldAbility == null) {
-                currentHeldAbility = abilityData;
-                OnPickupAbility?.Invoke(this, currentHeldAbility);
-            }
+        public bool TryPickupAbility(AbilityData abilityData) {
+            if (currentHeldAbility != null) return false;
+            
+            currentHeldAbility = abilityData;
+            OnPickupAbility?.Invoke(this, currentHeldAbility);
+            return true;
+
         }
     }
 }
