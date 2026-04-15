@@ -16,6 +16,7 @@ namespace TerrainGeneration {
         [SerializeField] private SpriteShapeController spriteShapeController;
         [SerializeField] private float heightBelow = 100f;
         [SerializeField] private float splineTension = 0.33f;
+        [SerializeField] private Transform terrainParent;
 
         private Vector2 _lastPosition = Vector2.zero;
         public static event Action<Vector2> OnTerrainGenerationComplete;
@@ -32,24 +33,31 @@ namespace TerrainGeneration {
             GenerateChunks(raceInfo.RaceDistance);
         }
 
-        private void GenerateChunks(float width) {
+private void GenerateChunks(float width) {
             float generationProgress = 0f;
             bool baseWidthMet = false;
 
             List<Vector2> points = new List<Vector2>();
             points.Add(new Vector2(0, -heightBelow));
-            points.Add(new Vector2(0, 0));
+            
+            // Note: If you ever change where the terrain starts, you'll want this 
+            // to be _lastPosition instead of a hardcoded Vector2(0,0)
+            points.Add(new Vector2(0, 0)); 
             
             while (generationProgress < width + extraGenerationDistance) {
                 TerrainBlock currentBlockPrefab = ChooseRandomBlock();
-                GameObject newBlock = Instantiate(currentBlockPrefab.gameObject, Vector3.zero, Quaternion.identity);
+                GameObject newBlock = Instantiate(currentBlockPrefab.gameObject, Vector3.zero, Quaternion.identity, terrainParent);
                 TerrainBlock currentBlock = newBlock.GetComponent<TerrainBlock>();
+                
                 Vector2 newBlockOffset = currentBlock.StartPosition;
-                newBlock.transform.position = _lastPosition + newBlockOffset;
+                newBlock.transform.position = _lastPosition - newBlockOffset; 
+                
                 points.AddRange(GetTerrainBlockSplinePoints(currentBlock));
 
-                _lastPosition -= currentBlock.Size;
+                _lastPosition = (Vector2)newBlock.transform.position + currentBlock.EndPosition;
+                
                 generationProgress += currentBlock.Width;
+                Debug.DrawLine(newBlock.transform.position, currentBlock.transform.position, Color.red);
 
                 if (!baseWidthMet && generationProgress > width) {
                     baseWidthMet = true;
@@ -64,9 +72,7 @@ namespace TerrainGeneration {
             splineContainerBase.Spline.SetTangentMode(new SplineRange(0, points.Count), TangentMode.AutoSmooth);
             
             UpdateSpline(spriteShapeController, splineContainerBase.Spline);
-            
         }
-
         private IEnumerable<float3> PointsToKnots(List<Vector2> points) {
             return points.Select(p => p.ToFloat3());
         }

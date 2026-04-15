@@ -8,7 +8,7 @@ namespace Gameplay {
 
         public void SetData(PlayerStartData playerStartData) {
             coconutBaseSprite.color = playerStartData.PlayerColor;
-            hatSprite.color = playerStartData.PlayerColor;
+            hatSprite.sprite = playerStartData.PlayerHat;
         }
     }
 }

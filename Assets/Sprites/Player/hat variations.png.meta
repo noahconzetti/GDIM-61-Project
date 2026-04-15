@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 6000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,10 +158,10 @@ TextureImporter:
       name: hat variations_0
       rect:
         serializedVersion: 2
-        x: 334
-        y: 306
-        width: 956
-        height: 821
+        x: 0
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: hat variations_1
       rect:
         serializedVersion: 2
-        x: 1902
-        y: 306
-        width: 1188
-        height: 898
+        x: 1762
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: hat variations_2
       rect:
         serializedVersion: 2
-        x: 3897
-        y: 329
-        width: 995
-        height: 964
+        x: 3556
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: hat variations_3
       rect:
         serializedVersion: 2
-        x: 5704
-        y: 502
-        width: 892
-        height: 700
+        x: 5334
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: hat variations_4
       rect:
         serializedVersion: 2
-        x: 7388
-        y: 685
-        width: 681
-        height: 746
+        x: 7112
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: hat variations_5
       rect:
         serializedVersion: 2
-        x: 9298
-        y: 700
-        width: 353
-        height: 566
+        x: 8890
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: hat variations_6
       rect:
         serializedVersion: 2
-        x: 9643
-        y: 824
-        width: 455
-        height: 423
+        x: 10668
+        y: 0
+        width: 1778
+        height: 1533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,187 +308,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: hat variations_7
-      rect:
-        serializedVersion: 2
-        x: 11029
-        y: 408
-        width: 999
-        height: 894
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f521f7ad20db5600800000000000000
-      internalID: 458188681617942001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_8
-      rect:
-        serializedVersion: 2
-        x: 12817
-        y: 397
-        width: 944
-        height: 1026
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00d289c15fd0dae30800000000000000
-      internalID: 4516281347720359168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_9
-      rect:
-        serializedVersion: 2
-        x: 14601
-        y: 220
-        width: 889
-        height: 1108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 669ac6b0ebee8fc50800000000000000
-      internalID: 6699366945716480358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_10
-      rect:
-        serializedVersion: 2
-        x: 16531
-        y: 458
-        width: 853
-        height: 770
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92c3cbc1bdb1e5e70800000000000000
-      internalID: 9105746124483607593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_11
-      rect:
-        serializedVersion: 2
-        x: 18354
-        y: 77
-        width: 995
-        height: 1057
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 591a55b56523031f0800000000000000
-      internalID: -1067297765205892715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_12
-      rect:
-        serializedVersion: 2
-        x: 20112
-        y: 712
-        width: 356
-        height: 381
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f86397e9e4ccaed0800000000000000
-      internalID: -2401327992403695370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_13
-      rect:
-        serializedVersion: 2
-        x: 20584
-        y: 983
-        width: 287
-        height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78eccbf9d05b7ada0800000000000000
-      internalID: -5933574913918185849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hat variations_14
-      rect:
-        serializedVersion: 2
-        x: 21766
-        y: 230
-        width: 1101
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e343b22b778157500800000000000000
-      internalID: 393247444834137150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 71b061d01ecfe4f499c09604c52a6afe
     internalID: 0
     vertices: []
     indices: 
@@ -500,19 +324,11 @@ TextureImporter:
     nameFileIdTable:
       hat variations_0: -2570584589590397786
       hat variations_1: 4704695035528165096
-      hat variations_10: 9105746124483607593
-      hat variations_11: -1067297765205892715
-      hat variations_12: -2401327992403695370
-      hat variations_13: -5933574913918185849
-      hat variations_14: 393247444834137150
       hat variations_2: 7381704731834318031
       hat variations_3: -5609688448986085828
       hat variations_4: -3530490756157119190
       hat variations_5: -7504371024662307788
       hat variations_6: 6534654307853771265
-      hat variations_7: 458188681617942001
-      hat variations_8: 4516281347720359168
-      hat variations_9: 6699366945716480358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

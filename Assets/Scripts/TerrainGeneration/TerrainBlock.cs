@@ -17,8 +17,7 @@ namespace TerrainGeneration {
 
         public Vector2 EndPosition {
             get {
-                var spline = groundSpline.Spline;
-                float3 pos = spline[^1].Position;
+                float3 pos = groundSpline.Spline[^1].Position;
                 return new Vector2(pos.x, pos.y);
             }
         }
