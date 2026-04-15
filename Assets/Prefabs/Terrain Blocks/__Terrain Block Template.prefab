@@ -77,9 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e38b0aa8dd41a5863c98f318cc7299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftAttach: {fileID: 1920835614320899291}
-  rightAttach: {fileID: 8823890573163461897}
   weight: 1
+  groundSpline: {fileID: 8664942784543688391}
 --- !u!1 &3811875989694921529
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,3 +237,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8757613460221112998, guid: 872bb9a8def0e484a82f406c239b4947, type: 3}
   m_PrefabInstance: {fileID: 5406369204511981273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8664942784543688391 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3695000806299514910, guid: 872bb9a8def0e484a82f406c239b4947, type: 3}
+  m_PrefabInstance: {fileID: 5406369204511981273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

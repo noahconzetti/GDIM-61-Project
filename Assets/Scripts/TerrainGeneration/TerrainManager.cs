@@ -1,11 +1,21 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Gameplay;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Splines;
+using UnityEngine.U2D;
+using Spline = UnityEngine.Splines.Spline;
 
 namespace TerrainGeneration {
     public class TerrainManager : MonoBehaviour {
         [SerializeField] private float extraGenerationDistance = 20f;
         [SerializeField] private TerrainSettings settings;
+        [SerializeField] private SplineContainer splineContainerBase;
+        [SerializeField] private SpriteShapeController spriteShapeController;
+        [SerializeField] private float heightBelow = 100f;
+        [SerializeField] private float splineTension = 0.33f;
 
         private Vector2 _lastPosition = Vector2.zero;
         public static event Action<Vector2> OnTerrainGenerationComplete;
@@ -25,20 +35,73 @@ namespace TerrainGeneration {
         private void GenerateChunks(float width) {
             float generationProgress = 0f;
             bool baseWidthMet = false;
-            while (generationProgress < width + extraGenerationDistance) {
-                TerrainBlock currentBlock = ChooseRandomBlock();
-                GameObject newBlock = Instantiate(currentBlock.gameObject, Vector3.zero, Quaternion.identity);
-                TerrainBlock block = newBlock.GetComponent<TerrainBlock>();
-                Vector2 leftAttachOffset = block.leftAttach.localPosition;
-                newBlock.transform.position = _lastPosition - leftAttachOffset;
 
-                _lastPosition += block.Size;
-                generationProgress += block.Width;
+            List<Vector2> points = new List<Vector2>();
+            points.Add(new Vector2(0, -heightBelow));
+            points.Add(new Vector2(0, 0));
+            
+            while (generationProgress < width + extraGenerationDistance) {
+                TerrainBlock currentBlockPrefab = ChooseRandomBlock();
+                GameObject newBlock = Instantiate(currentBlockPrefab.gameObject, Vector3.zero, Quaternion.identity);
+                TerrainBlock currentBlock = newBlock.GetComponent<TerrainBlock>();
+                Vector2 newBlockOffset = currentBlock.StartPosition;
+                newBlock.transform.position = _lastPosition + newBlockOffset;
+                points.AddRange(GetTerrainBlockSplinePoints(currentBlock));
+
+                _lastPosition -= currentBlock.Size;
+                generationProgress += currentBlock.Width;
 
                 if (!baseWidthMet && generationProgress > width) {
                     baseWidthMet = true;
                     OnTerrainGenerationComplete?.Invoke(_lastPosition);
                 }
+            }
+            
+            points.Add(new Vector2(_lastPosition.x, _lastPosition.y - heightBelow));
+            
+            splineContainerBase.Spline.Clear();
+            splineContainerBase.Spline.AddRange(PointsToKnots(points));
+            splineContainerBase.Spline.SetTangentMode(new SplineRange(0, points.Count), TangentMode.AutoSmooth);
+            
+            UpdateSpline(spriteShapeController, splineContainerBase.Spline);
+            
+        }
+
+        private IEnumerable<float3> PointsToKnots(List<Vector2> points) {
+            return points.Select(p => p.ToFloat3());
+        }
+
+        private void UpdateSpline(SpriteShapeController controller, Spline spline) {
+            controller.spline.Clear();
+            int count = spline.Count;
+
+            for (int i = 0; i < count; i++) {
+                controller.spline.InsertPointAt(i, spline[i].Position.ToVector3());
+            }
+
+            for (int i = 1; i < count - 1; i++) {
+                controller.spline.SetTangentMode(i, ShapeTangentMode.Continuous);
+
+                Vector3 pPrev = spline[i - 1].Position;
+                Vector3 pNext = spline[i + 1].Position;
+        
+                Vector3 direction = (pNext - pPrev).normalized;
+                
+                float distToPrev = Vector3.Distance(spline[i].Position, pPrev);
+                float distToNext = Vector3.Distance(spline[i].Position, pNext);
+                
+                controller.spline.SetLeftTangent(i, -direction * distToPrev * splineTension);
+                controller.spline.SetRightTangent(i, direction * distToNext * splineTension);
+            }
+
+            controller.UpdateSpriteShapeParameters();
+        }
+        
+        private IEnumerable<Vector2> GetTerrainBlockSplinePoints(TerrainBlock block) {
+            Spline spline = block.groundSpline.Spline;
+            Vector2 pos = block.transform.position;
+            for (int i = 1; i < spline.Count; i++) {
+                yield return new Vector2(spline[i].Position.x + pos.x, spline[i].Position.y + pos.y);
             }
         }
 

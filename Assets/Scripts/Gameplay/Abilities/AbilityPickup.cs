@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Gameplay.Abilities {
@@ -10,7 +9,6 @@ namespace Gameplay.Abilities {
             if (player.TryPickupAbility(abilityData)) {
                 Destroy(gameObject);
             }
-
         }
     }
 }
