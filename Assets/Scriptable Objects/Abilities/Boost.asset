@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Boost
   m_EditorClassIdentifier: 
   uiIcon: {fileID: 4704695035528165096, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
-  boostForce: 15
+  boostForce: 8
+  boostParticlesPrefab: {fileID: 4981041253867281385, guid: 467250194e1c641828c89f55e5327db1, type: 3}

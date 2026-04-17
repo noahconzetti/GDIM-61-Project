@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Gameplay.Player;
 using PlayerSelection;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Gameplay {
     public class GameManager : MonoBehaviour {
@@ -17,7 +18,11 @@ namespace Gameplay {
 
         public void Start() {
             if (useSeed) ExtraRandom.SetSeed(seed);
-            
+
+            if (CustomizationManager.Instance == null) {
+                SceneManager.LoadScene("Player Selection");
+                return;
+            }
             CustomizationManager.Instance.FinalizePlayers();
             List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationManager.Instance.Players);
             RaceInfo raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);

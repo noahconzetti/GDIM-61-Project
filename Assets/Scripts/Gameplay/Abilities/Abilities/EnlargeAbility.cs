@@ -8,6 +8,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float sizeIncreasePercent = 3;
         [SerializeField] private float massIncreasePercent = 6;
         [SerializeField] private float timeIncreaseSize = 7f;
+        [SerializeField] private float maxSpeedIncrease = 2f;
 
         private Vector3 _ogSize;
         private float _ogMass;
@@ -23,13 +24,17 @@ namespace Gameplay.Abilities.Abilities {
             
             player.transform.localScale *= sizeIncreasePercent;
             _rb.mass *= massIncreasePercent;
-            player.StartCoroutine(IncreaseSize(endCallback));
+            player.MaxSpeedIncreaseOverride = maxSpeedIncrease;
+            
+            player.StartCoroutine(IncreaseSize(endCallback, player));
         }
 
-        private IEnumerator IncreaseSize(Action endCallback) {
+        private IEnumerator IncreaseSize(Action endCallback, Coconut player) {
             yield return new WaitForSeconds(timeIncreaseSize);
             _transform.localScale = _ogSize;
             _rb.mass = _ogMass;
+            
+            player.MaxSpeedIncreaseOverride = maxSpeedIncrease;
             
             endCallback();
         }

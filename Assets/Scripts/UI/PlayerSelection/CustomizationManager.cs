@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using AppCore;
 using PlayerSelection.CustomizationOptionButtons;
 using UnityEngine;
@@ -63,7 +64,7 @@ namespace PlayerSelection {
         
         private void CreatePlayerDefaults() {
             for (int i = 0; i < coconutTabs.Length; i++) {
-                var currPlayer = new PlayerStartData(i, data.colors[i], data.hats[i]);
+                var currPlayer = new PlayerStartData(i, data.colors[i], i, data.hats[i], i);
                 Players.Add(currPlayer);
                 OnOptionsUpdated?.Invoke(currPlayer);
             }
@@ -73,6 +74,7 @@ namespace PlayerSelection {
         private void ChangeOption(int coconutIndex, int optionTypeIndex, int optionIndex) {
             switch (optionTypeIndex) {
                 case OPTION_COLOR:
+                    if (Players.Any(p => p.PlayerColorID == optionIndex)) return;
                     Players[coconutIndex].PlayerColor = data.colors[optionIndex];
                     break;
                 case OPTION_HAT:

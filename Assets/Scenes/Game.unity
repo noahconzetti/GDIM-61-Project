@@ -1387,6 +1387,8 @@ GameObject:
   - component: {fileID: 1258735122}
   - component: {fileID: 1258735121}
   - component: {fileID: 1258735123}
+  - component: {fileID: 1258735124}
+  - component: {fileID: 1258735125}
   m_Layer: 0
   m_Name: Player Follow
   m_TagString: Untagged
@@ -1473,6 +1475,46 @@ MonoBehaviour:
   FovRange: {x: 1, y: 100}
   DollyRange: {x: -100, y: 100}
   OrthoSizeRange: {x: 1, y: 1000}
+--- !u!114 &1258735124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258735120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoiseProfile: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 1
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &1258735125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258735120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e619181c9b944c2807a31c583d6e3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutoff: 0.01
+  defaults:
+    intensity: 3
+    frequency: 2
+    time: 0.1
+    decay: 1
+  baseAmplitude: 0
+  baseFrequency: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1340646355
 GameObject:
   m_ObjectHideFlags: 0
