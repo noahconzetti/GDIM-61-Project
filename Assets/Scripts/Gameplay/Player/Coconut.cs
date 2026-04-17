@@ -12,6 +12,7 @@ namespace Gameplay {
         [SerializeField] private float minXSpeed = 3f;
         [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float maxSpeedEnforcementPerSecond = 1f;
+        [SerializeField] private float firstPlaceMaxSpeedDebuff = 1f;
         [Header("Gravity Settings")]
         [SerializeField] private float airGravity = 1.5f;
         [SerializeField] private float groundedGravity = 0.9f;
@@ -54,6 +55,7 @@ namespace Gameplay {
 
         [Header("Do not edit pls yay")]
         [SerializeField] private bool _grounded = false;
+        [SerializeField] private int _place;
 
         [field: SerializeField] public AbilityData currentHeldAbility { get; private set; }
 
@@ -129,6 +131,7 @@ namespace Gameplay {
             
             float usedMaxSpeed = maxSpeed;
             if (MaxSpeedIncreaseOverride.HasValue) usedMaxSpeed += MaxSpeedIncreaseOverride.Value;
+            if (_place == 0) usedMaxSpeed -= firstPlaceMaxSpeedDebuff;
             if (_rb.linearVelocityX > usedMaxSpeed) {
                 _rb.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
             }
@@ -212,6 +215,11 @@ namespace Gameplay {
             
             Physics2D.IgnoreCollision(_collider, other._collider, false);
             squished = false;
+        }
+
+        public void SetCurrentPlace(int place) {
+            _place = place;
+            // if (pl)
         }
     }
 }

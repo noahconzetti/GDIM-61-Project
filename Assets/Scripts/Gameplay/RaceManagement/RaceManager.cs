@@ -17,6 +17,8 @@ namespace Gameplay.RaceManagement {
         
         private float _raceLength;
 
+        private Coconut[] _places;
+
         private void OnEnable() {
             GameManager.OnGameStart += AttachPlayers;
             TerrainManager.OnTerrainGenerationComplete += MoveEnd;
@@ -35,10 +37,17 @@ namespace Gameplay.RaceManagement {
             _coconutTracking = raceInfo.Players;
             // _progress = new List<float>(raceInfo.Players.Count);
             _raceLength = raceInfo.RaceDistance;
+            
+            _places = new Coconut[_coconutTracking.Count];
         }
 
         private void Update() {
-            foreach (Coconut coconut in _coconutTracking) {
+            _coconutTracking.Sort((a, b) => 
+                a.transform.position.x > b.transform.position.x ? -1 : 1);
+            
+            for (int i = 0; i < _coconutTracking.Count; i++) {
+                Coconut coconut = _coconutTracking[i];
+                coconut.SetCurrentPlace(i);
                 OnRaceProgressUpdate?.Invoke(coconut.PlayerID, (coconut.transform.position.x / _raceLength));
             }
         }

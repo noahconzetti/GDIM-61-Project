@@ -116,6 +116,7 @@ MonoBehaviour:
   minXSpeed: 8
   maxSpeed: 10
   maxSpeedEnforcementPerSecond: 3
+  firstPlaceMaxSpeedDebuff: 2
   airGravity: 1.5
   groundedGravity: 0.9
   jumpForce: 14
@@ -130,7 +131,11 @@ MonoBehaviour:
   minRaycastAngle: 210
   maxRaycastAngle: 300
   coconutCustomizer: {fileID: 1434383594990591277}
-  currentHeldAbility: {fileID: 0}
+  squishTime: 0.5
+  squished: 0
+  _grounded: 0
+  _place: 0
+  <currentHeldAbility>k__BackingField: {fileID: 0}
 --- !u!114 &1434383594990591277
 MonoBehaviour:
   m_ObjectHideFlags: 0
