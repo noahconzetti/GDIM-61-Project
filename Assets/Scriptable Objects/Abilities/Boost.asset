@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Boost
   m_EditorClassIdentifier: 
   uiIcon: {fileID: 4704695035528165096, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
-  ability: 0
-  boostForce: 4
+  boostForce: 15

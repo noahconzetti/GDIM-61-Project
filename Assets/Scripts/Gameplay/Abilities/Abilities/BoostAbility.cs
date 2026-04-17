@@ -6,7 +6,8 @@ namespace Gameplay.Abilities.Abilities {
     public class BoostAbility : AbilityData {
         [SerializeField] public float boostForce = 4f;
         public override void UseOn(Coconut player, Action endCallback) {
-            player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * boostForce);
+            Debug.Log("Hello");
+            player.GetComponent<Rigidbody2D>().linearVelocity += (Vector2.right * boostForce);
             endCallback();
         }
     }

@@ -28,9 +28,10 @@ namespace Gameplay.Abilities.Abilities {
 
         private IEnumerator IncreaseSize(Action endCallback) {
             yield return new WaitForSeconds(timeIncreaseSize);
-            endCallback();
             _transform.localScale = _ogSize;
-            _rb.mass *= _ogMass;
+            _rb.mass = _ogMass;
+            
+            endCallback();
         }
     }
 }

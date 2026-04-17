@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Enlarge
   m_EditorClassIdentifier: 
   uiIcon: {fileID: -7504371024662307788, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
-  ability: 0
   sizeIncreasePercent: 3
-  massIncreasePercent: 6
+  massIncreasePercent: 2
   timeIncreaseSize: 7
