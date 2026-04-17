@@ -36,6 +36,8 @@ namespace Gameplay {
         private bool _grounded = false;
         private Vector2 _groundNormal = Vector2.up;
         private bool _jumpBufferActive = false;
+
+        private bool _usingAbility = false;
         
         private float raycastAngleDifference;
         
@@ -44,7 +46,9 @@ namespace Gameplay {
         [SerializeField] private AbilityData currentHeldAbility;
 
         public static event Action<Coconut, AbilityData> OnPickupAbility;
-        public static event Action<Coconut, AbilityData> OnUseAbility;
+        public static event Action<Coconut, AbilityData> OnUseAbilityStart;
+        public static event Action<Coconut, AbilityData> OnUseAbilityEnd;
+
         public static event Action<Coconut> OnJump;
         
         public void Init(PlayerStartData playerStartData) {
@@ -144,9 +148,17 @@ namespace Gameplay {
         private void HandleAbility(int id) {
             if (id != PlayerID) return;
             if (currentHeldAbility == null) return;
-            currentHeldAbility.UseOn(this);
-            OnUseAbility?.Invoke(this, currentHeldAbility);
+            if (_usingAbility) return;
+            _usingAbility = true;
+            OnUseAbilityStart?.Invoke(this, currentHeldAbility);
+            
+            currentHeldAbility.UseOn(this, EndUseAbility);
+        }
+
+        private void EndUseAbility() {
+            OnUseAbilityEnd?.Invoke(this, currentHeldAbility);
             currentHeldAbility = null;
+            _usingAbility = false;
         }
 
         public bool TryPickupAbility(AbilityData abilityData) {

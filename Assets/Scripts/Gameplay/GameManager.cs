@@ -10,17 +10,16 @@ namespace Gameplay {
         [SerializeField] private bool useSeed = false;
         [SerializeField] private int seed = 0;
         
-        [SerializeField] private CustomizationManager customizationManager;
+        // [SerializeField] private CustomizationManager customizationManager;
         [SerializeField] private CoconutSpawner coconutSpawner;
         
         public static event Action<RaceInfo> OnGameStart;
-        
 
-        public void StartGame() {
+        public void Start() {
             if (useSeed) ExtraRandom.SetSeed(seed);
             
-            customizationManager.FinalizePlayers();
-            List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(customizationManager.Players);
+            CustomizationManager.Instance.FinalizePlayers();
+            List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationManager.Instance.Players);
             RaceInfo raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);
             OnGameStart?.Invoke(raceInfo);
         }

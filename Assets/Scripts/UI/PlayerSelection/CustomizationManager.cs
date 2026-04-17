@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using AppCore;
 using PlayerSelection.CustomizationOptionButtons;
 using UnityEngine;
+using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 namespace PlayerSelection {
     public class CustomizationManager : MonoBehaviour {
@@ -15,6 +17,8 @@ namespace PlayerSelection {
 
         public readonly List<PlayerStartData> Players = new(2);
 
+        public static CustomizationManager Instance;
+
         public static event Action<PlayerStartData> OnOptionsUpdated;
         public static event Action<List<PlayerStartData>> OnPlayersFinalized;
         
@@ -25,7 +29,16 @@ namespace PlayerSelection {
         private void OnDisable() {
             CustomizationOptionButton.OnOptionSelected -= ChangeOption;
         }
-        
+
+        private void Awake() {
+            if (Instance == null) {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            } else {
+                Destroy(gameObject);
+            }
+        }
+
         private void Start() {
             CreateButtons();
             CreatePlayerDefaults();
@@ -72,6 +85,10 @@ namespace PlayerSelection {
 
         public void FinalizePlayers() {
             OnPlayersFinalized?.Invoke(Players);
+        }
+
+        public void LoadGameScene() {
+            SceneManager.LoadScene("Game");
         }
     }
 }

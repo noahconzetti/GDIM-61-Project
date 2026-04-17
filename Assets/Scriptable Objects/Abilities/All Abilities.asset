@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7addb9cb991146d384eb0d09d1df5ea0, type: 3}
-  m_Name: Boost
+  m_Script: {fileID: 11500000, guid: eaf3c762605b49b599959c4d5ea72a5d, type: 3}
+  m_Name: All Abilities
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 4704695035528165096, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
-  ability: 0
-  boostForce: 4
+  abilityData:
+  - {fileID: 11400000, guid: 01dc163d3e6e8450bbc91b2f67dbb936, type: 2}
+  - {fileID: 11400000, guid: d3101bb9b95be406ca0eed9ae68a9a5f, type: 2}

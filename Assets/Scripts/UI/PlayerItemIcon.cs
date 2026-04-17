@@ -13,13 +13,13 @@ public class PlayerItemIcon : MonoBehaviour {
     
     private void OnEnable() {
         Coconut.OnPickupAbility += HandlePickup;
-        Coconut.OnUseAbility += HandleUse;
+        Coconut.OnUseAbilityEnd += HandleUse;
         CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
     }
     
     private void OnDisable() {
         Coconut.OnPickupAbility += HandlePickup;
-        Coconut.OnUseAbility += HandleUse;
+        Coconut.OnUseAbilityEnd += HandleUse;
         CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
     }
 

@@ -33,7 +33,7 @@ namespace TerrainGeneration {
             GenerateChunks(raceInfo.RaceDistance);
         }
 
-private void GenerateChunks(float width) {
+        private void GenerateChunks(float width) {
             float generationProgress = 0f;
             bool baseWidthMet = false;
 

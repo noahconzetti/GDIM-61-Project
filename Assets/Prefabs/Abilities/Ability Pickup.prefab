@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6721179731140425135}
   - component: {fileID: 1351741981105655570}
   m_Layer: 0
-  m_Name: Pickup
+  m_Name: Ability Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767099123a7e435588f1e948f64931a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityData: {fileID: 0}
+  abilityData: {fileID: 11400000, guid: 6df987d97cb784cf5bd449c3ad30f1b7, type: 2}
 --- !u!61 &1351741981105655570
 BoxCollider2D:
   m_ObjectHideFlags: 0

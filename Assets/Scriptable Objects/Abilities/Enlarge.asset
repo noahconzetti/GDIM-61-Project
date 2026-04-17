@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7addb9cb991146d384eb0d09d1df5ea0, type: 3}
-  m_Name: Boost
+  m_Script: {fileID: 11500000, guid: 94b2f536b1b94379841f5075e8d77786, type: 3}
+  m_Name: Enlarge
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 4704695035528165096, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
+  uiIcon: {fileID: -7504371024662307788, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
   ability: 0
-  boostForce: 4
+  sizeIncreasePercent: 3
+  massIncreasePercent: 6
+  timeIncreaseSize: 7
