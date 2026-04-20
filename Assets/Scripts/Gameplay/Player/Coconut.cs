@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using AppCore;
 using Gameplay.Abilities;
 using Gameplay.Abilities.Abilities;
+using Gameplay.Environment;
 using PlayerSelection;
 using UnityEngine;
 
@@ -12,6 +15,7 @@ namespace Gameplay {
         [SerializeField] private float minXSpeed = 3f;
         [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float maxSpeedEnforcementPerSecond = 1f;
+        [SerializeField] private float minSpeedEnforcementPerSecond = 1f;
         [SerializeField] private float firstPlaceMaxSpeedDebuff = 1f;
         [Header("Gravity Settings")]
         [SerializeField] private float airGravity = 1.5f;
@@ -28,7 +32,8 @@ namespace Gameplay {
         [SerializeField] private int numRaycasts = 10;
         [SerializeField] private float minRaycastAngle = 210;
         [SerializeField] private float maxRaycastAngle = 300;
-
+        [SerializeField] private float inAirAngularVelocityMax = 1f;
+        [SerializeField] private float angularVelocityMaxEnforcementPerSecond = 2f;
         [Header("Links")]
         [SerializeField] private CoconutCustomizer coconutCustomizer;
 
@@ -50,6 +55,7 @@ namespace Gameplay {
         public float? MaxSpeedIncreaseOverride = null;
 
         public bool squished = false;
+        public List<Box> slowedEffects = new List<Box>();
         
         public int PlayerID { get; private set; }
 
@@ -125,9 +131,11 @@ namespace Gameplay {
         }
         
         private void ApplySpeedConstraints() {
+            // Velocity
             if (_rb.linearVelocityX < minXSpeed && !squished) {
-                _rb.linearVelocityX = minXSpeed;
+                _rb.linearVelocityX += minSpeedEnforcementPerSecond;
             }
+            if (_rb.linearVelocityX < 0) _rb.linearVelocityX = 0;
             
             float usedMaxSpeed = maxSpeed;
             if (MaxSpeedIncreaseOverride.HasValue) usedMaxSpeed += MaxSpeedIncreaseOverride.Value;
@@ -135,8 +143,19 @@ namespace Gameplay {
             if (_rb.linearVelocityX > usedMaxSpeed) {
                 _rb.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
             }
+            
+            
+            // Angular velocity
+            Debug.Log(_rb.angularVelocity);
+            if (!_grounded && _rb.angularVelocity < inAirAngularVelocityMax) {
+                _rb.angularVelocity += angularVelocityMaxEnforcementPerSecond * Time.deltaTime;
+            }
         }
-        
+
+        private float GetSlowEffects() {
+            return slowedEffects.Sum(x => x.slowSpeed);
+        }
+
         private void HandleJumpInput(int id) {
             if (id != PlayerID) return;
             
@@ -196,6 +215,7 @@ namespace Gameplay {
             if (other.contacts[0].normal.x > 0 &&
                 otherCoconut != null && 
                 otherCoconut.PlayerID != PlayerID && 
+                !(UsingAbility && currentHeldAbility.GetType() == typeof(EnlargeAbility)) &&
                 otherCoconut.UsingAbility && 
                 otherCoconut.currentHeldAbility.GetType() == typeof(EnlargeAbility)) {
                 

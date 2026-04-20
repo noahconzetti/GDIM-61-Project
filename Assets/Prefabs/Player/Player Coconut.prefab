@@ -116,6 +116,7 @@ MonoBehaviour:
   minXSpeed: 8
   maxSpeed: 10
   maxSpeedEnforcementPerSecond: 3
+  minSpeedEnforcementPerSecond: 1
   firstPlaceMaxSpeedDebuff: 2
   airGravity: 1.5
   groundedGravity: 0.9
@@ -126,13 +127,16 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  groundCastAddition: 0.5
+  groundCastAddition: 0.2
   numRaycasts: 10
   minRaycastAngle: 210
   maxRaycastAngle: 300
+  inAirAngularVelocityMax: -300
+  angularVelocityMaxEnforcementPerSecond: 500
   coconutCustomizer: {fileID: 1434383594990591277}
   squishTime: 0.5
   squished: 0
+  slowedEffects: []
   _grounded: 0
   _place: 0
   <currentHeldAbility>k__BackingField: {fileID: 0}
