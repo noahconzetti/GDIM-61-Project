@@ -745,8 +745,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 958043776}
   - {fileID: 2124122102}
+  - {fileID: 958043776}
   m_Father: {fileID: 1971701526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -1227,6 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressIconPrefab: {fileID: 8778312207683368702, guid: a8724f15b6b09467eab49b5556db7a92, type: 3}
+  distanceBetweenIcons: 15
 --- !u!1 &1005809948
 GameObject:
   m_ObjectHideFlags: 0

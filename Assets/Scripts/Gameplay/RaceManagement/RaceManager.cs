@@ -48,7 +48,8 @@ namespace Gameplay.RaceManagement {
             for (int i = 0; i < _coconutTracking.Count; i++) {
                 Coconut coconut = _coconutTracking[i];
                 coconut.SetCurrentPlace(i);
-                OnRaceProgressUpdate?.Invoke(coconut.PlayerID, (coconut.transform.position.x / _raceLength));
+                float progress = Mathf.Min(coconut.transform.position.x / _raceLength, 1);
+                OnRaceProgressUpdate?.Invoke(coconut.PlayerID, progress);
             }
         }
     }
