@@ -55,6 +55,7 @@ namespace Gameplay {
         public float? MaxSpeedIncreaseOverride = null;
 
         public bool squished = false;
+        public bool dead = false;
         public List<Box> slowedEffects = new List<Box>();
         
         public int PlayerID { get; private set; }
@@ -131,7 +132,7 @@ namespace Gameplay {
         
         private void ApplySpeedConstraints() {
             // Velocity
-            if (_rb.linearVelocityX < minXSpeed && !squished) {
+            if (_rb.linearVelocityX < minXSpeed && !squished && !dead) {
                 _rb.linearVelocityX += minSpeedEnforcementPerSecond;
             }
             if (_rb.linearVelocityX < 0) _rb.linearVelocityX = 0;

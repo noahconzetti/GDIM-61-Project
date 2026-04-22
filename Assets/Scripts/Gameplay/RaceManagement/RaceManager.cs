@@ -19,6 +19,12 @@ namespace Gameplay.RaceManagement {
 
         private Coconut[] _places;
 
+        private static RaceManager Instance;
+
+        private void Awake() {
+            Instance = this;
+        }
+
         private void OnEnable() {
             GameManager.OnGameStart += AttachPlayers;
             TerrainManager.OnTerrainGenerationComplete += MoveEnd;
@@ -50,7 +56,12 @@ namespace Gameplay.RaceManagement {
                 coconut.SetCurrentPlace(i);
                 float progress = Mathf.Min(coconut.transform.position.x / _raceLength, 1);
                 OnRaceProgressUpdate?.Invoke(coconut.PlayerID, progress);
+                _places[i] = coconut;
             }
+        }
+
+        public static Coconut[] GetPlayerPlaces() {
+            return Instance._places;
         }
     }
 }

@@ -15,7 +15,9 @@ namespace Gameplay {
         [SerializeField] private CoconutSpawner coconutSpawner;
         
         public static event Action<RaceInfo> OnGameStart;
-
+        
+        private RaceInfo _raceInfo;
+        
         public void Start() {
             if (useSeed) ExtraRandom.SetSeed(seed);
 
@@ -25,8 +27,8 @@ namespace Gameplay {
             }
             CustomizationManager.Instance.FinalizePlayers();
             List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationManager.Instance.Players);
-            RaceInfo raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);
-            OnGameStart?.Invoke(raceInfo);
+            _raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);
+            OnGameStart?.Invoke(_raceInfo);
         }
     }
 }

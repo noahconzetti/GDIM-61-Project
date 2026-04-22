@@ -18,6 +18,7 @@ namespace Gameplay.Player {
             _animator.SetFloat("ySpeed", _rb.linearVelocityY);
             _animator.SetFloat("xSpeed", _rb.linearVelocityX);
             _animator.SetBool("Enlarged", 
+                _coconut.currentHeldAbility != null &&
                 _coconut.currentHeldAbility.GetType() == typeof(EnlargeAbility) &&
                 _coconut.UsingAbility);
             _animator.SetBool("Grounded", _coconut.Grounded);

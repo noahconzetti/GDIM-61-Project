@@ -54,7 +54,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1.5
   m_LinearDamping: 0
-  m_AngularDamping: 0.1
+  m_AngularDamping: 0
   m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -124,7 +124,7 @@ MonoBehaviour:
   groundedGravity: 0.9
   jumpForce: 14
   forwardMomentumPreserved: 1
-  jumpDirection: {x: 0.3, y: 1}
+  jumpDirection: {x: 2, y: 1}
   jumpBufferTime: 0.3
   groundLayer:
     serializedVersion: 2

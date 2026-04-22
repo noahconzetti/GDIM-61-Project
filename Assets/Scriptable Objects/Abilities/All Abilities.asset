@@ -15,3 +15,4 @@ MonoBehaviour:
   abilityData:
   - {fileID: 11400000, guid: 01dc163d3e6e8450bbc91b2f67dbb936, type: 2}
   - {fileID: 11400000, guid: d3101bb9b95be406ca0eed9ae68a9a5f, type: 2}
+  - {fileID: 11400000, guid: 55583444c702241a1a5fdc7176f04d71, type: 2}
