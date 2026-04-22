@@ -60,9 +60,8 @@ namespace Gameplay {
         public int PlayerID { get; private set; }
 
         [Header("Do not edit pls yay")]
-        [SerializeField] private bool _grounded = false;
-        [SerializeField] private int _place;
-
+        [field: SerializeField] public bool Grounded { get; private set; }  = false;
+        [field: SerializeField] public int place { get; private set; } = 0;
         [field: SerializeField] public AbilityData currentHeldAbility { get; private set; }
 
         public static event Action<Coconut, AbilityData> OnPickupAbility;
@@ -118,16 +117,16 @@ namespace Gameplay {
 
             if (bestHit.HasValue) {
                 _groundNormal = bestHit.Value.normal;
-                _grounded = true;
+                Grounded = true;
             } else {
-                _grounded = false;
+                Grounded = false;
             }
             
-            if (_grounded && _jumpBufferActive) {
+            if (Grounded && _jumpBufferActive) {
                 Jump();
             }
             
-            _rb.gravityScale = _grounded ? groundedGravity : airGravity;
+            _rb.gravityScale = Grounded ? groundedGravity : airGravity;
         }
         
         private void ApplySpeedConstraints() {
@@ -139,15 +138,14 @@ namespace Gameplay {
             
             float usedMaxSpeed = maxSpeed;
             if (MaxSpeedIncreaseOverride.HasValue) usedMaxSpeed += MaxSpeedIncreaseOverride.Value;
-            if (_place == 0) usedMaxSpeed -= firstPlaceMaxSpeedDebuff;
+            if (place == 0) usedMaxSpeed -= firstPlaceMaxSpeedDebuff;
             if (_rb.linearVelocityX > usedMaxSpeed) {
                 _rb.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
             }
             
             
             // Angular velocity
-            Debug.Log(_rb.angularVelocity);
-            if (!_grounded && _rb.angularVelocity < inAirAngularVelocityMax) {
+            if (!Grounded && _rb.angularVelocity < inAirAngularVelocityMax) {
                 _rb.angularVelocity += angularVelocityMaxEnforcementPerSecond * Time.deltaTime;
             }
         }
@@ -159,7 +157,7 @@ namespace Gameplay {
         private void HandleJumpInput(int id) {
             if (id != PlayerID) return;
             
-            if (!_grounded) {
+            if (!Grounded) {
                 if (_jumpCoroutine != null) StopCoroutine(_jumpCoroutine);
                 _jumpCoroutine = StartCoroutine(SaveJumpInput());
                 return;
@@ -238,8 +236,7 @@ namespace Gameplay {
         }
 
         public void SetCurrentPlace(int place) {
-            _place = place;
-            // if (pl)
+            this.place = place;
         }
     }
 }

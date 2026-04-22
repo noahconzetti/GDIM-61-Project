@@ -127,13 +127,49 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""P3 Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""8acd0b93-8ade-4ad9-9cdc-8a6a8edb2f0e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""P3 Ability"",
+                    ""type"": ""Button"",
+                    ""id"": ""6906d8f6-a991-462a-ac7e-60e136d07614"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""P4 Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""0d93ddf6-92b0-4b36-b953-ef02a0a89844"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""P4 Ability"",
+                    ""type"": ""Button"",
+                    ""id"": ""3e66b2a0-33a8-4276-87d5-77dc0214094c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""61096705-3afe-456e-ac67-34bafa236a20"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -144,7 +180,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""04bd449c-720a-48e0-9668-b9b251f11513"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -155,7 +191,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bb8f42c8-46da-4e25-9ddd-eec758020997"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -166,11 +202,55 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6778a6c3-856a-41cb-9984-0ab48f2f48d6"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""P2 Ability"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e990b208-d1bc-4056-a434-4f6de197c5d5"",
+                    ""path"": ""<Keyboard>/0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""P3 Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5d5b1cc4-8e29-49ab-a573-7e1c6e82e77f"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""P3 Ability"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cfe2d579-d25a-4d93-a97a-fc42f897d65e"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""P4 Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c00179ab-b76c-47c7-95b6-da926900cb89"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""P4 Ability"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -185,6 +265,10 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_CoconutControls_P1Ability = m_CoconutControls.FindAction("P1 Ability", throwIfNotFound: true);
         m_CoconutControls_P2Jump = m_CoconutControls.FindAction("P2 Jump", throwIfNotFound: true);
         m_CoconutControls_P2Ability = m_CoconutControls.FindAction("P2 Ability", throwIfNotFound: true);
+        m_CoconutControls_P3Jump = m_CoconutControls.FindAction("P3 Jump", throwIfNotFound: true);
+        m_CoconutControls_P3Ability = m_CoconutControls.FindAction("P3 Ability", throwIfNotFound: true);
+        m_CoconutControls_P4Jump = m_CoconutControls.FindAction("P4 Jump", throwIfNotFound: true);
+        m_CoconutControls_P4Ability = m_CoconutControls.FindAction("P4 Ability", throwIfNotFound: true);
     }
 
     ~@PlayerInputs()
@@ -269,6 +353,10 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_CoconutControls_P1Ability;
     private readonly InputAction m_CoconutControls_P2Jump;
     private readonly InputAction m_CoconutControls_P2Ability;
+    private readonly InputAction m_CoconutControls_P3Jump;
+    private readonly InputAction m_CoconutControls_P3Ability;
+    private readonly InputAction m_CoconutControls_P4Jump;
+    private readonly InputAction m_CoconutControls_P4Ability;
     /// <summary>
     /// Provides access to input actions defined in input action map "Coconut Controls".
     /// </summary>
@@ -296,6 +384,22 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "CoconutControls/P2Ability".
         /// </summary>
         public InputAction @P2Ability => m_Wrapper.m_CoconutControls_P2Ability;
+        /// <summary>
+        /// Provides access to the underlying input action "CoconutControls/P3Jump".
+        /// </summary>
+        public InputAction @P3Jump => m_Wrapper.m_CoconutControls_P3Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "CoconutControls/P3Ability".
+        /// </summary>
+        public InputAction @P3Ability => m_Wrapper.m_CoconutControls_P3Ability;
+        /// <summary>
+        /// Provides access to the underlying input action "CoconutControls/P4Jump".
+        /// </summary>
+        public InputAction @P4Jump => m_Wrapper.m_CoconutControls_P4Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "CoconutControls/P4Ability".
+        /// </summary>
+        public InputAction @P4Ability => m_Wrapper.m_CoconutControls_P4Ability;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -334,6 +438,18 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @P2Ability.started += instance.OnP2Ability;
             @P2Ability.performed += instance.OnP2Ability;
             @P2Ability.canceled += instance.OnP2Ability;
+            @P3Jump.started += instance.OnP3Jump;
+            @P3Jump.performed += instance.OnP3Jump;
+            @P3Jump.canceled += instance.OnP3Jump;
+            @P3Ability.started += instance.OnP3Ability;
+            @P3Ability.performed += instance.OnP3Ability;
+            @P3Ability.canceled += instance.OnP3Ability;
+            @P4Jump.started += instance.OnP4Jump;
+            @P4Jump.performed += instance.OnP4Jump;
+            @P4Jump.canceled += instance.OnP4Jump;
+            @P4Ability.started += instance.OnP4Ability;
+            @P4Ability.performed += instance.OnP4Ability;
+            @P4Ability.canceled += instance.OnP4Ability;
         }
 
         /// <summary>
@@ -357,6 +473,18 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @P2Ability.started -= instance.OnP2Ability;
             @P2Ability.performed -= instance.OnP2Ability;
             @P2Ability.canceled -= instance.OnP2Ability;
+            @P3Jump.started -= instance.OnP3Jump;
+            @P3Jump.performed -= instance.OnP3Jump;
+            @P3Jump.canceled -= instance.OnP3Jump;
+            @P3Ability.started -= instance.OnP3Ability;
+            @P3Ability.performed -= instance.OnP3Ability;
+            @P3Ability.canceled -= instance.OnP3Ability;
+            @P4Jump.started -= instance.OnP4Jump;
+            @P4Jump.performed -= instance.OnP4Jump;
+            @P4Jump.canceled -= instance.OnP4Jump;
+            @P4Ability.started -= instance.OnP4Ability;
+            @P4Ability.performed -= instance.OnP4Ability;
+            @P4Ability.canceled -= instance.OnP4Ability;
         }
 
         /// <summary>
@@ -425,5 +553,33 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnP2Ability(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "P3 Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnP3Jump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "P3 Ability" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnP3Ability(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "P4 Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnP4Jump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "P4 Ability" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnP4Ability(InputAction.CallbackContext context);
     }
 }
