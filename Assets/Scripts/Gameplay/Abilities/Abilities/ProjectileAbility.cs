@@ -9,6 +9,7 @@ namespace Gameplay.Abilities.Abilities {
         public override void UseOn(Coconut player, Action endCallback) {
             GameObject projectile = Instantiate(projectilePrefab, player.transform.position, Quaternion.identity);
             projectile.GetComponent<Projectile>().SetTarget(PickRandomPlayer(player));
+            endCallback();
         }
 
         private Coconut PickRandomPlayer(Coconut ignore) {

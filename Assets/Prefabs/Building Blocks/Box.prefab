@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2180940373107868148}
   - component: {fileID: 6472687079943253608}
   - component: {fileID: 9078402251205390928}
+  - component: {fileID: 6739769720017340450}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -176,3 +177,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowSpeed: 10
+--- !u!114 &6739769720017340450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564164097966416550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c0cdeac6394876a0fe08776b9bbec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appearChance: 0.33
+  randomizeObject: 0
+  optionPrefabs: []
+  weights: []

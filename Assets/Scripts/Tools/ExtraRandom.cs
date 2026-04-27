@@ -5,7 +5,7 @@ using System.Linq;
 using Random = UnityEngine.Random;
 
 public static class ExtraRandom {
-    public static T WeightedChoice<T>(Collection<T> values, Collection<float> weights) {
+    public static T WeightedChoice<T>(List<T> values, List<float> weights) {
         float total = 0f;
         foreach (float weight in weights) {
             total += weight;
@@ -22,6 +22,7 @@ public static class ExtraRandom {
 
         return values[0];
     }
+    
     public static T WeightedChoice<T>(IList<T> values, Func<T, float> valueToWeight) {
         float total = values.Sum(valueToWeight);
 
