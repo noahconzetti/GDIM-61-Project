@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Gameplay;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,7 +24,7 @@ namespace PlayerSelection {
             TryGetComponent(out _animator);
         }
 
-        private void HandleOptionsUpdated(PlayerStartData newData) {
+        private void HandleOptionsUpdated(PlayerStartData newData, HashSet<int> activeColorIndexes) {
             if (newData.PlayerID != playerIndex) return;
             coconutBase.color = newData.PlayerColor;
             if (coconutHat.sprite != newData.PlayerHat) {

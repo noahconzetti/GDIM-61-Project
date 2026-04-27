@@ -6,9 +6,7 @@ namespace Gameplay.Abilities {
 
         private void OnTriggerEnter2D(Collider2D other) {
             if (!other.TryGetComponent(out Coconut player)) return;
-            if (player.TryPickupAbility(ChooseRandomAbility())) {
-                Destroy(gameObject);
-            }
+            player.TryPickupAbility(ChooseRandomAbility());
         }
 
         private AbilityData ChooseRandomAbility() {

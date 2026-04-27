@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using AppCore;
 using PlayerSelection.CustomizationOptionButtons;
 using UnityEngine;
@@ -20,7 +21,9 @@ namespace PlayerSelection {
 
         public static CustomizationManager Instance = null;
 
-        public static event Action<PlayerStartData> OnOptionsUpdated;
+        private HashSet<int> _activeColorIndexes = new();
+
+        public static event Action<PlayerStartData, HashSet<int>> OnOptionsUpdated;
         public static event Action<List<PlayerStartData>> OnPlayersFinalized;
         
         private void OnEnable() {
@@ -66,23 +69,26 @@ namespace PlayerSelection {
             for (int i = 0; i < coconutTabs.Length; i++) {
                 var currPlayer = new PlayerStartData(i, data.colors[i], i, data.hats[i], i);
                 Players.Add(currPlayer);
-                OnOptionsUpdated?.Invoke(currPlayer);
+                _activeColorIndexes.Add(i);
+                OnOptionsUpdated?.Invoke(currPlayer, _activeColorIndexes);
             }
         }
-
         
         private void ChangeOption(int coconutIndex, int optionTypeIndex, int optionIndex) {
             switch (optionTypeIndex) {
                 case OPTION_COLOR:
-                    if (Players.Any(p => p.PlayerColorID == optionIndex)) return;
+                    _activeColorIndexes.Remove(Players[coconutIndex].PlayerColorID);
                     Players[coconutIndex].PlayerColor = data.colors[optionIndex];
+                    Players[coconutIndex].PlayerColorID = optionIndex;
+                    _activeColorIndexes.Add(optionIndex);
                     break;
                 case OPTION_HAT:
                     Players[coconutIndex].PlayerHat = data.hats[optionIndex];
                     break;
             }
             
-            OnOptionsUpdated?.Invoke(Players[coconutIndex]);
+            OnOptionsUpdated?.Invoke(Players[coconutIndex], _activeColorIndexes);
+            Debug.Log(string.Join(',', _activeColorIndexes));
         }
 
         public void FinalizePlayers() {
