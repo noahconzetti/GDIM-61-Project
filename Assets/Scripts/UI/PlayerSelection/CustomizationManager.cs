@@ -18,7 +18,7 @@ namespace PlayerSelection {
 
         public readonly List<PlayerStartData> Players = new(2);
 
-        public static CustomizationManager Instance;
+        public static CustomizationManager Instance = null;
 
         public static event Action<PlayerStartData> OnOptionsUpdated;
         public static event Action<List<PlayerStartData>> OnPlayersFinalized;

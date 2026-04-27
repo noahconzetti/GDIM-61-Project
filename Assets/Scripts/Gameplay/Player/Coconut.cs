@@ -20,6 +20,7 @@ namespace Gameplay {
         [Header("Gravity Settings")]
         [SerializeField] private float airGravity = 1.5f;
         [SerializeField] private float groundedGravity = 0.9f;
+        [SerializeField] private float notGroundedBoost = 1f;
         [Header("Jump Settings")]
         [SerializeField] private float jumpForce = 2;
         [SerializeField] private float forwardMomentumPreserved = 0.9f;
@@ -39,6 +40,10 @@ namespace Gameplay {
 
         [Header("Ability settings")]
         [SerializeField] private float squishTime = .5f;
+
+        [Header("Debug")]
+        [SerializeField] private GameObject slowIndicator;
+        [SerializeField] private GameObject fastIndicator;
         
         private Rigidbody2D _rb;
         private CircleCollider2D _collider;
@@ -97,7 +102,7 @@ namespace Gameplay {
             UpdateGrounded();
             ApplySpeedConstraints();
         }
-        
+
         private void UpdateGrounded() {
             RaycastHit2D? bestHit = null;
             for (int i = 0; i < numRaycasts; i++) {
@@ -134,6 +139,9 @@ namespace Gameplay {
             // Velocity
             if (_rb.linearVelocityX < minXSpeed && !squished && !dead) {
                 _rb.linearVelocityX += minSpeedEnforcementPerSecond;
+                slowIndicator.SetActive(true);
+            } else {
+                slowIndicator.SetActive(false);
             }
             if (_rb.linearVelocityX < 0) _rb.linearVelocityX = 0;
             
@@ -142,6 +150,9 @@ namespace Gameplay {
             if (place == 0) usedMaxSpeed -= firstPlaceMaxSpeedDebuff;
             if (_rb.linearVelocityX > usedMaxSpeed) {
                 _rb.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
+                fastIndicator.SetActive(true);
+            } else {
+                fastIndicator.SetActive(false);
             }
             
             
