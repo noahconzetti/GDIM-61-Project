@@ -35,12 +35,11 @@ namespace PlayerSelection {
         }
 
         private void Awake() {
-            if (Instance == null) {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            } else {
-                Destroy(gameObject);
+            if (Instance != null) {
+                Destroy(Instance.gameObject);
             }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         private void Start() {
@@ -88,7 +87,6 @@ namespace PlayerSelection {
             }
             
             OnOptionsUpdated?.Invoke(Players[coconutIndex], _activeColorIndexes);
-            Debug.Log(string.Join(',', _activeColorIndexes));
         }
 
         public void FinalizePlayers() {

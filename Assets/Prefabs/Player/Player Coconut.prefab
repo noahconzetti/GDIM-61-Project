@@ -123,7 +123,7 @@ MonoBehaviour:
   firstPlaceMaxSpeedDebuff: 0.5
   airGravity: 1.5
   groundedGravity: 0.9
-  notGroundedBoost: 1
+  notGroundedBoost: 2
   jumpForce: 14
   forwardMomentumPreserved: 1
   jumpDirection: {x: 2, y: 1}

@@ -12,7 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b2f536b1b94379841f5075e8d77786, type: 3}
   m_Name: Enlarge
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: -7504371024662307788, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
+  uiIcon: {fileID: -8471602702086864555, guid: 179e77efe90b34a55bcb4ef17c5e121e, type: 3}
   sizeIncreasePercent: 3
   massIncreasePercent: 2
   timeIncreaseSize: 7
+  maxSpeedIncrease: 2
+  boostForce: 1
+  enlargeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

@@ -18,9 +18,9 @@ public class PlayerItemIcon : MonoBehaviour {
     }
     
     private void OnDisable() {
-        Coconut.OnPickupAbility += HandlePickup;
-        Coconut.OnUseAbilityEnd += HandleUse;
-        CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
+        Coconut.OnPickupAbility -= HandlePickup;
+        Coconut.OnUseAbilityEnd -= HandleUse;
+        CustomizationManager.OnPlayersFinalized -= SetBackgroundColor;
     }
 
     private void SetBackgroundColor(List<PlayerStartData> playerStartData) {

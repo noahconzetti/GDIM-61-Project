@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7addb9cb991146d384eb0d09d1df5ea0, type: 3}
   m_Name: Boost
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 4704695035528165096, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
+  uiIcon: {fileID: 326621922322331402, guid: 07a0fcffe0bbe43609afce9f9d817095, type: 3}
   boostForce: 4
   betweenBoostsTime: 0.5
   numBoosts: 4
