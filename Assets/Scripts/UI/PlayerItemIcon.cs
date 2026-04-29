@@ -10,6 +10,7 @@ public class PlayerItemIcon : MonoBehaviour {
     [SerializeField] private int player = 0;
     [SerializeField] private Image abilityIcon;
     [SerializeField] private Image backgroundColor;
+    [SerializeField] private Image hatImage;
     
     private void OnEnable() {
         Coconut.OnPickupAbility += HandlePickup;
@@ -27,6 +28,7 @@ public class PlayerItemIcon : MonoBehaviour {
         foreach (var playerData in playerStartData) {
             if (playerData.PlayerID == player) {
                 backgroundColor.color = playerData.PlayerColor;
+                hatImage.sprite = playerData.PlayerHat;
             }
         }
     }

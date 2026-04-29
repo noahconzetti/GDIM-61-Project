@@ -225,9 +225,8 @@ namespace Gameplay {
             if (other.contacts[0].normal.x > 0 &&
                 otherCoconut != null && 
                 otherCoconut.PlayerID != PlayerID && 
-                !(UsingAbility && currentHeldAbility.GetType() == typeof(EnlargeAbility)) &&
-                otherCoconut.UsingAbility && 
-                otherCoconut.currentHeldAbility.GetType() == typeof(EnlargeAbility)) {
+                IsUsingAbility(typeof(EnlargeAbility)) &&
+                otherCoconut.IsUsingAbility(typeof(EnlargeAbility))) {
                 
                 otherCoconut.StartCoroutine(Squish(otherCoconut));
             }
@@ -249,6 +248,10 @@ namespace Gameplay {
 
         public void SetCurrentPlace(int place) {
             this.place = place;
+        }
+
+        public bool IsUsingAbility(Type abilityType) {
+            return UsingAbility && currentHeldAbility.GetType() == abilityType;
         }
     }
 }
