@@ -131,7 +131,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  groundCastAddition: 0.2
+  groundCastAddition: 0.1
   numRaycasts: 10
   minRaycastAngle: 210
   maxRaycastAngle: 300

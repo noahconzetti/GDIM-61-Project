@@ -17,7 +17,8 @@ MonoBehaviour:
   massIncreasePercent: 2
   timeIncreaseSize: 7
   maxSpeedIncrease: 2
-  boostForce: 1
+  boostForce: 3
+  continualBoostForce: 0.03
   enlargeCurve:
     serializedVersion: 2
     m_Curve:

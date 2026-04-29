@@ -30,6 +30,8 @@ namespace Gameplay {
             List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationManager.Instance.Players);
             _raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);
             OnGameStart?.Invoke(_raceInfo);
+            
+            
         }
     }
 }

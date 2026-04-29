@@ -10,6 +10,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float timeIncreaseSize = 7f;
         [SerializeField] private float maxSpeedIncrease = 2f;
         [SerializeField] private float boostForce = 1f;
+        [SerializeField] private float continualBoostForce = 0.1f;
         [SerializeField] private AnimationCurve enlargeCurve = AnimationCurve.EaseInOut(0, 0, .5f, 1);
 
         private Vector3 _ogScale;
@@ -34,7 +35,12 @@ namespace Gameplay.Abilities.Abilities {
 
         private IEnumerator IncreaseSize(Action endCallback, Coconut player) {
             yield return ChangePlayerScale(player, _ogScale * sizeIncreasePercent, 1);
-            yield return new WaitForSeconds(timeIncreaseSize);
+            float t = 0;
+            while (t < timeIncreaseSize) {
+                t += Time.fixedDeltaTime;
+                _rb.linearVelocityX += continualBoostForce;
+                yield return new WaitForFixedUpdate();
+            }
             yield return ChangePlayerScale(player, _ogScale, -1);
     
             player.MaxSpeedIncreaseOverride = null;

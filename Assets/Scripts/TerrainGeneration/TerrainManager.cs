@@ -38,11 +38,11 @@ namespace TerrainGeneration {
             bool baseWidthMet = false;
 
             List<Vector2> points = new List<Vector2>();
-            points.Add(new Vector2(0, -heightBelow));
+            points.AddRange(GetStartPoints());
+
+            _lastPosition = points[^1];
             
-            // Note: If you ever change where the terrain starts, you'll want this 
-            // to be _lastPosition instead of a hardcoded Vector2(0,0)
-            points.Add(new Vector2(0, 0)); 
+            points.Insert(0, new Vector2(points[0].x, -heightBelow));); 
             
             while (generationProgress < width + extraGenerationDistance) {
                 TerrainBlock currentBlockPrefab = ChooseRandomBlock();
@@ -73,6 +73,14 @@ namespace TerrainGeneration {
             
             UpdateSpline(spriteShapeController, splineContainerBase.Spline);
         }
+
+        private IEnumerable<Vector2> GetStartPoints() {
+            for (int i = 0; i < spriteShapeController.spline.GetPointCount(); i++) {
+                yield return spriteShapeController.spline.GetPosition(i);
+            }
+        }
+
+
         private IEnumerable<float3> PointsToKnots(List<Vector2> points) {
             return points.Select(p => p.ToFloat3());
         }

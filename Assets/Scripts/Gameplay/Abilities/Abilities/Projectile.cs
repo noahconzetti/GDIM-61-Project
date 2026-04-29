@@ -7,6 +7,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float projectileForce = 1f;
         [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float coconutDeadTime = 1f;
+        [SerializeField] private float coconutDeadTimeVsEnlarged = 0;
         private Coconut _target;
         private Rigidbody2D _rb;
 
@@ -25,6 +26,9 @@ namespace Gameplay.Abilities.Abilities {
 
         private void OnTriggerEnter2D(Collider2D other) {
             if (other.gameObject.TryGetComponent(out Coconut coconut) && coconut == _target) {
+                if (coconut.IsUsingAbility(typeof(EnlargeAbility))) {
+                    coconutDeadTime = coconutDeadTimeVsEnlarged;
+                }
                 Destroy(gameObject);
                 coconut.StartCoroutine(HitByProjectile(coconut));
             }

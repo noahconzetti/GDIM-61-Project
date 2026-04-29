@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 9874b0a7dbe7548d494c1b21eec484dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5230068876471886940
+    second: boost sprite sheet_0
+  - first:
+      213: -76829311072649197
+    second: boost sprite sheet_1
+  - first:
+      213: -621828613591478171
+    second: boost sprite sheet_2
+  - first:
+      213: 8971430765790444689
+    second: boost sprite sheet_3
+  - first:
+      213: 7729914034633339079
+    second: boost sprite sheet_4
+  - first:
+      213: 1800610378076155535
+    second: boost sprite sheet_5
+  - first:
+      213: 1637407925186926934
+    second: boost sprite sheet_6
+  - first:
+      213: -4837132064198439832
+    second: boost sprite sheet_7
+  - first:
+      213: -1303095681769623004
+    second: boost sprite sheet_8
+  - first:
+      213: -723077573505132301
+    second: boost sprite sheet_9
+  - first:
+      213: -5354179897804635006
+    second: boost sprite sheet_10
+  - first:
+      213: 5125031629239110452
+    second: boost sprite sheet_11
+  - first:
+      213: 7645887302606371811
+    second: boost sprite sheet_12
+  - first:
+      213: -2728342246179780325
+    second: boost sprite sheet_13
+  - first:
+      213: 656408337392898156
+    second: boost sprite sheet_14
+  - first:
+      213: -2308039107369775696
+    second: boost sprite sheet_15
+  - first:
+      213: 2526587378933234344
+    second: boost sprite sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boost sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 402
+        width: 342
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54eeecdeefe49840800000000000000
+      internalID: 5230068876471886940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 318
+        width: 297
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3104d2d062c0feef0800000000000000
+      internalID: -76829311072649197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3853
+        y: 382
+        width: 384
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560d4b7ab22de57f0800000000000000
+      internalID: -621828613591478171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5761
+        y: 675
+        width: 274
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c33f1bfbce08c70800000000000000
+      internalID: 8971430765790444689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7721
+        y: 856
+        width: 168
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c070a21cdb264b60800000000000000
+      internalID: 7729914034633339079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 671
+        width: 580
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e6c1c499d0df810800000000000000
+      internalID: 1800610378076155535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4183
+        y: 675
+        width: 493
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6591d2525dd39b610800000000000000
+      internalID: 1637407925186926934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5548
+        y: 432
+        width: 226
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ccccd040e0fdcb0800000000000000
+      internalID: -4837132064198439832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 598
+        width: 449
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422b6cba1697aede0800000000000000
+      internalID: -1303095681769623004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4233
+        y: 635
+        width: 215
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8dc2627cc17f5f0800000000000000
+      internalID: -723077573505132301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 522
+        width: 503
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28441d720c122b5b0800000000000000
+      internalID: -5354179897804635006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4266
+        y: 583
+        width: 482
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b407bfc15cf1740800000000000000
+      internalID: 5125031629239110452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4257
+        y: 547
+        width: 169
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebb588fdf5ab1a60800000000000000
+      internalID: 7645887302606371811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 494
+        width: 403
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1943c6be2bf22ad0800000000000000
+      internalID: -2728342246179780325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5728
+        y: 275
+        width: 261
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6098e1b7e70c1900800000000000000
+      internalID: 656408337392898156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7294
+        y: 366
+        width: 168
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdc38d09a238ffd0800000000000000
+      internalID: -2308039107369775696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boost sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 7635
+        y: 177
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aafc4fa5dd301320800000000000000
+      internalID: 2526587378933234344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boost sprite sheet_0: 5230068876471886940
+      boost sprite sheet_1: -76829311072649197
+      boost sprite sheet_10: -5354179897804635006
+      boost sprite sheet_11: 5125031629239110452
+      boost sprite sheet_12: 7645887302606371811
+      boost sprite sheet_13: -2728342246179780325
+      boost sprite sheet_14: 656408337392898156
+      boost sprite sheet_15: -2308039107369775696
+      boost sprite sheet_16: 2526587378933234344
+      boost sprite sheet_2: -621828613591478171
+      boost sprite sheet_3: 8971430765790444689
+      boost sprite sheet_4: 7729914034633339079
+      boost sprite sheet_5: 1800610378076155535
+      boost sprite sheet_6: 1637407925186926934
+      boost sprite sheet_7: -4837132064198439832
+      boost sprite sheet_8: -1303095681769623004
+      boost sprite sheet_9: -723077573505132301
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

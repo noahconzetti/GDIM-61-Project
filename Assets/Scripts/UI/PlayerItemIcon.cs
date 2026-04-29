@@ -11,19 +11,27 @@ public class PlayerItemIcon : MonoBehaviour {
     [SerializeField] private Image abilityIcon;
     [SerializeField] private Image backgroundColor;
     [SerializeField] private Image hatImage;
-    
+
+    private Animator _animator;
+
+    private void Awake() {
+        TryGetComponent(out _animator);
+    }
+
     private void OnEnable() {
         Coconut.OnPickupAbility += HandlePickup;
-        Coconut.OnUseAbilityEnd += HandleUse;
+        Coconut.OnUseAbilityStart += HandleAbilityStart;
+        Coconut.OnUseAbilityEnd += HandleAbilityEnd;
         CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
     }
     
     private void OnDisable() {
         Coconut.OnPickupAbility -= HandlePickup;
-        Coconut.OnUseAbilityEnd -= HandleUse;
+        Coconut.OnUseAbilityStart -= HandleAbilityStart;
+        Coconut.OnUseAbilityEnd -= HandleAbilityEnd;
         CustomizationManager.OnPlayersFinalized -= SetBackgroundColor;
     }
-
+    
     private void SetBackgroundColor(List<PlayerStartData> playerStartData) {
         foreach (var playerData in playerStartData) {
             if (playerData.PlayerID == player) {
@@ -37,9 +45,15 @@ public class PlayerItemIcon : MonoBehaviour {
         if (coconut.PlayerID != player) return;
 
         abilityIcon.sprite = abilityData.uiIcon;
+        _animator.SetTrigger("Pickup");
     }
     
-    private void HandleUse(Coconut coconut, AbilityData abilityData) {
+    private void HandleAbilityStart(Coconut coconut, AbilityData abilityData) {
+        if (coconut.PlayerID != player) return;
+        
+    }
+    
+    private void HandleAbilityEnd(Coconut coconut, AbilityData abilityData) {
         if (coconut.PlayerID != player) return;
         
         abilityIcon.sprite = null;

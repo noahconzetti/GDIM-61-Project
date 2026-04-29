@@ -16,6 +16,7 @@ namespace Gameplay.Player {
                 GameObject newPlayer = Instantiate(coconutPrefab, coconutStartPoint.position, coconutStartPoint.rotation, coconutParent);
                 Coconut coconut = newPlayer.GetComponent<Coconut>();
                 coconut.Init(customizationData);
+                coconut.ActiveRB(false);
                 newPlayer.transform.position += new Vector3(Random.Range(0, 0.5f), 0, Random.Range(0, 0.5f));
                 coconuts.Add(coconut);
             }

@@ -253,5 +253,9 @@ namespace Gameplay {
         public bool IsUsingAbility(Type abilityType) {
             return UsingAbility && currentHeldAbility.GetType() == abilityType;
         }
+
+        public void ActiveRB(bool b) {
+            _rb.bodyType = b ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
+        }
     }
 }

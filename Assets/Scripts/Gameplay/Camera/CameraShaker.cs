@@ -38,11 +38,7 @@ namespace Gameplay.Camera {
         }
 
         private void CoconutCollision(Coconut coconut, Collision2D collision) {
-            if (coconut.UsingAbility &&
-                coconut.currentHeldAbility.GetType() == typeof(EnlargeAbility) &&
-                collision.otherCollider.gameObject.layer == groundLayer)
-            {
-                Debug.Log("hello shake");
+            if (coconut.IsUsingAbility(typeof(EnlargeAbility))) {
                 InternalShake(defaults);
             }
 
@@ -51,6 +47,7 @@ namespace Gameplay.Camera {
         private void InternalShake(CameraShakeData data) {
             StartCoroutine(ShakeCoroutine(data));
         }
+        
         private IEnumerator ShakeCoroutine(CameraShakeData data) {
             _cinemachineNoise.AmplitudeGain += data.intensity;
             _cinemachineNoise.FrequencyGain += data.frequency;
