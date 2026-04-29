@@ -17,14 +17,12 @@ namespace PlayerSelection {
         public const int OPTION_COLOR = 1;
         public const int OPTION_HAT = 2;
 
-        public readonly List<PlayerStartData> Players = new(2);
-
-        public static CustomizationManager Instance = null;
-
+        public List<PlayerStartData> Players = new(2);
+        
         private HashSet<int> _activeColorIndexes = new();
 
         public static event Action<PlayerStartData, HashSet<int>> OnOptionsUpdated;
-        public static event Action<List<PlayerStartData>> OnPlayersFinalized;
+        // public static event Action<List<PlayerStartData>> OnPlayersFinalized;
         
         private void OnEnable() {
             CustomizationOptionButton.OnOptionSelected += ChangeOption;
@@ -33,18 +31,24 @@ namespace PlayerSelection {
         private void OnDisable() {
             CustomizationOptionButton.OnOptionSelected -= ChangeOption;
         }
-
+        
         private void Awake() {
-            if (Instance != null) {
-                Destroy(Instance.gameObject);
+            CreateButtons();
+            if (CustomizationPersistantData.Instance.Players == null) {
+                CreatePlayerDefaults();
+            } else {
+                Players = CustomizationPersistantData.Instance.Players;
             }
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
 
         private void Start() {
-            CreateButtons();
-            CreatePlayerDefaults();
+            UpdateAllPlayers();
+        }
+
+        private void UpdateAllPlayers() {
+            foreach (var player in Players) {
+                OnOptionsUpdated?.Invoke(player, _activeColorIndexes);
+            }
         }
 
         private void CreateButtons() {
@@ -69,7 +73,6 @@ namespace PlayerSelection {
                 var currPlayer = new PlayerStartData(i, data.colors[i], i, data.hats[i], i);
                 Players.Add(currPlayer);
                 _activeColorIndexes.Add(i);
-                OnOptionsUpdated?.Invoke(currPlayer, _activeColorIndexes);
             }
         }
         
@@ -89,11 +92,8 @@ namespace PlayerSelection {
             OnOptionsUpdated?.Invoke(Players[coconutIndex], _activeColorIndexes);
         }
 
-        public void FinalizePlayers() {
-            OnPlayersFinalized?.Invoke(Players);
-        }
-
         public void LoadGameScene() {
+            CustomizationPersistantData.Instance.Players = Players;
             SceneManager.LoadScene("Game");
         }
     }

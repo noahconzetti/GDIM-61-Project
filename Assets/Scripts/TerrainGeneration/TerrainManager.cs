@@ -42,7 +42,7 @@ namespace TerrainGeneration {
 
             _lastPosition = points[^1];
             
-            points.Insert(0, new Vector2(points[0].x, -heightBelow));); 
+            points.Insert(0, new Vector2(points[0].x, -heightBelow)); 
             
             while (generationProgress < width + extraGenerationDistance) {
                 TerrainBlock currentBlockPrefab = ChooseRandomBlock();

@@ -9,11 +9,11 @@ namespace Gameplay.RaceManagement {
         [SerializeField] private float distanceBetweenIcons = 5f;
         
         private void OnEnable() {
-            CustomizationManager.OnPlayersFinalized += CreateProgressIcons;
+            CustomizationPersistantData.OnPlayersFinalized += CreateProgressIcons;
         }
 
         private void OnDisable() {
-            CustomizationManager.OnPlayersFinalized -= CreateProgressIcons;
+            CustomizationPersistantData.OnPlayersFinalized -= CreateProgressIcons;
         }
 
         private void CreateProgressIcons(List<PlayerStartData> players) {

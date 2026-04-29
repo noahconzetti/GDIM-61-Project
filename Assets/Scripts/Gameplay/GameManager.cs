@@ -21,13 +21,12 @@ namespace Gameplay {
         public void Start() {
             if (useSeed) ExtraRandom.SetSeed(seed);
 
-            if (CustomizationManager.Instance == null) {
+            if (CustomizationPersistantData.Instance == null) {
                 SceneManager.LoadScene("Player Selection");
                 return;
             }
-            Debug.Log(CustomizationManager.Instance);
-            CustomizationManager.Instance.FinalizePlayers();
-            List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationManager.Instance.Players);
+            CustomizationPersistantData.FinalizePlayers();
+            List<Coconut> coconuts = coconutSpawner.SpawnCoconuts(CustomizationPersistantData.Instance.Players);
             _raceInfo = new RaceInfo(coconuts, raceLength, useSeed?seed:null);
             OnGameStart?.Invoke(_raceInfo);
             

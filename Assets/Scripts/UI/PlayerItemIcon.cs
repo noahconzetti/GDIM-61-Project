@@ -22,14 +22,14 @@ public class PlayerItemIcon : MonoBehaviour {
         Coconut.OnPickupAbility += HandlePickup;
         Coconut.OnUseAbilityStart += HandleAbilityStart;
         Coconut.OnUseAbilityEnd += HandleAbilityEnd;
-        CustomizationManager.OnPlayersFinalized += SetBackgroundColor;
+        CustomizationPersistantData.OnPlayersFinalized += SetBackgroundColor;
     }
     
     private void OnDisable() {
         Coconut.OnPickupAbility -= HandlePickup;
         Coconut.OnUseAbilityStart -= HandleAbilityStart;
         Coconut.OnUseAbilityEnd -= HandleAbilityEnd;
-        CustomizationManager.OnPlayersFinalized -= SetBackgroundColor;
+        CustomizationPersistantData.OnPlayersFinalized -= SetBackgroundColor;
     }
     
     private void SetBackgroundColor(List<PlayerStartData> playerStartData) {
