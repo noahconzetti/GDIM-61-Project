@@ -1,10 +1,12 @@
 using System;
 using Gameplay;
 using TMPro;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class StartSequenceManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI numberText;
+    [SerializeField] private CinemachineCamera startCamera;
 
     private Animator _animator;
     private RaceInfo _raceInfo;
@@ -28,6 +30,7 @@ public class StartSequenceManager : MonoBehaviour {
     
     public void AnimEnd() {
         _raceInfo.Players.ForEach(p => p.ActiveRB(true));
+        startCamera.Priority = 0;
     }
 
     public void ChangeNumber(int number) {
