@@ -45,8 +45,8 @@ namespace Gameplay {
         [SerializeField] private GameObject slowIndicator;
         [SerializeField] private GameObject fastIndicator;
         
-        private Rigidbody2D _rb;
-        private CircleCollider2D _collider;
+        public Rigidbody2D Rigidbody { get; private set; }
+        public CircleCollider2D Collider { get; private set; }
 
         private Vector2 _groundNormal = Vector2.up;
         private bool _jumpBufferActive = false;
@@ -93,8 +93,8 @@ namespace Gameplay {
         }
 
         private void Awake() {
-            TryGetComponent(out _rb);
-            TryGetComponent(out _collider);
+            Rigidbody = GetComponent<Rigidbody2D>();
+            Collider = GetComponent<CircleCollider2D>();
             raycastAngleDifference = (maxRaycastAngle - minRaycastAngle) / numRaycasts;
         }
 
@@ -108,9 +108,9 @@ namespace Gameplay {
             for (int i = 0; i < numRaycasts; i++) {
                 float currentAngle = minRaycastAngle + raycastAngleDifference * i;
                 Vector2 currentDirection = new Vector2(Mathf.Cos(currentAngle), Mathf.Sin(currentAngle));
-                float raycastDistance = (_collider.radius) *_collider.transform.lossyScale.magnitude + groundCastAddition;
+                float raycastDistance = (Collider.radius) *Collider.transform.lossyScale.magnitude + groundCastAddition;
                 RaycastHit2D hit = Physics2D.Raycast(
-                    _rb.position,
+                    Rigidbody.position,
                     currentDirection,
                     raycastDistance,
                     groundLayer.value);
@@ -132,24 +132,24 @@ namespace Gameplay {
                 Jump();
             }
             
-            _rb.gravityScale = Grounded ? groundedGravity : airGravity;
+            Rigidbody.gravityScale = Grounded ? groundedGravity : airGravity;
         }
         
         private void ApplySpeedConstraints() {
             // Velocity
-            if (_rb.linearVelocityX < minXSpeed && !squished && !dead) {
-                _rb.linearVelocityX += minSpeedEnforcementPerSecond;
+            if (Rigidbody.linearVelocityX < minXSpeed && !squished && !dead) {
+                Rigidbody.linearVelocityX += minSpeedEnforcementPerSecond;
                 slowIndicator.SetActive(true);
             } else {
                 slowIndicator.SetActive(false);
             }
-            if (_rb.linearVelocityX < 0) _rb.linearVelocityX = 0;
+            if (Rigidbody.linearVelocityX < 0) Rigidbody.linearVelocityX = 0;
             
             float usedMaxSpeed = maxSpeed;
             if (MaxSpeedIncreaseOverride.HasValue) usedMaxSpeed += MaxSpeedIncreaseOverride.Value;
             if (place == 0) usedMaxSpeed -= firstPlaceMaxSpeedDebuff;
-            if (_rb.linearVelocityX > usedMaxSpeed) {
-                _rb.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
+            if (Rigidbody.linearVelocityX > usedMaxSpeed) {
+                Rigidbody.linearVelocityX -= maxSpeedEnforcementPerSecond * Time.deltaTime;
                 fastIndicator.SetActive(true);
             } else {
                 fastIndicator.SetActive(false);
@@ -157,8 +157,8 @@ namespace Gameplay {
             
             
             // Angular velocity
-            if (!Grounded && _rb.angularVelocity < inAirAngularVelocityMax) {
-                _rb.angularVelocity += angularVelocityMaxEnforcementPerSecond * Time.deltaTime;
+            if (!Grounded && Rigidbody.angularVelocity < inAirAngularVelocityMax) {
+                Rigidbody.angularVelocity += angularVelocityMaxEnforcementPerSecond * Time.deltaTime;
             }
         }
 
@@ -180,10 +180,10 @@ namespace Gameplay {
 
         private void Jump() {
             Vector2 baseForce = _groundNormal * jumpForce;
-            float forwardDifference = _rb.linearVelocityX - baseForce.x;
+            float forwardDifference = Rigidbody.linearVelocityX - baseForce.x;
             if (forwardDifference < 0) forwardDifference = 0;
             Vector2 adjustedForce = baseForce + new Vector2(forwardDifference * forwardMomentumPreserved, 0);
-            _rb.linearVelocity = adjustedForce;
+            Rigidbody.linearVelocity = adjustedForce;
             _jumpBufferActive = false;
             OnJump?.Invoke(this);
         }
@@ -237,12 +237,12 @@ namespace Gameplay {
                 yield break;
             }
             squished = true;
-            _rb.linearVelocityX = 0;
-            Physics2D.IgnoreCollision(_collider, other._collider, true);
+            Rigidbody.linearVelocityX = 0;
+            Physics2D.IgnoreCollision(Collider, other.Collider, true);
             
             yield return new WaitForSeconds(squishTime);
             
-            Physics2D.IgnoreCollision(_collider, other._collider, false);
+            Physics2D.IgnoreCollision(Collider, other.Collider, false);
             squished = false;
         }
 
@@ -255,7 +255,7 @@ namespace Gameplay {
         }
 
         public void ActiveRB(bool b) {
-            _rb.bodyType = b ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
+            Rigidbody.bodyType = b ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
         }
     }
 }
