@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boost
   m_EditorClassIdentifier: 
   uiIcon: {fileID: 326621922322331402, guid: 07a0fcffe0bbe43609afce9f9d817095, type: 3}
-  boostForce: 6
+  boostForce: 5.5
   betweenBoostsTime: 0.5
   numBoosts: 4
   boostParticlesPrefab: {fileID: 4981041253867281385, guid: 467250194e1c641828c89f55e5327db1, type: 3}

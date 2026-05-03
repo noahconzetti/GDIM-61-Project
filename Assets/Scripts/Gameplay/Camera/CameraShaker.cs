@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Gameplay.Abilities;
 using Gameplay.Abilities.Abilities;
 using Unity.Cinemachine;
 using UnityEngine;
@@ -31,17 +32,24 @@ namespace Gameplay.Camera {
 
         private void OnEnable() {
             Coconut.OnCollision += CoconutCollision;
+            Coconut.OnUseAbilityStart += HandleAbilityUsed;
         }
 
         private void OnDisable() {
             Coconut.OnCollision -= CoconutCollision;
+            Coconut.OnUseAbilityStart -= HandleAbilityUsed;
+        }
+
+        private void HandleAbilityUsed(Coconut coconut, AbilityData ability) {
+            if (ability.GetType() == typeof(ShockwaveAbility)) {
+                InternalShake(defaults);
+            }
         }
 
         private void CoconutCollision(Coconut coconut, Collision2D collision) {
             if (coconut.IsUsingAbility(typeof(EnlargeAbility))) {
                 InternalShake(defaults);
             }
-
         }
 
         private void InternalShake(CameraShakeData data) {

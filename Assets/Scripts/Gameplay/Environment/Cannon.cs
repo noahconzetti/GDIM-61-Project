@@ -26,7 +26,6 @@ namespace Gameplay.Environment {
         private void RotateCannon() {
             float newRotation = _startRotation + Mathf.Sin(Time.time * rotationSpeed) * rotationAmount;
             transform.rotation = Quaternion.Euler(0, 0, newRotation);
-            Debug.Log(newRotation);
         }
 
         private void OnTriggerEnter2D(Collider2D other) {

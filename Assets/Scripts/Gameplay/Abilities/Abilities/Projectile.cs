@@ -37,9 +37,9 @@ namespace Gameplay.Abilities.Abilities {
         private IEnumerator HitByProjectile(Coconut c) {
             Rigidbody2D rb = c.GetComponent<Rigidbody2D>();
             rb.linearVelocity = Vector2.zero;
-            c.dead = true;
+            c.DeadList.Add(this);
             yield return new WaitForSeconds(coconutDeadTime);
-            c.dead = false;
+            c.DeadList.Remove(this);
         }
     }
 }

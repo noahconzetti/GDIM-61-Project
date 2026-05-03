@@ -8,6 +8,7 @@ using Gameplay.Abilities.Abilities;
 using Gameplay.Environment;
 using PlayerSelection;
 using UnityEngine;
+using Object = System.Object;
 
 namespace Gameplay {
     public class Coconut : MonoBehaviour {
@@ -60,7 +61,8 @@ namespace Gameplay {
         public float? MaxSpeedIncreaseOverride = null;
 
         public bool squished = false;
-        public bool dead = false;
+        public List<Object> DeadList = new();
+        private bool _dead => DeadList.Count > 0;
         public List<Box> slowedEffects = new List<Box>();
         
         public int PlayerID { get; private set; }
@@ -137,7 +139,7 @@ namespace Gameplay {
         
         private void ApplySpeedConstraints() {
             // Velocity
-            if (Rigidbody.linearVelocityX < minXSpeed && !squished && !dead) {
+            if (Rigidbody.linearVelocityX < minXSpeed && !squished && !_dead) {
                 Rigidbody.linearVelocityX += minSpeedEnforcementPerSecond;
                 slowIndicator.SetActive(true);
             } else {

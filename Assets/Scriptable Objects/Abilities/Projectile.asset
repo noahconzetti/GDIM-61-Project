@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b585ac7aa75441f3b2d68b9e90e970c0, type: 3}
-  m_Name: Projectile Ability
+  m_Name: Projectile
   m_EditorClassIdentifier: 
   uiIcon: {fileID: -2570584589590397786, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
   projectilePrefab: {fileID: 6681133680234889383, guid: 931450613894f4184a343e500318c788, type: 3}
