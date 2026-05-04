@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0750c38e65f4eb59eeccc0216b67905, type: 3}
+  m_Name: Bombs
+  m_EditorClassIdentifier: 
+  uiIcon: {fileID: 2526587378933234344, guid: 9874b0a7dbe7548d494c1b21eec484dd, type: 3}
+  bombDropperPrefab: {fileID: 8471620309637150456, guid: 8dec6213c2e5b491fa19c2edf0a77ffc, type: 3}

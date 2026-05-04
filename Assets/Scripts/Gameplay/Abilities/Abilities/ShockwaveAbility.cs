@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
-    [CreateAssetMenu(menuName = "Shockwave Ability")]
+    [CreateAssetMenu(menuName = "Abilities/Shockwave Ability")]
     public class ShockwaveAbility : AbilityData {
         [SerializeField] private float radius = 20f;
         [SerializeField] private float expandTime = 1f;
