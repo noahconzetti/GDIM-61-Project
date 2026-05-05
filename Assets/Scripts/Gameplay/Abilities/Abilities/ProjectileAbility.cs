@@ -15,12 +15,12 @@ namespace Gameplay.Abilities.Abilities {
         private Coconut PickRandomPlayer(Coconut ignore) {
             Coconut[] coconuts = RaceManager.GetPlayerPlaces();
             
-            for (int i = 0; i < coconuts.Length - 1; i++) {
+            for (int i = 1; i < coconuts.Length; i++) {
                 if (coconuts[i].PlayerID == ignore.PlayerID) {
-                    return coconuts[i+1];
+                    return coconuts[i-1];
                 }
             }
-            return coconuts[^2];
+            return coconuts[1];
         }
     }
 }

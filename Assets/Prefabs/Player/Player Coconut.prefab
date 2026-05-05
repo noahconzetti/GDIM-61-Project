@@ -120,13 +120,13 @@ MonoBehaviour:
   maxSpeed: 10
   maxSpeedEnforcementPerSecond: 3
   minSpeedEnforcementPerSecond: 1
-  firstPlaceMaxSpeedDebuff: 0.5
+  firstPlaceMaxSpeedDebuff: -0.2
   airGravity: 1.5
   groundedGravity: 0.9
   notGroundedBoost: 2
   jumpForce: 14
   forwardMomentumPreserved: 1
-  jumpDirection: {x: 2, y: 1}
+  jumpDirection: {x: 3, y: 1}
   jumpBufferTime: 0.3
   groundLayer:
     serializedVersion: 2
@@ -142,7 +142,6 @@ MonoBehaviour:
   slowIndicator: {fileID: 1051885257810012032}
   fastIndicator: {fileID: 8278600018096794978}
   squished: 0
-  dead: 0
   slowedEffects: []
   <Grounded>k__BackingField: 0
   <place>k__BackingField: 0

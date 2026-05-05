@@ -184,7 +184,7 @@ namespace Gameplay {
             Vector2 baseForce = _groundNormal * jumpForce;
             float forwardDifference = Rigidbody.linearVelocityX - baseForce.x;
             if (forwardDifference < 0) forwardDifference = 0;
-            Vector2 adjustedForce = baseForce + new Vector2(forwardDifference * forwardMomentumPreserved, 0);
+            Vector2 adjustedForce = baseForce + new Vector2(forwardDifference * forwardMomentumPreserved, 0) + jumpDirection;
             Rigidbody.linearVelocity = adjustedForce;
             _jumpBufferActive = false;
             OnJump?.Invoke(this);

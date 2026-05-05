@@ -7,6 +7,7 @@ namespace Gameplay.RaceManagement {
     public class CoconutProgressIconsManager : MonoBehaviour {
         [SerializeField] private GameObject progressIconPrefab;
         [SerializeField] private float distanceBetweenIcons = 5f;
+        [SerializeField] private float startYOffset = 30f;
         
         private void OnEnable() {
             CustomizationPersistantData.OnPlayersFinalized += CreateProgressIcons;
@@ -20,7 +21,7 @@ namespace Gameplay.RaceManagement {
             foreach (var player in players) {
                 GameObject progressIcon = Instantiate(progressIconPrefab, transform);
                 CoconutProgressIcon icon = progressIcon.GetComponent<CoconutProgressIcon>();
-                float yPos = player.PlayerID * distanceBetweenIcons;
+                float yPos = player.PlayerID * distanceBetweenIcons - startYOffset;
                 progressIcon.transform.localPosition = new Vector3(0, yPos, 0);
                 icon.Init(player);
             }

@@ -18,7 +18,6 @@ namespace Gameplay.Abilities.Abilities {
             GameObject shockwave = Instantiate(shockwavePrefab, player.transform.position, Quaternion.identity);
             shockwave.GetComponent<Shockwave>().Init(recoverTime, player);
             yield return new WaitForSeconds(expandTime);
-            yield return new WaitForSeconds(recoverTime);
             endCallback();
         }
     }

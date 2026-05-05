@@ -31,7 +31,11 @@ public class PlayerItemIcon : MonoBehaviour {
         Coconut.OnUseAbilityEnd -= HandleAbilityEnd;
         CustomizationPersistantData.OnPlayersFinalized -= SetBackgroundColor;
     }
-    
+
+    private void Start() {
+        abilityIcon.color = Color.clear;
+    }
+
     private void SetBackgroundColor(List<PlayerStartData> playerStartData) {
         foreach (var playerData in playerStartData) {
             if (playerData.PlayerID == player) {
@@ -45,6 +49,8 @@ public class PlayerItemIcon : MonoBehaviour {
         if (coconut.PlayerID != player) return;
 
         abilityIcon.sprite = abilityData.uiIcon;
+        abilityIcon.color = Color.white;
+
         _animator.SetTrigger("Pickup");
     }
     
@@ -57,5 +63,6 @@ public class PlayerItemIcon : MonoBehaviour {
         if (coconut.PlayerID != player) return;
         
         abilityIcon.sprite = null;
+        abilityIcon.color = Color.clear;
     }
 }
