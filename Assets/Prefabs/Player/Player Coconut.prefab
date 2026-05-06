@@ -126,7 +126,7 @@ MonoBehaviour:
   notGroundedBoost: 2
   jumpForce: 14
   forwardMomentumPreserved: 1
-  jumpDirection: {x: 3, y: 1}
+  jumpDirection: {x: 1, y: 0.3}
   jumpBufferTime: 0.3
   groundLayer:
     serializedVersion: 2
@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7064390352161995323
 Transform:
   m_ObjectHideFlags: 0
@@ -583,8 +583,8 @@ Transform:
   m_GameObject: {fileID: 5002620619644531280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.019, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0129, y: -0.019, z: 0}
+  m_LocalScale: {x: 1.0025, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5123179566273644838}
@@ -634,12 +634,12 @@ SpriteRenderer:
   m_SortingLayerID: 839173067
   m_SortingLayer: 2
   m_SortingOrder: 100
-  m_Sprite: {fileID: -8487667156545281020, guid: 030e15629d0bb440bb9f91649dcd9c37, type: 3}
+  m_Sprite: {fileID: -7267126287335338388, guid: f11929e529f2c4e0cbdc60959da42840, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.25, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -6,8 +6,10 @@ namespace Gameplay.Abilities.Abilities {
     public class BombsAbility : AbilityData {
         [SerializeField] private GameObject bombDropperPrefab;
         public override void UseOn(Coconut player, Action endCallback) {
-            GameObject dropper = Instantiate(bombDropperPrefab, player.transform);
-            dropper.GetComponent<BombDropper>().Init(player);
+            GameObject dropperObject = Instantiate(bombDropperPrefab, player.transform);
+            BombDropper dropper = dropperObject.GetComponent<BombDropper>();
+            dropper.Init(player);
+            dropper.AllBombsDropped = endCallback;
         }
     }
 }

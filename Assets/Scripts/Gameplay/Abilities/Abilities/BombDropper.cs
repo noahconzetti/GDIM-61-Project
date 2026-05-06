@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,7 +10,8 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private GameObject bombPrefab;
         
         private Coconut ignore;
-        
+        public Action AllBombsDropped;
+
         public void Init(Coconut player) {
             ignore = player;
             StartCoroutine(SpawnBombs());
@@ -22,6 +24,8 @@ namespace Gameplay.Abilities.Abilities {
                 bomb.GetComponent<Rigidbody2D>().linearVelocityY = -dropForce;
                 yield return new WaitForSeconds(dropFrequency);
             }
+
+            AllBombsDropped?.Invoke();
         }
     }
 }
