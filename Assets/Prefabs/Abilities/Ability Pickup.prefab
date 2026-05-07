@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6721179731140425135}
   - component: {fileID: 1351741981105655570}
   - component: {fileID: 671760040334870441}
+  - component: {fileID: 3067214398884644763}
   m_Layer: 0
   m_Name: Ability Pickup
   m_TagString: Untagged
@@ -162,3 +163,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hueChangeSpeed: 0.2
+--- !u!114 &3067214398884644763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445455807939649058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c0cdeac6394876a0fe08776b9bbec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appearChance: 1
+  randomizeObject: 0
+  optionPrefabs: []
+  weights: []

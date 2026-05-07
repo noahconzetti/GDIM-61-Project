@@ -19,6 +19,7 @@ namespace Gameplay.Abilities.Abilities {
         private void OnCollisionEnter2D(Collision2D other) {
             if (_exploded) return;
             if (other.gameObject.TryGetComponent(out Coconut hitPlayer) && hitPlayer != _ignore) {
+                
                 Explode();
             }
         }
@@ -39,6 +40,7 @@ namespace Gameplay.Abilities.Abilities {
 
             _exploded = true;
             GetComponent<Collider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
         }
 
         private IEnumerator HitPlayer(Coconut player) {

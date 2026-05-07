@@ -8,10 +8,12 @@ namespace PlayerSelection.CustomizationOptionButtons {
         [SerializeField] public int coconutIndex;
         [SerializeField] public int optionIndex;
         [SerializeField] public int optionTypeIndex;
+        [SerializeField] private float desaturationPercentage = 0.3f;
 
         [SerializeField] public Image content;
 
         private Button _button;
+        private Color _baseColor;
 
         public static event Action<int, int, int> OnOptionSelected; // CoconutIndex, OptionTypeIndex, OptionIndex
 
@@ -28,8 +30,11 @@ namespace PlayerSelection.CustomizationOptionButtons {
         }
 
         private void HandleOptionsUpdated(PlayerStartData playerUpdated, HashSet<int> newUsedColorIndexes) {
-            if (optionTypeIndex != CustomizationManager.OPTION_COLOR) return; 
-            _button.interactable = !newUsedColorIndexes.Contains(optionIndex);
+            if (optionTypeIndex != CustomizationManager.OPTION_COLOR) return;
+            bool selectable = !newUsedColorIndexes.Contains(optionIndex);
+            _button.interactable = selectable;
+            Color.RGBToHSV(_baseColor, out float h, out float s, out float v);
+            content.color = selectable ? _baseColor : Color.HSVToRGB(h, s * desaturationPercentage, v);
         }
 
         private void OnDisable() {
@@ -40,6 +45,11 @@ namespace PlayerSelection.CustomizationOptionButtons {
             coconutIndex = coconut;
             optionTypeIndex = optionType;
             optionIndex = option;
+        }
+
+        public void SetColor(Color dataColor) {
+            _baseColor = dataColor;
+            content.color = _baseColor;
         }
     }
 }

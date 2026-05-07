@@ -57,7 +57,7 @@ namespace PlayerSelection {
                     GameObject colorButton = Instantiate(colorButtonPrefab, coconutTabs[playerIndex].colorButtonParent);
                     CustomizationOptionButton button = colorButton.GetComponent<CustomizationOptionButton>();
                     button.Init(playerIndex, OPTION_COLOR, choiceIndex);
-                    button.content.color = data.colors[choiceIndex];
+                    button.SetColor(data.colors[choiceIndex]);
                 }
                 for (int choiceIndex = 0; choiceIndex < data.hats.Length; choiceIndex++) {
                     GameObject hatButton = Instantiate(colorButtonPrefab, coconutTabs[playerIndex].hatButtonParent);
