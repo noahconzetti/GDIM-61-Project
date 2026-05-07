@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Gameplay.Abilities.Abilities {
     [CreateAssetMenu(menuName = "Abilities/Boost")]
     public class BoostAbility : AbilityData {
-        [SerializeField] public float boostForce = 4f;
+        [SerializeField] public Vector2 boostForce;
         [SerializeField] public float betweenBoostsTime = .5f;
         [SerializeField] public int numBoosts = 4;
         [SerializeField] public GameObject boostParticlesPrefab;
@@ -19,7 +19,7 @@ namespace Gameplay.Abilities.Abilities {
             Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
 
             for (int i = 0; i < numBoosts; i++) {
-                rb.linearVelocity += Vector2.right * boostForce;
+                rb.linearVelocity += boostForce;
                 yield return new WaitForSeconds(betweenBoostsTime);
                 Instantiate(boostParticlesPrefab, player.transform.position, player.transform.rotation);
             }
