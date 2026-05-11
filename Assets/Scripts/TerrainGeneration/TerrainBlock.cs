@@ -6,6 +6,8 @@ using UnityEngine.U2D;
 namespace TerrainGeneration {
     public class TerrainBlock : MonoBehaviour {
         [SerializeField] public float weight = 1f;
+        [SerializeField] public bool canOverlapCategory = false;
+        [SerializeField] public TerrainCategory terrainCategory;
         [SerializeField] public SplineContainer groundSpline;
 
         public Vector2 StartPosition {

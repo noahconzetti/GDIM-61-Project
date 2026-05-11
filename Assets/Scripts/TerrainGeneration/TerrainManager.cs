@@ -21,6 +21,8 @@ namespace TerrainGeneration {
         private Vector2 _lastPosition = Vector2.zero;
         public static event Action<Vector2> OnTerrainGenerationComplete;
 
+        private TerrainCategory _lastTerrainCategory;
+
         private void OnEnable() {
             GameManager.OnGameStart += HandleGameStart;
         }
@@ -46,6 +48,7 @@ namespace TerrainGeneration {
             
             while (generationProgress < width + extraGenerationDistance) {
                 TerrainBlock currentBlockPrefab = ChooseRandomBlock();
+                _lastTerrainCategory = currentBlockPrefab.terrainCategory;
                 GameObject newBlock = Instantiate(currentBlockPrefab.gameObject, Vector3.zero, Quaternion.identity, terrainParent);
                 TerrainBlock currentBlock = newBlock.GetComponent<TerrainBlock>();
                 
@@ -120,7 +123,9 @@ namespace TerrainGeneration {
         }
 
         private TerrainBlock ChooseRandomBlock() {
-            return ExtraRandom.WeightedChoice(settings.blocks, x => x.weight);
+            return ExtraRandom.WeightedChoice(settings.blocks, 
+                block => block.weight, 
+                block => block.canOverlapCategory && block.terrainCategory != _lastTerrainCategory);
         }
     }
 }

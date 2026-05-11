@@ -23,7 +23,7 @@ public static class ExtraRandom {
         return values[0];
     }
     
-    public static T WeightedChoice<T>(IList<T> values, Func<T, float> valueToWeight) {
+    public static T WeightedChoice<T>(IList<T> values, Func<T, float> valueToWeight, Func<T, bool> canGenerate) {
         float total = values.Sum(valueToWeight);
 
         float choice = Random.Range(0f, total);
@@ -34,7 +34,8 @@ public static class ExtraRandom {
                 return value;
             }
         }
-
+        
+        if (!canGenerate(values[0])) return WeightedChoice(values, valueToWeight, canGenerate);
         return values[0];
     }
 
