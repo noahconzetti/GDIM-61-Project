@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: b5e30d36e8b3e4cf7bb9acc9123c55e0
+guid: 479ea307361c84851a7e140f1f0cec3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7683962991242841346
-    second: temple variations_0
+      213: 5475127597006725477
+    second: "temple bodies 1.05.48\u202FPM_0"
   - first:
-      213: -8040200367973230980
-    second: temple variations_1
+      213: 6908845788354918911
+    second: "temple bodies 1.05.48\u202FPM_1"
   - first:
-      213: -5386811630889624743
-    second: temple variations_2
+      213: 6129959647026682736
+    second: "temple bodies 1.05.48\u202FPM_2"
   - first:
-      213: -789135701029864822
-    second: temple variations_3
+      213: -5082877713119136496
+    second: "temple bodies 1.05.48\u202FPM_3"
+  - first:
+      213: 366112290820068790
+    second: "temple bodies 1.05.48\u202FPM_4"
+  - first:
+      213: 6882699861434196134
+    second: "temple bodies 1.05.48\u202FPM_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,12 +128,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: temple variations_0
+      name: "temple bodies 1.05.48\u202FPM_0"
       rect:
         serializedVersion: 2
         x: 432
         y: 237
-        width: 1010
+        width: 1011
         height: 557
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef2f8bfee541d5590800000000000000
-      internalID: -7683962991242841346
+      spriteID: 561268f7a8f8bfb40800000000000000
+      internalID: 5475127597006725477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: temple variations_1
+      name: "temple bodies 1.05.48\u202FPM_1"
       rect:
         serializedVersion: 2
         x: 2232
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c769df73d587b6090800000000000000
-      internalID: -8040200367973230980
+      spriteID: ff939dec3a621ef50800000000000000
+      internalID: 6908845788354918911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: temple variations_2
+      name: "temple bodies 1.05.48\u202FPM_2"
       rect:
         serializedVersion: 2
-        x: 4072
+        x: 4071
         y: 222
-        width: 894
-        height: 567
+        width: 895
+        height: 564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95b91ecbc533e35b0800000000000000
-      internalID: -5386811630889624743
+      spriteID: 07b118032ddf11550800000000000000
+      internalID: 6129959647026682736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: temple variations_3
+      name: "temple bodies 1.05.48\u202FPM_3"
       rect:
         serializedVersion: 2
         x: 5957
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8a398cc24d6c05f0800000000000000
-      internalID: -789135701029864822
+      spriteID: 015b8c076adf579b0800000000000000
+      internalID: -5082877713119136496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "temple bodies 1.05.48\u202FPM_4"
+      rect:
+        serializedVersion: 2
+        x: 7398
+        y: 232
+        width: 1393
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b51c325031b41500800000000000000
+      internalID: 366112290820068790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "temple bodies 1.05.48\u202FPM_5"
+      rect:
+        serializedVersion: 2
+        x: 9169
+        y: 97
+        width: 1506
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a06a60de03448f50800000000000000
+      internalID: 6882699861434196134
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      temple variations_0: -7683962991242841346
-      temple variations_1: -8040200367973230980
-      temple variations_2: -5386811630889624743
-      temple variations_3: -789135701029864822
+      "temple bodies 1.05.48\u202FPM_0": 5475127597006725477
+      "temple bodies 1.05.48\u202FPM_1": 6908845788354918911
+      "temple bodies 1.05.48\u202FPM_2": 6129959647026682736
+      "temple bodies 1.05.48\u202FPM_3": -5082877713119136496
+      "temple bodies 1.05.48\u202FPM_4": 366112290820068790
+      "temple bodies 1.05.48\u202FPM_5": 6882699861434196134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
