@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df21788a7ae94ffcb5dd091d7b1375c0, type: 3}
+  m_Name: BoostSlow
+  m_EditorClassIdentifier: 
+  blocks:
+  - {fileID: 2107449111909618936, guid: ee6eea1f1dbc146d58faaba9676e7111, type: 3}
+  - {fileID: 2107449111909618936, guid: 168a6ca5748f44b978f75f8783462e3c, type: 3}
+  - {fileID: 2107449111909618936, guid: 3e92c5027ffe74e3db605c1d79473ff3, type: 3}
+  - {fileID: 2107449111909618936, guid: ca5bf006a17e94e309248f8775921ef8, type: 3}

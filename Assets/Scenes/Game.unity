@@ -396,8 +396,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
+  m_sharedMaterial: {fileID: -1508273494627990734, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extraGenerationDistance: 100
-  settings: {fileID: 11400000, guid: 7ab7bcfe0835046c3bf4dca23e4415ea, type: 2}
+  settings: {fileID: 11400000, guid: f4781c3f380864f2697b1786d53fb4a1, type: 2}
   splineContainerBase: {fileID: 1526458965}
   spriteShapeController: {fileID: 1822139330}
   heightBelow: 100

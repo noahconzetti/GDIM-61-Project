@@ -13,7 +13,7 @@ namespace Gameplay.RaceManagement {
         // private float _averageProgress = 0f;
         // private List<float> _progress = new();
 
-        private List<Coconut> _coconutTracking = new();
+        private List<Coconut> _coconutTracking;
         
         private float _raceLength;
 
@@ -61,6 +61,7 @@ namespace Gameplay.RaceManagement {
         }
 
         public static Coconut[] GetPlayerPlaces() {
+            if (!Instance || Instance._coconutTracking == null) return null;
             return Instance._places;
         }
     }

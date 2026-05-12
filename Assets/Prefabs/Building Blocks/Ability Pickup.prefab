@@ -233,4 +233,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 114f2601685f44dc9b038b2f34ecf7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hueChangeSpeed: 1
+  hueChangeSpeed: 0.2

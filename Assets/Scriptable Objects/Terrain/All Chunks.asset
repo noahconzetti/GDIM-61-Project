@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df21788a7ae94ffcb5dd091d7b1375c0, type: 3}
-  m_Name: Cliffs Test
+  m_Name: All Chunks
   m_EditorClassIdentifier: 
   blocks:
   - {fileID: 2107449111909618936, guid: f6a754a6675204c568f665a3c833343d, type: 3}
