@@ -494,6 +494,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: P3 Selection Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 6139675155141926950, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: P
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6573932329963014147, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -629,8 +641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 396.1667, y: 74.0204}
+  m_AnchoredPosition: {x: 0, y: -10}
+  m_SizeDelta: {x: 949.8, y: 74.0204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543592529
 MonoBehaviour:
@@ -654,8 +666,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Crazy Coconuts
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
+  m_sharedMaterial: {fileID: -1508273494627990734, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -679,8 +691,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 82.4
+  m_fontSizeBase: 82.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -742,6 +754,14 @@ PrefabInstance:
     - target: {fileID: 4915180375995368898, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Name
       value: P1 Selection Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139675155141926950, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: Q
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6573932329963014147, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Pivot.x
@@ -903,8 +923,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
+  m_sharedMaterial: {fileID: -1508273494627990734, guid: 94309cc4e9b174f5bae67fb1d914e15f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1014,7 +1034,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 126.59}
+  m_SizeDelta: {x: 0, y: 96.122}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1001 &1449005000
 PrefabInstance:
@@ -1031,6 +1051,14 @@ PrefabInstance:
     - target: {fileID: 4915180375995368898, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Name
       value: P4 Selection Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139675155141926950, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: '>'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: ^
       objectReference: {fileID: 0}
     - target: {fileID: 6573932329963014147, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Pivot.x
@@ -1170,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 61}
   m_SizeDelta: {x: 0, y: 422.1346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799985207
@@ -1508,7 +1536,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 500, y: 63.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107925814
 MonoBehaviour:
