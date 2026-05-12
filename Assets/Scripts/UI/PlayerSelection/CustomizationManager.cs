@@ -38,6 +38,7 @@ namespace PlayerSelection {
                 CreatePlayerDefaults();
             } else {
                 Players = CustomizationPersistantData.Instance.Players;
+                UpdateAllPlayers();
             }
         }
 
