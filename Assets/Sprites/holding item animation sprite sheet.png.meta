@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: ccc92571daef54bb183fa6f5ab335013
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4725790474197860399
+    second: holding item animation sprite sheet_0
+  - first:
+      213: 3511179613363333470
+    second: holding item animation sprite sheet_1
+  - first:
+      213: -4402999518557714654
+    second: holding item animation sprite sheet_2
+  - first:
+      213: -998128312539464033
+    second: holding item animation sprite sheet_3
+  - first:
+      213: -876723751498912963
+    second: holding item animation sprite sheet_4
+  - first:
+      213: -7530091912449893707
+    second: holding item animation sprite sheet_5
+  - first:
+      213: 2689183197886725875
+    second: holding item animation sprite sheet_6
+  - first:
+      213: 4826560387489793168
+    second: holding item animation sprite sheet_7
+  - first:
+      213: 6923221111986053746
+    second: holding item animation sprite sheet_8
+  - first:
+      213: -5586526789187824033
+    second: holding item animation sprite sheet_9
+  - first:
+      213: 7580679284643310792
+    second: holding item animation sprite sheet_10
+  - first:
+      213: 1387642621288032422
+    second: holding item animation sprite sheet_11
+  - first:
+      213: -2655499999567214494
+    second: holding item animation sprite sheet_12
+  - first:
+      213: 3098684291517307116
+    second: holding item animation sprite sheet_13
+  - first:
+      213: -2285295001985810811
+    second: holding item animation sprite sheet_14
+  - first:
+      213: -2821242437174650179
+    second: holding item animation sprite sheet_15
+  - first:
+      213: 9002781070132388773
+    second: holding item animation sprite sheet_16
+  - first:
+      213: 870507222696029225
+    second: holding item animation sprite sheet_17
+  - first:
+      213: 4459346225420519020
+    second: holding item animation sprite sheet_18
+  - first:
+      213: 1628218422515612065
+    second: holding item animation sprite sheet_19
+  - first:
+      213: -5811652994060282007
+    second: holding item animation sprite sheet_20
+  - first:
+      213: -874415584041755810
+    second: holding item animation sprite sheet_21
+  - first:
+      213: 2613936746895811426
+    second: holding item animation sprite sheet_22
+  - first:
+      213: 2563511546746441639
+    second: holding item animation sprite sheet_23
+  - first:
+      213: 2839285073097245132
+    second: holding item animation sprite sheet_24
+  - first:
+      213: -8585100882768723868
+    second: holding item animation sprite sheet_25
+  - first:
+      213: -5963506919066141736
+    second: holding item animation sprite sheet_26
+  - first:
+      213: 8702890611795504248
+    second: holding item animation sprite sheet_27
+  - first:
+      213: 6755388038134612219
+    second: holding item animation sprite sheet_28
+  - first:
+      213: -3540032341198011324
+    second: holding item animation sprite sheet_29
+  - first:
+      213: -4799099860257492549
+    second: holding item animation sprite sheet_30
+  - first:
+      213: 1501847465689991450
+    second: holding item animation sprite sheet_31
+  - first:
+      213: -5712425300056243810
+    second: holding item animation sprite sheet_32
+  - first:
+      213: 3633038045689951422
+    second: holding item animation sprite sheet_33
+  - first:
+      213: 4013410729617277193
+    second: holding item animation sprite sheet_34
+  - first:
+      213: 5843444759301790604
+    second: holding item animation sprite sheet_35
+  - first:
+      213: 5186632790977945052
+    second: holding item animation sprite sheet_36
+  - first:
+      213: 71932635452417495
+    second: holding item animation sprite sheet_37
+  - first:
+      213: 6748813867128367745
+    second: holding item animation sprite sheet_38
+  - first:
+      213: 191988924334598237
+    second: holding item animation sprite sheet_39
+  - first:
+      213: -6064609479248076091
+    second: holding item animation sprite sheet_40
+  - first:
+      213: 9040662068177350237
+    second: holding item animation sprite sheet_41
+  - first:
+      213: -7829717964882262411
+    second: holding item animation sprite sheet_42
+  - first:
+      213: 7697709368508185418
+    second: holding item animation sprite sheet_43
+  - first:
+      213: -8905944780267181091
+    second: holding item animation sprite sheet_44
+  - first:
+      213: -8483857110871556240
+    second: holding item animation sprite sheet_45
+  - first:
+      213: -4163699973045157222
+    second: holding item animation sprite sheet_46
+  - first:
+      213: 4395805583524672581
+    second: holding item animation sprite sheet_47
+  - first:
+      213: -4288692168724981497
+    second: holding item animation sprite sheet_48
+  - first:
+      213: -3755587406169257484
+    second: holding item animation sprite sheet_49
+  - first:
+      213: 7924990440665003242
+    second: holding item animation sprite sheet_50
+  - first:
+      213: 5113938572280027058
+    second: holding item animation sprite sheet_51
+  - first:
+      213: 7686310359290726985
+    second: holding item animation sprite sheet_52
+  - first:
+      213: -5869262351455291149
+    second: holding item animation sprite sheet_53
+  - first:
+      213: -8045932825185911776
+    second: holding item animation sprite sheet_54
+  - first:
+      213: 6564006869874316217
+    second: holding item animation sprite sheet_55
+  - first:
+      213: -4767148521364330186
+    second: holding item animation sprite sheet_56
+  - first:
+      213: -2354267638797239385
+    second: holding item animation sprite sheet_57
+  - first:
+      213: -2891035736659724998
+    second: holding item animation sprite sheet_58
+  - first:
+      213: -5145193832622694499
+    second: holding item animation sprite sheet_59
+  - first:
+      213: 5803089701226655928
+    second: holding item animation sprite sheet_60
+  - first:
+      213: 1539433654057447142
+    second: holding item animation sprite sheet_61
+  - first:
+      213: -6490027784376772872
+    second: holding item animation sprite sheet_62
+  - first:
+      213: -4159707927853695114
+    second: holding item animation sprite sheet_63
+  - first:
+      213: 9222348157306999700
+    second: holding item animation sprite sheet_64
+  - first:
+      213: 567004417038208517
+    second: holding item animation sprite sheet_65
+  - first:
+      213: -8427824328709657031
+    second: holding item animation sprite sheet_66
+  - first:
+      213: -1750901078055685687
+    second: holding item animation sprite sheet_67
+  - first:
+      213: -6129078536108928870
+    second: holding item animation sprite sheet_68
+  - first:
+      213: -7808048844189623407
+    second: holding item animation sprite sheet_69
+  - first:
+      213: -3160006034415612674
+    second: holding item animation sprite sheet_70
+  - first:
+      213: -4865866028163811557
+    second: holding item animation sprite sheet_71
+  - first:
+      213: 5422432274040804461
+    second: holding item animation sprite sheet_72
+  - first:
+      213: 3787816453336334589
+    second: holding item animation sprite sheet_73
+  - first:
+      213: 5857503276716699292
+    second: holding item animation sprite sheet_74
+  - first:
+      213: -1184728059104260276
+    second: holding item animation sprite sheet_75
+  - first:
+      213: 8501030080627888157
+    second: holding item animation sprite sheet_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dff28e1a9e9a6eb0800000000000000
+      internalID: -4725790474197860399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e596d1d51473ab030800000000000000
+      internalID: 3511179613363333470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227c626144765e2c0800000000000000
+      internalID: -4402999518557714654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e33da869fe522f0800000000000000
+      internalID: -998128312539464033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b62c1a46045d3f0800000000000000
+      internalID: -876723751498912963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bad1604d4dbf7790800000000000000
+      internalID: -7530091912449893707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3febcfdded5e15520800000000000000
+      internalID: 2689183197886725875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4207
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0940d47a9136bf240800000000000000
+      internalID: 4826560387489793168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4808
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272e969abe8341060800000000000000
+      internalID: 6923221111986053746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5409
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f569142eb7ba872b0800000000000000
+      internalID: -5586526789187824033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6010
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cca35d25abf33960800000000000000
+      internalID: 7580679284643310792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6611
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8a01dac95e14310800000000000000
+      internalID: 1387642621288032422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7212
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2680fb0e1d4c52bd0800000000000000
+      internalID: -2655499999567214494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 7813
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8d8f212fcb00b20800000000000000
+      internalID: 3098684291517307116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 8414
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ef8afbd400940e0800000000000000
+      internalID: -2285295001985810811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding item animation sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 9015
+        y: 0
+        width: 601
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba92f273fee8d8d0800000000000000
+      internalID: -2821242437174650179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6f99f0ab4f1ac4ad782194bff76f31ed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      holding item animation sprite sheet_0: -4725790474197860399
+      holding item animation sprite sheet_1: 3511179613363333470
+      holding item animation sprite sheet_10: 7580679284643310792
+      holding item animation sprite sheet_11: 1387642621288032422
+      holding item animation sprite sheet_12: -2655499999567214494
+      holding item animation sprite sheet_13: 3098684291517307116
+      holding item animation sprite sheet_14: -2285295001985810811
+      holding item animation sprite sheet_15: -2821242437174650179
+      holding item animation sprite sheet_2: -4402999518557714654
+      holding item animation sprite sheet_3: -998128312539464033
+      holding item animation sprite sheet_4: -876723751498912963
+      holding item animation sprite sheet_5: -7530091912449893707
+      holding item animation sprite sheet_6: 2689183197886725875
+      holding item animation sprite sheet_7: 4826560387489793168
+      holding item animation sprite sheet_8: 6923221111986053746
+      holding item animation sprite sheet_9: -5586526789187824033
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

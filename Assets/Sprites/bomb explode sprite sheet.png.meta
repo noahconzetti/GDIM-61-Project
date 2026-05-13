@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: d6262b03d43ca4ac6aa5bed2b58199f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7447763226505929690
+    second: bomb explode sprite sheet_0
+  - first:
+      213: 7354238121048937044
+    second: bomb explode sprite sheet_1
+  - first:
+      213: -2654730500268354739
+    second: bomb explode sprite sheet_2
+  - first:
+      213: -925752389903211473
+    second: bomb explode sprite sheet_3
+  - first:
+      213: -2739165946944121652
+    second: bomb explode sprite sheet_4
+  - first:
+      213: -239122109986626560
+    second: bomb explode sprite sheet_5
+  - first:
+      213: 7519376458058583497
+    second: bomb explode sprite sheet_6
+  - first:
+      213: -5534323081701016212
+    second: bomb explode sprite sheet_7
+  - first:
+      213: -2250481948893284043
+    second: bomb explode sprite sheet_8
+  - first:
+      213: 550505449825677402
+    second: bomb explode sprite sheet_9
+  - first:
+      213: -4951899000676058315
+    second: bomb explode sprite sheet_10
+  - first:
+      213: -5694219015619465079
+    second: bomb explode sprite sheet_11
+  - first:
+      213: -5473322624186825104
+    second: bomb explode sprite sheet_12
+  - first:
+      213: -514767469202744823
+    second: bomb explode sprite sheet_13
+  - first:
+      213: -7212720025458834153
+    second: bomb explode sprite sheet_14
+  - first:
+      213: 373253322371965728
+    second: bomb explode sprite sheet_15
+  - first:
+      213: 249734618279762727
+    second: bomb explode sprite sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1430
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad36a1fc135cb5760800000000000000
+      internalID: 7447763226505929690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1430
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45212ce4b908f0660800000000000000
+      internalID: 7354238121048937044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1430
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d431c15eca0882bd0800000000000000
+      internalID: -2654730500268354739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1430
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24a9d13b111723f0800000000000000
+      internalID: -925752389903211473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1430
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc49c8f75178cf9d0800000000000000
+      internalID: -2739165946944121652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0042e4835b77eacf0800000000000000
+      internalID: -239122109986626560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomb explode sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 1800
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd440b9c013a5860800000000000000
+      internalID: 7519376458058583497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6a83ea242811430d9699b134fca4d63
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bomb explode sprite sheet_0: 7447763226505929690
+      bomb explode sprite sheet_1: 7354238121048937044
+      bomb explode sprite sheet_2: -2654730500268354739
+      bomb explode sprite sheet_3: -925752389903211473
+      bomb explode sprite sheet_4: -2739165946944121652
+      bomb explode sprite sheet_5: -239122109986626560
+      bomb explode sprite sheet_6: 7519376458058583497
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

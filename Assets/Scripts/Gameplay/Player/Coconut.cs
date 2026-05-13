@@ -64,7 +64,7 @@ namespace Gameplay {
 
         public bool squished = false;
         public List<Object> DeadList = new();
-        private bool _dead => DeadList.Count > 0;
+        public bool Dead => DeadList.Count > 0;
         public List<Box> slowedEffects = new List<Box>();
         
         public int PlayerID { get; private set; }
@@ -141,7 +141,7 @@ namespace Gameplay {
         
         private void ApplySpeedConstraints() {
             // Velocity
-            if (Rigidbody.linearVelocityX < minXSpeed && !squished && !_dead) {
+            if (Rigidbody.linearVelocityX < minXSpeed && !squished && !Dead) {
                 Rigidbody.linearVelocityX += minSpeedEnforcementPerSecond;
                 slowIndicator.SetActive(true);
             } else {
@@ -172,10 +172,12 @@ namespace Gameplay {
             if (coconuts == null) return;
             switch (place) {
                 case 0:
+                    if (!coconuts[1]) return;
                     float distToSecond = Mathf.Abs(transform.position.x - coconuts[1].transform.position.x);
                     Rigidbody.linearVelocityX -= firstPlaceSpeedDebuffByUnit.Evaluate(distToSecond);
                     break;
                 case 3:
+                    if (!coconuts[2]) return;
                     float distToSecondLast = Mathf.Abs(transform.position.x - coconuts[2].transform.position.x);
                     Rigidbody.linearVelocityX += firstPlaceSpeedDebuffByUnit.Evaluate(distToSecondLast);
                     break;

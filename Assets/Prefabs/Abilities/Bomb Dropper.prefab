@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropFrequency: 1
   dropNumber: 5
-  dropForce: 20
+  dropForce: 0
   bombPrefab: {fileID: 1442633393693458479, guid: c90b704e740104f62865396404600996, type: 3}

@@ -22,6 +22,7 @@ namespace Gameplay.Player {
                 _coconut.currentHeldAbility.GetType() == typeof(EnlargeAbility) &&
                 _coconut.UsingAbility);
             _animator.SetBool("Grounded", _coconut.Grounded);
+            _animator.SetBool("Dead", _coconut.Dead);
         }
     }
 }
