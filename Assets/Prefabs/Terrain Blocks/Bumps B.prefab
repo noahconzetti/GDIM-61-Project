@@ -324,6 +324,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.3991194
       objectReference: {fileID: 0}
+    - target: {fileID: 8159200048077359181, guid: 474c1265cbfc54089a38be06439f3f39, type: 3}
+      propertyPath: terrainCategory
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8664942784543688391, guid: 474c1265cbfc54089a38be06439f3f39, type: 3}
       propertyPath: m_Splines.Array.size
       value: 1

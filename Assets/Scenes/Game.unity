@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extraGenerationDistance: 100
-  settings: {fileID: 11400000, guid: f4781c3f380864f2697b1786d53fb4a1, type: 2}
+  settings: {fileID: 11400000, guid: 7ab7bcfe0835046c3bf4dca23e4415ea, type: 2}
   splineContainerBase: {fileID: 1526458965}
   spriteShapeController: {fileID: 1822139330}
   heightBelow: 100
