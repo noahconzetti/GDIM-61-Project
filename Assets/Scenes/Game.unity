@@ -432,6 +432,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -705,6 +706,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2161,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d95121e2d474a8d8243ae1281240771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raceLength: 500
+  raceLength: 1000
   useSeed: 0
   seed: 0
   coconutSpawner: {fileID: 1555396410}
@@ -3903,7 +3905,7 @@ MonoBehaviour:
   - {x: -8.420112, y: 1.5154133}
   - {x: -3.7372286, y: 1.3152399}
   - {x: -0.50660837, y: 1.140875}
-  - {x: 0.999961, y: 0.9997485}
+  - {x: 0.999961, y: 0.99974865}
   - {x: 2.477582, y: 0.68189454}
   - {x: 4.975338, y: 0.16259804}
   - {x: 8.242089, y: -0.5104512}
@@ -4016,7 +4018,7 @@ PolygonCollider2D:
       - {x: -8.420112, y: 1.5154133}
       - {x: -3.7372286, y: 1.3152399}
       - {x: -0.50660837, y: 1.140875}
-      - {x: 0.999961, y: 0.9997485}
+      - {x: 0.999961, y: 0.99974865}
       - {x: 2.477582, y: 0.68189454}
       - {x: 4.975338, y: 0.16259804}
       - {x: 8.242089, y: -0.5104512}

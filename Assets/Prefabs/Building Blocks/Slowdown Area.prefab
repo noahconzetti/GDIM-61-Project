@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[0].inSlope
-      value: 0.277263
+      value: 0.19554776
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[1].inSlope
@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[0].outSlope
-      value: 0.277263
+      value: 0.19554776
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[1].inWeight
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[0].outWeight
-      value: 0.09114906
+      value: 0.067528754
       objectReference: {fileID: 0}
     - target: {fileID: 3041551832301195467, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
       propertyPath: speedChangeByCurrentSpeed.m_Curve.Array.data[1].outWeight
