@@ -24,7 +24,7 @@ namespace PlayerSelection {
             TryGetComponent(out _animator);
         }
 
-        private void HandleOptionsUpdated(PlayerStartData newData, HashSet<int> activeColorIndexes) {
+        public void HandleOptionsUpdated(PlayerStartData newData, HashSet<int> activeColorIndexes) {
             if (newData.PlayerID != playerIndex) return;
             coconutBase.color = newData.PlayerColor;
             if (coconutHat.sprite != newData.PlayerHat) {

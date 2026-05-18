@@ -95,7 +95,7 @@ namespace PlayerSelection {
 
         public void LoadGameScene() {
             CustomizationPersistantData.Instance.Players = Players;
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8466942478358696660}
@@ -179,14 +179,14 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  groundCastAddition: 0.1
+  groundCastAddition: 0.3
   numRaycasts: 10
   minRaycastAngle: 210
   maxRaycastAngle: 300
   inAirAngularVelocityMax: -300
   angularVelocityMaxEnforcementPerSecond: 500
   coconutCustomizer: {fileID: 1434383594990591277}
-  squishTime: 0.5
+  squishTime: 2
   slowIndicator: {fileID: 1051885257810012032}
   fastIndicator: {fileID: 8278600018096794978}
   squished: 0

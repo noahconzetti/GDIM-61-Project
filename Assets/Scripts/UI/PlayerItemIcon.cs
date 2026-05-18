@@ -56,7 +56,7 @@ public class PlayerItemIcon : MonoBehaviour {
     
     private void HandleAbilityStart(Coconut coconut, AbilityData abilityData) {
         if (coconut.PlayerID != player) return;
-        _animator.SetBool("Using Ability", true);
+        _animator.SetTrigger("Using Ability");
     }
     
     private void HandleAbilityEnd(Coconut coconut, AbilityData abilityData) {
@@ -64,6 +64,7 @@ public class PlayerItemIcon : MonoBehaviour {
         
         abilityIcon.sprite = null;
         abilityIcon.color = Color.clear;
-        _animator.SetBool("Using Ability", false);
+        _animator.SetTrigger("Stop Using Ability");
+        _animator.ResetTrigger("Using Ability");
     }
 }

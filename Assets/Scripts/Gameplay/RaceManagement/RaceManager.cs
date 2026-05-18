@@ -48,6 +48,7 @@ namespace Gameplay.RaceManagement {
         }
 
         private void Update() {
+            if (_coconutTracking == null) return;
             _coconutTracking.Sort((a, b) => 
                 a.transform.position.x > b.transform.position.x ? -1 : 1);
             

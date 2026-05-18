@@ -144,11 +144,8 @@ namespace Gameplay {
         private void ApplySpeedConstraints() {
             // Velocity
             if (_completedRace) {
-                if (Rigidbody.linearVelocity.magnitude > maxWaterSpeed) {
-                    Rigidbody.linearVelocity -= new Vector2(minSpeedEnforcementPerSecond, minSpeedEnforcementPerSecond);
-                    if (Rigidbody.linearVelocityX < 0) Rigidbody.linearVelocityX = 0;
-                    if (Rigidbody.linearVelocityY < 0) Rigidbody.linearVelocityY = 0;
-                }
+                if (Rigidbody.linearVelocityX > maxWaterSpeed) Rigidbody.linearVelocityX = maxWaterSpeed;
+                if (Rigidbody.linearVelocityY > maxWaterSpeed) Rigidbody.linearVelocityY = maxWaterSpeed;
                 return;
             }
             

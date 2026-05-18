@@ -12,20 +12,28 @@ public class StartSequenceManager : MonoBehaviour {
     private RaceInfo _raceInfo;
     
     private void OnEnable() {
+        // LoadingScreen.OnLoadingCompleted += HandleLoadingComplete;
         GameManager.OnGameStart += HandleGameStart;
     }
     
     private void OnDisable() {
+        // LoadingScreen.OnLoadingCompleted += HandleLoadingComplete;
         GameManager.OnGameStart -= HandleGameStart;
     }
+
+    // private void HandleLoadingComplete() {
+    // }
 
     private void Awake() {
         TryGetComponent(out _animator);
     }
 
     private void HandleGameStart(RaceInfo raceInfo) {
-        // _animator.SetTrigger("Start");
         _raceInfo = raceInfo;
+    }
+
+    public void StartTrigger() {
+        _animator.SetTrigger("Start");
     }
     
     public void AnimEnd() {
