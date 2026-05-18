@@ -20,6 +20,7 @@ namespace Gameplay {
         [SerializeField] private float minSpeedEnforcementPerSecond = 1f;
         [SerializeField] private AnimationCurve firstPlaceSpeedDebuffByUnit;
         [SerializeField] private AnimationCurve lastPlaceSpeedBuffByUnit;
+        [SerializeField] private float maxWaterSpeed = 3f;
         [Header("Gravity Settings")]
         [SerializeField] private float airGravity = 1.5f;
         [SerializeField] private float groundedGravity = 0.9f;
@@ -53,6 +54,7 @@ namespace Gameplay {
 
         private Vector2 _groundNormal = Vector2.up;
         private bool _jumpBufferActive = false;
+        private bool _completedRace = false;
 
         public bool UsingAbility { get; private set; }  = false;
 
@@ -141,6 +143,15 @@ namespace Gameplay {
         
         private void ApplySpeedConstraints() {
             // Velocity
+            if (_completedRace) {
+                if (Rigidbody.linearVelocity.magnitude > maxWaterSpeed) {
+                    Rigidbody.linearVelocity -= new Vector2(minSpeedEnforcementPerSecond, minSpeedEnforcementPerSecond);
+                    if (Rigidbody.linearVelocityX < 0) Rigidbody.linearVelocityX = 0;
+                    if (Rigidbody.linearVelocityY < 0) Rigidbody.linearVelocityY = 0;
+                }
+                return;
+            }
+            
             if (Rigidbody.linearVelocityX < minXSpeed && !squished && !Dead) {
                 Rigidbody.linearVelocityX += minSpeedEnforcementPerSecond;
                 slowIndicator.SetActive(true);
@@ -278,6 +289,10 @@ namespace Gameplay {
 
         public void ActiveRB(bool b) {
             Rigidbody.bodyType = b ? RigidbodyType2D.Dynamic : RigidbodyType2D.Static;
+        }
+
+        public void FinishGame() {
+            _completedRace = true;
         }
     }
 }

@@ -29,8 +29,9 @@ namespace Gameplay.RaceManagement {
             if (!other.TryGetComponent(out Coconut player)) return;
             
             _finishers.Add(player);
-            OnPlayerFinished?.Invoke(player, ++_numFinished);
-
+            _numFinished++;
+            OnPlayerFinished?.Invoke(player, _numFinished);
+            
             if (_numFinished >= _numPlayers) {
                 OnStandingsFinalized?.Invoke(_finishers);
             }

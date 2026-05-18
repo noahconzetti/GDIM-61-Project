@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -13,14 +14,14 @@ namespace Gameplay.RaceManagement {
         }
 
         private void OnEnable() {
-            FinishLineTrigger.OnPlayerFinished += SetCameraPriority;
+            FinishLineTrigger.OnStandingsFinalized += SetCameraPriority;
         }
 
         private void OnDisable() {
-            FinishLineTrigger.OnPlayerFinished -= SetCameraPriority;
+            FinishLineTrigger.OnStandingsFinalized -= SetCameraPriority;
         }
 
-        private void SetCameraPriority(Coconut coconut, int place) {
+        private void SetCameraPriority(List<Coconut> obj) {
             _cam.Priority = priority;
         }
     }
