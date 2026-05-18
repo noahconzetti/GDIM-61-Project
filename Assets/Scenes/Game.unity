@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 229887754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.344525, y: 8.951651, z: -136.12552}
+  m_LocalPosition: {x: 17.8, y: 7.1, z: -136.12552}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d95121e2d474a8d8243ae1281240771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raceLength: 100
+  raceLength: 1000
   useSeed: 0
   seed: 0
   coconutSpawner: {fileID: 1555396410}
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerParent: {fileID: 1005809949}
-  defaultRadius: 7
+  defaultRadius: 13
 --- !u!1 &1402934183
 GameObject:
   m_ObjectHideFlags: 0
