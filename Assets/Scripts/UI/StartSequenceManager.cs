@@ -21,9 +21,6 @@ public class StartSequenceManager : MonoBehaviour {
         GameManager.OnGameStart -= HandleGameStart;
     }
 
-    // private void HandleLoadingComplete() {
-    // }
-
     private void Awake() {
         TryGetComponent(out _animator);
     }

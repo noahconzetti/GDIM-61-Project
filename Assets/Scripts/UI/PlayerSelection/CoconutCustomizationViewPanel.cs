@@ -8,7 +8,7 @@ namespace PlayerSelection {
         [SerializeField] public Transform hatButtonParent;
         [SerializeField] private CustomizationSelectionPreview previewer;
 
-        private void Start() {
+        private void Awake() {
             previewer.playerIndex = playerIndex;
         }
     }

@@ -5,7 +5,6 @@ using UnityEngine;
 namespace Gameplay.Abilities.Abilities {
     public class Projectile : MonoBehaviour {
         [SerializeField] private float projectileForce = 1f;
-        [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float coconutDeadTime = 1f;
         [SerializeField] private float coconutDeadTimeVsEnlarged = 0;
         private Coconut _target;

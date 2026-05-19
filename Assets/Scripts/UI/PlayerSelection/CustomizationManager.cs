@@ -22,7 +22,6 @@ namespace PlayerSelection {
         private HashSet<int> _activeColorIndexes = new();
 
         public static event Action<PlayerStartData, HashSet<int>> OnOptionsUpdated;
-        // public static event Action<List<PlayerStartData>> OnPlayersFinalized;
         
         private void OnEnable() {
             CustomizationOptionButton.OnOptionSelected += ChangeOption;
@@ -32,7 +31,7 @@ namespace PlayerSelection {
             CustomizationOptionButton.OnOptionSelected -= ChangeOption;
         }
         
-        private void Awake() {
+        private void Start() {
             CreateButtons();
             if (CustomizationPersistantData.Instance.Players == null) {
                 CreatePlayerDefaults();
@@ -40,9 +39,6 @@ namespace PlayerSelection {
                 Players = CustomizationPersistantData.Instance.Players;
                 UpdateAllPlayers();
             }
-        }
-
-        private void Start() {
             UpdateAllPlayers();
         }
 

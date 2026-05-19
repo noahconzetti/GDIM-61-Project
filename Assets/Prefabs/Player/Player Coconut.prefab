@@ -120,45 +120,39 @@ MonoBehaviour:
   maxSpeed: 11
   maxSpeedEnforcementPerSecond: 3
   minSpeedEnforcementPerSecond: 1
-  firstPlaceSpeedDebuffByUnit:
+  speedBuffByUnit:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 20
+      time: -100
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: -20
       value: 0
       inSlope: 0
       outSlope: 0
-      tangentMode: 136
+      tangentMode: 65
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 20
+      value: 0
+      inSlope: -0
+      outSlope: 0
+      tangentMode: 5
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 100
-      value: 0.05
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  lastPlaceSpeedBuffByUnit:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 20
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 100
-      value: 0.05
+      value: -0.1
       inSlope: 0
       outSlope: 0
       tangentMode: 136
@@ -171,7 +165,6 @@ MonoBehaviour:
   maxWaterSpeed: 3
   airGravity: 1.5
   groundedGravity: 0.9
-  notGroundedBoost: 2
   jumpForce: 14
   forwardMomentumPreserved: 1
   jumpDirection: {x: 1, y: 0.3}

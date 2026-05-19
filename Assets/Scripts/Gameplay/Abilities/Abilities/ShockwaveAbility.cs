@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Gameplay.Abilities.Abilities {
     [CreateAssetMenu(menuName = "Abilities/Shockwave Ability")]
     public class ShockwaveAbility : AbilityData {
-        [SerializeField] private float radius = 20f;
+        // [SerializeField] private float radius = 20f;
         [SerializeField] private float expandTime = 1f;
         [SerializeField] private float recoverTime = 2f;
         [SerializeField] private GameObject shockwavePrefab;

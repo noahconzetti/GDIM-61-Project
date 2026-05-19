@@ -18,13 +18,12 @@ namespace Gameplay {
         [SerializeField] private float maxSpeed = 10f;
         [SerializeField] private float maxSpeedEnforcementPerSecond = 1f;
         [SerializeField] private float minSpeedEnforcementPerSecond = 1f;
-        [SerializeField] private AnimationCurve firstPlaceSpeedDebuffByUnit;
-        [SerializeField] private AnimationCurve lastPlaceSpeedBuffByUnit;
+        [SerializeField] private AnimationCurve speedBuffByUnit;
         [SerializeField] private float maxWaterSpeed = 3f;
         [Header("Gravity Settings")]
         [SerializeField] private float airGravity = 1.5f;
         [SerializeField] private float groundedGravity = 0.9f;
-        [SerializeField] private float notGroundedBoost = 1f;
+        // [SerializeField] private float notGroundedBoost = 1f;
         [Header("Jump Settings")]
         [SerializeField] private float jumpForce = 2;
         [SerializeField] private float forwardMomentumPreserved = 0.9f;
@@ -178,18 +177,9 @@ namespace Gameplay {
         private void UpdateVelocityBasedOnPlayerPos() {
             Coconut[] coconuts = RaceManager.GetPlayerPlaces();
             if (coconuts == null) return;
-            switch (place) {
-                case 0:
-                    if (!coconuts[1]) return;
-                    float distToSecond = Mathf.Abs(transform.position.x - coconuts[1].transform.position.x);
-                    Rigidbody.linearVelocityX -= firstPlaceSpeedDebuffByUnit.Evaluate(distToSecond);
-                    break;
-                case 3:
-                    if (!coconuts[2]) return;
-                    float distToSecondLast = Mathf.Abs(transform.position.x - coconuts[2].transform.position.x);
-                    Rigidbody.linearVelocityX += firstPlaceSpeedDebuffByUnit.Evaluate(distToSecondLast);
-                    break;
-            }
+            float avgX = coconuts.Sum((c) => c.transform.position.x) / coconuts.Length;
+            float distToCenter = transform.position.x - avgX;
+            Rigidbody.linearVelocityX += speedBuffByUnit.Evaluate(distToCenter);
         }
 
         private float GetSlowEffects() {

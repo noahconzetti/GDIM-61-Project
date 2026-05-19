@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 47097258}
   - component: {fileID: 47097263}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Fade Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1122752569}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1761381910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2370,7 +2370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2656,7 +2656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FramingMode: 2
   FramingSize: 0.64
-  CenterOffset: {x: -1.18, y: 0}
+  CenterOffset: {x: -1, y: 0}
   Damping: 1
   SizeAdjustment: 2
   LateralAdjustment: 0
@@ -4113,6 +4113,7 @@ Transform:
   - {fileID: 1971701526}
   - {fileID: 1340646356}
   - {fileID: 1402934184}
+  - {fileID: 47097262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1822139326
@@ -5115,4 +5116,3 @@ SceneRoots:
   - {fileID: 1005809949}
   - {fileID: 1419680448}
   - {fileID: 1761381910}
-  - {fileID: 47097262}

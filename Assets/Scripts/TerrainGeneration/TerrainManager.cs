@@ -46,7 +46,7 @@ namespace TerrainGeneration {
             
             points.Insert(0, new Vector2(points[0].x, -heightBelow)); 
             
-            while (generationProgress < width + extraGenerationDistance) {
+            while (generationProgress < width) {
                 TerrainBlock currentBlockPrefab = ChooseRandomBlock();
                 _lastTerrainCategory = currentBlockPrefab.terrainCategory;
                 GameObject newBlock = Instantiate(currentBlockPrefab.gameObject, Vector3.zero, Quaternion.identity, terrainParent);
@@ -68,6 +68,7 @@ namespace TerrainGeneration {
                 }
             }
             
+            points.Add(new Vector2(_lastPosition.x + extraGenerationDistance, _lastPosition.y - extraGenerationDistance));
             points.Add(new Vector2(_lastPosition.x, _lastPosition.y - heightBelow));
             
             splineContainerBase.Spline.Clear();
