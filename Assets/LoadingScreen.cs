@@ -3,11 +3,16 @@ using System.Collections;
 using PlayerSelection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class LoadingScreen : MonoBehaviour {
     [SerializeField] private bool isLoadingScreen = true;
-    [SerializeField] private CustomizationSelectionPreview coconut;
+    [SerializeField] private Image faceImage;
+    [SerializeField] private Image hatImage;
+    [SerializeField] private Image coconutImage;
+    [SerializeField] private Animator coconutAnimator;
+    [SerializeField] private Sprite[] coconutSpriteOptions;
     [SerializeField] private Animator fadeAnimator;
     [SerializeField] private StartSequenceManager startSequence;
 
@@ -16,9 +21,16 @@ public class LoadingScreen : MonoBehaviour {
     private void Start() {
         fadeAnimator.SetTrigger("From Black");
         if (!isLoadingScreen) return;
+        
+        
         int randomIndex = Random.Range(0, CustomizationPersistantData.Instance.Players.Count);
-        coconut.HandleOptionsUpdated(CustomizationPersistantData.Instance.Players[randomIndex], null);
-        coconut.Winner();
+        PlayerStartData data = CustomizationPersistantData.Instance.Players[randomIndex];
+        int randomSprite = Random.Range(0, coconutSpriteOptions.Length);
+        coconutAnimator.SetTrigger("Win");
+        coconutImage.color = data.PlayerColor;
+        hatImage.sprite = data.PlayerHat;
+        faceImage.sprite = coconutSpriteOptions[randomSprite];
+        Debug.Log("Player: " + randomIndex + " Face: " + randomSprite + " Face name: " + coconutSpriteOptions[randomSprite].name);
     }
 
     private IEnumerator LoadGameScene() {
