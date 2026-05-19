@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P2 Selection Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
+      propertyPath: m_text
+      value: X
+      objectReference: {fileID: 0}
     - target: {fileID: 6573932329963014147, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -564,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_text
-      value: 0
+      value: O
       objectReference: {fileID: 0}
     - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_fontStyle
@@ -854,11 +858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6139675155141926950, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_text
-      value: Q
+      value: W
       objectReference: {fileID: 0}
     - target: {fileID: 6192672325640749929, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_text
-      value: 1
+      value: Q
       objectReference: {fileID: 0}
     - target: {fileID: 6573932329963014147, guid: fa6e435b3a5504712864fcfb88ec8707, type: 3}
       propertyPath: m_Pivot.x
