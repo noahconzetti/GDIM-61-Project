@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b585ac7aa75441f3b2d68b9e90e970c0, type: 3}
   m_Name: Projectile
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: -2570584589590397786, guid: ea577f1c70ed143b4aac1786d730b526, type: 3}
+  uiIcon: {fileID: -1229858627709956937, guid: 3a15d436c45f14d47be79e3c842da255, type: 3}
   projectilePrefab: {fileID: 6681133680234889383, guid: 931450613894f4184a343e500318c788, type: 3}

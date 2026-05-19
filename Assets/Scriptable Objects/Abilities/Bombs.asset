@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0750c38e65f4eb59eeccc0216b67905, type: 3}
   m_Name: Bombs
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 2526587378933234344, guid: 9874b0a7dbe7548d494c1b21eec484dd, type: 3}
+  uiIcon: {fileID: -1483665779731714255, guid: 2beacebdec3834a9ea38c595c33778a4, type: 3}
   bombDropperPrefab: {fileID: 8471620309637150456, guid: 8dec6213c2e5b491fa19c2edf0a77ffc, type: 3}

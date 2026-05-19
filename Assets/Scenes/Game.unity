@@ -2100,7 +2100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317151656553642990, guid: d812d6b30cabe4545a775e3f0b4a7559, type: 3}
       propertyPath: m_text
-      value: D
+      value: X
       objectReference: {fileID: 0}
     - target: {fileID: 7043735333541057193, guid: d812d6b30cabe4545a775e3f0b4a7559, type: 3}
       propertyPath: m_text
@@ -6512,11 +6512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317151656553642990, guid: d812d6b30cabe4545a775e3f0b4a7559, type: 3}
       propertyPath: m_text
-      value: 1
+      value: Q
       objectReference: {fileID: 0}
     - target: {fileID: 7043735333541057193, guid: d812d6b30cabe4545a775e3f0b4a7559, type: 3}
       propertyPath: m_text
-      value: Q
+      value: W
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
