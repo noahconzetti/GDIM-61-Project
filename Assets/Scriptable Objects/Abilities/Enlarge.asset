@@ -43,3 +43,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  enlargeParticles: {fileID: 1610440048279521084, guid: 722823f799e874941ab30e211ae9a0c2, type: 3}

@@ -176,7 +176,7 @@ namespace Gameplay {
 
         private void UpdateVelocityBasedOnPlayerPos() {
             Coconut[] coconuts = RaceManager.GetPlayerPlaces();
-            if (coconuts == null) return;
+            if (coconuts == null || coconuts[0] == null) return;
             float avgX = coconuts.Sum((c) => c.transform.position.x) / coconuts.Length;
             float distToCenter = transform.position.x - avgX;
             Rigidbody.linearVelocityX += speedBuffByUnit.Evaluate(distToCenter);

@@ -1,0 +1,729 @@
+fileFormatVersion: 2
+guid: 35e46ed6df7624676a436be1ad33d2a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2767496150357596284
+    second: holding_0
+  - first:
+      213: 3831271297870293176
+    second: holding_1
+  - first:
+      213: -3838146068379737069
+    second: holding_2
+  - first:
+      213: -4190978033386431930
+    second: holding_3
+  - first:
+      213: -4833010592063797483
+    second: holding_4
+  - first:
+      213: -5195129771092768162
+    second: holding_5
+  - first:
+      213: -5086352650261535716
+    second: holding_6
+  - first:
+      213: 4725727349752809179
+    second: holding_7
+  - first:
+      213: -1462517304239909620
+    second: holding_8
+  - first:
+      213: -670579748112560975
+    second: holding_9
+  - first:
+      213: 6115944138351019592
+    second: holding_10
+  - first:
+      213: -2097801780549340382
+    second: holding_11
+  - first:
+      213: -3832201731015063967
+    second: holding_12
+  - first:
+      213: -2428506005241720684
+    second: holding_13
+  - first:
+      213: -4396760285430847862
+    second: holding_14
+  - first:
+      213: -7724022615795695198
+    second: holding_15
+  - first:
+      213: -4133679947433752154
+    second: holding_16
+  - first:
+      213: -3837120827102356658
+    second: holding_17
+  - first:
+      213: -2280747116662370036
+    second: holding_18
+  - first:
+      213: -6189490024189295070
+    second: holding_19
+  - first:
+      213: -3215870974979823422
+    second: holding_20
+  - first:
+      213: 5598294927345149218
+    second: holding_21
+  - first:
+      213: 4688116844638955292
+    second: holding_22
+  - first:
+      213: -7095707071285459099
+    second: holding_23
+  - first:
+      213: 1848342231202868495
+    second: holding_24
+  - first:
+      213: -5437464338754453961
+    second: holding_25
+  - first:
+      213: -1028197755969322486
+    second: holding_26
+  - first:
+      213: 1739218980890648214
+    second: holding_27
+  - first:
+      213: -39103980433806106
+    second: holding_28
+  - first:
+      213: 1535444886969596119
+    second: holding_29
+  - first:
+      213: 7758284125361869460
+    second: holding_30
+  - first:
+      213: 7008864687439030905
+    second: holding_31
+  - first:
+      213: -3478154587509636352
+    second: holding_32
+  - first:
+      213: 6820439854283130426
+    second: holding_33
+  - first:
+      213: 1434926113067036650
+    second: holding_34
+  - first:
+      213: -5500795267026580925
+    second: holding_35
+  - first:
+      213: -3847143872308655889
+    second: holding_36
+  - first:
+      213: -5337309707127992073
+    second: holding_37
+  - first:
+      213: -4122994014438322983
+    second: holding_38
+  - first:
+      213: -3919802573497728560
+    second: holding_39
+  - first:
+      213: -2303570099976684728
+    second: holding_40
+  - first:
+      213: -4833748218077771976
+    second: holding_41
+  - first:
+      213: 5902867052987161991
+    second: holding_42
+  - first:
+      213: -6923106634296089438
+    second: holding_43
+  - first:
+      213: 3411398096465553122
+    second: holding_44
+  - first:
+      213: -7744733057575453082
+    second: holding_45
+  - first:
+      213: 1156454098935614157
+    second: holding_46
+  - first:
+      213: -3926906644512104578
+    second: holding_47
+  - first:
+      213: -6852874984717992635
+    second: holding_48
+  - first:
+      213: -1598864709226090158
+    second: holding_49
+  - first:
+      213: -3683491717211905789
+    second: holding_50
+  - first:
+      213: 8137963984986002571
+    second: holding_51
+  - first:
+      213: -1650718088748104658
+    second: holding_52
+  - first:
+      213: -5573132891577323757
+    second: holding_53
+  - first:
+      213: -2967136637296036580
+    second: holding_54
+  - first:
+      213: 8536830472021528282
+    second: holding_55
+  - first:
+      213: -3880335361382956630
+    second: holding_56
+  - first:
+      213: -2536005258839586382
+    second: holding_57
+  - first:
+      213: 8073221638807561609
+    second: holding_58
+  - first:
+      213: -1785568839311343092
+    second: holding_59
+  - first:
+      213: 9160098646437851555
+    second: holding_60
+  - first:
+      213: 8012477118044163179
+    second: holding_61
+  - first:
+      213: 8848402543035113233
+    second: holding_62
+  - first:
+      213: -7862068694186988589
+    second: holding_63
+  - first:
+      213: 1030013591246408943
+    second: holding_64
+  - first:
+      213: 4254811115089046314
+    second: holding_65
+  - first:
+      213: -5025198293069894248
+    second: holding_66
+  - first:
+      213: 549267478431899466
+    second: holding_67
+  - first:
+      213: -5640808842544424215
+    second: holding_68
+  - first:
+      213: 4099640368788542700
+    second: holding_69
+  - first:
+      213: 2933965399254008069
+    second: holding_70
+  - first:
+      213: 5978095999858335292
+    second: holding_71
+  - first:
+      213: 2999574811219207873
+    second: holding_72
+  - first:
+      213: 3038674360290319439
+    second: holding_73
+  - first:
+      213: -4826568847329083441
+    second: holding_74
+  - first:
+      213: 4586469694990990389
+    second: holding_75
+  - first:
+      213: -2987568080969810567
+    second: holding_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: holding_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3189
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78535ff51f186620800000000000000
+      internalID: 2767496150357596284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_1
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 3189
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b865bb42f86b2530800000000000000
+      internalID: 3831271297870293176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_2
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 3189
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314e9267c7a2cbac0800000000000000
+      internalID: -3838146068379737069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_3
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 3189
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a5982fea7a6d5c0800000000000000
+      internalID: -4190978033386431930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_4
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 3189
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51746501972bdecb0800000000000000
+      internalID: -4833010592063797483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2126
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a85f78ff037e7b0800000000000000
+      internalID: -5195129771092768162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_6
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2126
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c146bc69635a969b0800000000000000
+      internalID: -5086352650261535716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_7
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 2126
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd64d539cf7259140800000000000000
+      internalID: 4725727349752809179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_8
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 2126
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c051be2b24814bbe0800000000000000
+      internalID: -1462517304239909620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_9
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 2126
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc0e20a54f91b6f0800000000000000
+      internalID: -670579748112560975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1063
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8468b884ac230e450800000000000000
+      internalID: 6115944138351019592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_11
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1063
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223bc2d256c13e2e0800000000000000
+      internalID: -2097801780549340382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_12
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 1063
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166c53b54d841dac0800000000000000
+      internalID: -3832201731015063967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_13
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 1063
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4901aaea7a63c4ed0800000000000000
+      internalID: -2428506005241720684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_14
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 1063
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a866950c0d19bf2c0800000000000000
+      internalID: -4396760285430847862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: holding_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1203
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a10a64ca52cec490800000000000000
+      internalID: -7724022615795695198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c153eb100185f4819a1b62188dab350c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      holding_0: 2767496150357596284
+      holding_1: 3831271297870293176
+      holding_10: 6115944138351019592
+      holding_11: -2097801780549340382
+      holding_12: -3832201731015063967
+      holding_13: -2428506005241720684
+      holding_14: -4396760285430847862
+      holding_15: -7724022615795695198
+      holding_2: -3838146068379737069
+      holding_3: -4190978033386431930
+      holding_4: -4833010592063797483
+      holding_5: -5195129771092768162
+      holding_6: -5086352650261535716
+      holding_7: 4725727349752809179
+      holding_8: -1462517304239909620
+      holding_9: -670579748112560975
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

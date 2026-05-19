@@ -9,9 +9,13 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float coconutDeadTimeVsEnlarged = 0;
         private Coconut _target;
         private Rigidbody2D _rb;
+        private Animator _animator;
+        private Collider2D _collider;
 
         private void Awake() {
             TryGetComponent(out _rb);
+            TryGetComponent(out _animator);
+            TryGetComponent(out _collider);
         }
 
         public void SetTarget(Coconut target) {
@@ -24,13 +28,15 @@ namespace Gameplay.Abilities.Abilities {
         }
 
         private void OnTriggerEnter2D(Collider2D other) {
-            if (other.gameObject.TryGetComponent(out Coconut coconut) && coconut == _target) {
-                if (coconut.IsUsingAbility(typeof(EnlargeAbility))) {
-                    coconutDeadTime = coconutDeadTimeVsEnlarged;
-                }
-                Destroy(gameObject);
-                coconut.StartCoroutine(HitByProjectile(coconut));
+            if (!other.gameObject.TryGetComponent(out Coconut coconut) || coconut != _target) return;
+            
+            if (coconut.IsUsingAbility(typeof(EnlargeAbility))) {
+                coconutDeadTime = coconutDeadTimeVsEnlarged;
             }
+            coconut.StartCoroutine(HitByProjectile(coconut));
+            _animator.SetTrigger("Hit");
+            _collider.enabled = false;
+            _rb.linearVelocity = Vector2.zero;
         }
 
         private IEnumerator HitByProjectile(Coconut c) {
@@ -39,6 +45,10 @@ namespace Gameplay.Abilities.Abilities {
             c.DeadList.Add(this);
             yield return new WaitForSeconds(coconutDeadTime);
             c.DeadList.Remove(this);
+        }
+
+        public void HitAnimationDone() {
+            Destroy(gameObject);
         }
     }
 }

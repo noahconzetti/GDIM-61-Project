@@ -12,6 +12,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float boostForce = 1f;
         [SerializeField] private float continualBoostForce = 0.1f;
         [SerializeField] private AnimationCurve enlargeCurve = AnimationCurve.EaseInOut(0, 0, .5f, 1);
+        [SerializeField] private GameObject enlargeParticles;
 
         private Vector3 _ogScale;
         private float _ogMass;
@@ -29,6 +30,7 @@ namespace Gameplay.Abilities.Abilities {
             player.MaxSpeedIncreaseOverride = maxSpeedIncrease;
             
             _rb.linearVelocity += (Vector2.right * boostForce);
+            Instantiate(enlargeParticles, player.transform);
             
             player.StartCoroutine(IncreaseSize(endCallback, player));
         }

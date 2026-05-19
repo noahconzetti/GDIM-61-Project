@@ -1,0 +1,434 @@
+fileFormatVersion: 2
+guid: cf0520ad1317741ecb43d072e49b9bca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2448176949886000839
+    second: enlarge cloud puffs sprite_0
+  - first:
+      213: 8328698908235615272
+    second: enlarge cloud puffs sprite_1
+  - first:
+      213: 8339930072391887320
+    second: enlarge cloud puffs sprite_2
+  - first:
+      213: 1738781974107806120
+    second: enlarge cloud puffs sprite_3
+  - first:
+      213: -7657041845480610318
+    second: enlarge cloud puffs sprite_4
+  - first:
+      213: 7758864161729848318
+    second: enlarge cloud puffs sprite_5
+  - first:
+      213: -3912323853548573375
+    second: enlarge cloud puffs sprite_6
+  - first:
+      213: 1256417261241387908
+    second: enlarge cloud puffs sprite_7
+  - first:
+      213: 7814545264560347758
+    second: enlarge cloud puffs sprite_8
+  - first:
+      213: 3394914174181643348
+    second: enlarge cloud puffs sprite_9
+  - first:
+      213: -7758595334372545544
+    second: enlarge cloud puffs sprite_10
+  - first:
+      213: -1885942310245935102
+    second: enlarge cloud puffs sprite_11
+  - first:
+      213: 5076835087079606236
+    second: enlarge cloud puffs sprite_12
+  - first:
+      213: -3495847322063054382
+    second: enlarge cloud puffs sprite_13
+  - first:
+      213: -1822356759262415589
+    second: enlarge cloud puffs sprite_14
+  - first:
+      213: -2264622375071319401
+    second: enlarge cloud puffs sprite_15
+  - first:
+      213: -6262329276390437692
+    second: enlarge cloud puffs sprite_16
+  - first:
+      213: -5056540151449235868
+    second: enlarge cloud puffs sprite_17
+  - first:
+      213: -8317105630368142700
+    second: enlarge cloud puffs sprite_18
+  - first:
+      213: -8184703191353814815
+    second: enlarge cloud puffs sprite_19
+  - first:
+      213: 6422985747628083501
+    second: enlarge cloud puffs sprite_20
+  - first:
+      213: -3240092066029704174
+    second: enlarge cloud puffs sprite_21
+  - first:
+      213: 3762653008676680639
+    second: enlarge cloud puffs sprite_22
+  - first:
+      213: -2116232423413302702
+    second: enlarge cloud puffs sprite_23
+  - first:
+      213: 5919096005558780854
+    second: enlarge cloud puffs sprite_24
+  - first:
+      213: 3398859260421822245
+    second: enlarge cloud puffs sprite_25
+  - first:
+      213: 5968986511042595777
+    second: enlarge cloud puffs sprite_26
+  - first:
+      213: 2115510084072259013
+    second: enlarge cloud puffs sprite_27
+  - first:
+      213: -158055073817987534
+    second: enlarge cloud puffs sprite_28
+  - first:
+      213: 4517524897921521043
+    second: enlarge cloud puffs sprite_29
+  - first:
+      213: -6615644708570036221
+    second: enlarge cloud puffs sprite_30
+  - first:
+      213: 5012409402291240485
+    second: enlarge cloud puffs sprite_31
+  - first:
+      213: 2256641520280987663
+    second: enlarge cloud puffs sprite_32
+  - first:
+      213: 8201536510729142073
+    second: enlarge cloud puffs sprite_33
+  - first:
+      213: -1406016376543386761
+    second: enlarge cloud puffs sprite_34
+  - first:
+      213: 3361858932584299951
+    second: enlarge cloud puffs sprite_35
+  - first:
+      213: 1273121617494665350
+    second: enlarge cloud puffs sprite_36
+  - first:
+      213: -4087301917004693331
+    second: enlarge cloud puffs sprite_37
+  - first:
+      213: -4751473194434726846
+    second: enlarge cloud puffs sprite_38
+  - first:
+      213: -633982993435233837
+    second: enlarge cloud puffs sprite_39
+  - first:
+      213: 8760404300616010855
+    second: enlarge cloud puffs sprite_40
+  - first:
+      213: -8505071053689338447
+    second: enlarge cloud puffs sprite_41
+  - first:
+      213: -3752190291811401741
+    second: enlarge cloud puffs sprite_42
+  - first:
+      213: -6518991459874311940
+    second: enlarge cloud puffs sprite_43
+  - first:
+      213: 1749472494544286724
+    second: enlarge cloud puffs sprite_44
+  - first:
+      213: -3306305617866285050
+    second: enlarge cloud puffs sprite_45
+  - first:
+      213: 6071069222496719895
+    second: enlarge cloud puffs sprite_46
+  - first:
+      213: 6946824911372346280
+    second: enlarge cloud puffs sprite_47
+  - first:
+      213: -3952295720390562024
+    second: enlarge cloud puffs sprite_48
+  - first:
+      213: 5518797546272576776
+    second: enlarge cloud puffs sprite_49
+  - first:
+      213: 7325191558603559685
+    second: enlarge cloud puffs sprite_50
+  - first:
+      213: -2232723733119249661
+    second: enlarge cloud puffs sprite_51
+  - first:
+      213: -4317764351957171602
+    second: enlarge cloud puffs sprite_52
+  - first:
+      213: -669393362348510552
+    second: enlarge cloud puffs sprite_53
+  - first:
+      213: 6067839381212952578
+    second: enlarge cloud puffs sprite_54
+  - first:
+      213: -347421783471955989
+    second: enlarge cloud puffs sprite_55
+  - first:
+      213: 1939556967936079441
+    second: enlarge cloud puffs sprite_56
+  - first:
+      213: 5115095983044698381
+    second: enlarge cloud puffs sprite_57
+  - first:
+      213: -154028425494297092
+    second: enlarge cloud puffs sprite_58
+  - first:
+      213: -3153011707410040318
+    second: enlarge cloud puffs sprite_59
+  - first:
+      213: -1804592481782926460
+    second: enlarge cloud puffs sprite_60
+  - first:
+      213: 543649648735615935
+    second: enlarge cloud puffs sprite_61
+  - first:
+      213: -8824094344040179854
+    second: enlarge cloud puffs sprite_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enlarge cloud puffs sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1800
+        height: 1447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce114507fba9f120800000000000000
+      internalID: 2448176949886000839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enlarge cloud puffs sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 1800
+        height: 1447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c419a978b759370800000000000000
+      internalID: 8328698908235615272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enlarge cloud puffs sprite_2
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 1800
+        height: 1447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d92488c6326db370800000000000000
+      internalID: 8339930072391887320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enlarge cloud puffs sprite_3
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 1800
+        height: 1447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a95c843ef4612810800000000000000
+      internalID: 1738781974107806120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enlarge cloud puffs sprite_4
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 1800
+        height: 1447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5a3d1a209bcb590800000000000000
+      internalID: -7657041845480610318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f7d480ca663574b6e99a05f01ef64171
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enlarge cloud puffs sprite_0: 2448176949886000839
+      enlarge cloud puffs sprite_1: 8328698908235615272
+      enlarge cloud puffs sprite_2: 8339930072391887320
+      enlarge cloud puffs sprite_3: 1738781974107806120
+      enlarge cloud puffs sprite_4: -7657041845480610318
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
