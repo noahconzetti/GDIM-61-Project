@@ -42,5 +42,9 @@ namespace PlayerSelection {
             coconutBase.color = coconutCustomizer.data.PlayerColor;
             coconutHat.sprite = coconutCustomizer.data.PlayerHat;
         }
+
+        public void Loser() {
+            _animator.SetTrigger("Egg");
+        }
     }
 }

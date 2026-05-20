@@ -1,58 +1,109 @@
 fileFormatVersion: 2
-guid: d6262b03d43ca4ac6aa5bed2b58199f5
+guid: fd4c582c22537468fb516cacca98d584
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7447763226505929690
-    second: bomb explode sprite sheet_0
+      213: -2009982790292393982
+    second: last place sprite_0
   - first:
-      213: 7354238121048937044
-    second: bomb explode sprite sheet_1
+      213: -7227355457663817201
+    second: last place sprite_1
   - first:
-      213: -2654730500268354739
-    second: bomb explode sprite sheet_2
+      213: 3874049615114635052
+    second: last place sprite_2
   - first:
-      213: -925752389903211473
-    second: bomb explode sprite sheet_3
+      213: 2755694802262655581
+    second: last place sprite_3
   - first:
-      213: -2739165946944121652
-    second: bomb explode sprite sheet_4
+      213: 923589295859486143
+    second: last place sprite_4
   - first:
-      213: -239122109986626560
-    second: bomb explode sprite sheet_5
+      213: -2236919361587088552
+    second: last place sprite_5
   - first:
-      213: 7519376458058583497
-    second: bomb explode sprite sheet_6
+      213: 2223466991875301920
+    second: last place sprite_6
   - first:
-      213: -5534323081701016212
-    second: bomb explode sprite sheet_7
+      213: 1788210385040178455
+    second: last place sprite_7
   - first:
-      213: -2250481948893284043
-    second: bomb explode sprite sheet_8
+      213: 9200672005633223940
+    second: last place sprite_8
   - first:
-      213: 550505449825677402
-    second: bomb explode sprite sheet_9
+      213: 8021021812302432393
+    second: last place sprite_9
   - first:
-      213: -4951899000676058315
-    second: bomb explode sprite sheet_10
+      213: -4652887714303566431
+    second: last place sprite_10
   - first:
-      213: -5694219015619465079
-    second: bomb explode sprite sheet_11
+      213: 2553837322829807903
+    second: last place sprite_11
   - first:
-      213: -5473322624186825104
-    second: bomb explode sprite sheet_12
+      213: -8158066156051231178
+    second: last place sprite_12
   - first:
-      213: -514767469202744823
-    second: bomb explode sprite sheet_13
+      213: 5631585290699483276
+    second: last place sprite_13
   - first:
-      213: -7212720025458834153
-    second: bomb explode sprite sheet_14
+      213: -4289524773441165369
+    second: last place sprite_14
   - first:
-      213: 373253322371965728
-    second: bomb explode sprite sheet_15
+      213: 2497454134159841148
+    second: last place sprite_15
   - first:
-      213: 249734618279762727
-    second: bomb explode sprite sheet_16
+      213: -2186046774090523964
+    second: last place sprite_16
+  - first:
+      213: -6757610015150595020
+    second: last place sprite_17
+  - first:
+      213: 862963979993542826
+    second: last place sprite_18
+  - first:
+      213: -1886900515585517628
+    second: last place sprite_19
+  - first:
+      213: 3016837762621623882
+    second: last place sprite_20
+  - first:
+      213: -809839873135456149
+    second: last place sprite_21
+  - first:
+      213: -5537194970182148400
+    second: last place sprite_22
+  - first:
+      213: 8785213564500706113
+    second: last place sprite_23
+  - first:
+      213: -6834447518638816548
+    second: last place sprite_24
+  - first:
+      213: -703533602262736802
+    second: last place sprite_25
+  - first:
+      213: -8658252768104057638
+    second: last place sprite_26
+  - first:
+      213: -8229128375748479483
+    second: last place sprite_27
+  - first:
+      213: -1910513582937535896
+    second: last place sprite_28
+  - first:
+      213: -8476936748641914774
+    second: last place sprite_29
+  - first:
+      213: -8222546851810134492
+    second: last place sprite_30
+  - first:
+      213: 3254661826454249017
+    second: last place sprite_31
+  - first:
+      213: 7997893129202556523
+    second: last place sprite_32
+  - first:
+      213: 5951524045454065120
+    second: last place sprite_33
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,7 +150,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 1500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -161,13 +212,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb explode sprite sheet_0
+      name: last place sprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1430
+        y: 1200
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad36a1fc135cb5760800000000000000
-      internalID: 7447763226505929690
+      spriteID: 20039f33d4b1b14e0800000000000000
+      internalID: -2009982790292393982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb explode sprite sheet_1
+      name: last place sprite_1
       rect:
         serializedVersion: 2
         x: 1800
-        y: 1430
+        y: 1200
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45212ce4b908f0660800000000000000
-      internalID: 7354238121048937044
+      spriteID: f0aa770e08643bb90800000000000000
+      internalID: -7227355457663817201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb explode sprite sheet_2
+      name: last place sprite_2
       rect:
         serializedVersion: 2
         x: 3600
-        y: 1430
+        y: 1200
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d431c15eca0882bd0800000000000000
-      internalID: -2654730500268354739
+      spriteID: c27852f699363c530800000000000000
+      internalID: 3874049615114635052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb explode sprite sheet_3
+      name: last place sprite_3
       rect:
         serializedVersion: 2
         x: 5400
-        y: 1430
+        y: 1200
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24a9d13b111723f0800000000000000
-      internalID: -925752389903211473
+      spriteID: d52814682d13e3620800000000000000
+      internalID: 2755694802262655581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb explode sprite sheet_4
+      name: last place sprite_4
       rect:
         serializedVersion: 2
         x: 7200
-        y: 1430
+        y: 1200
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,42 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc49c8f75178cf9d0800000000000000
-      internalID: -2739165946944121652
+      spriteID: fbdce0a329f31dc00800000000000000
+      internalID: 923589295859486143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb explode sprite sheet_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1800
-        height: 1430
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0042e4835b77eacf0800000000000000
-      internalID: -239122109986626560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bomb explode sprite sheet_6
+      name: last place sprite_5
       rect:
         serializedVersion: 2
         x: 1800
         y: 0
         width: 1800
-        height: 1430
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +337,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cd440b9c013a5860800000000000000
-      internalID: 7519376458058583497
+      spriteID: 853786d31bdd4f0e0800000000000000
+      internalID: -2236919361587088552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: last place sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022a88cd2775bde10800000000000000
+      internalID: 2223466991875301920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: last place sprite_7
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71dfbffeedff0d810800000000000000
+      internalID: 1788210385040178455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: last place sprite_8
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d26ae117a5faf70800000000000000
+      internalID: 9200672005633223940
       vertices: []
       indices: 
       edges: []
@@ -318,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a6a83ea242811430d9699b134fca4d63
+    spriteID: 07a5b30c8cd004fc782bf550635d548a
     internalID: 0
     vertices: []
     indices: 
@@ -328,13 +423,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bomb explode sprite sheet_0: 7447763226505929690
-      bomb explode sprite sheet_1: 7354238121048937044
-      bomb explode sprite sheet_2: -2654730500268354739
-      bomb explode sprite sheet_3: -925752389903211473
-      bomb explode sprite sheet_4: -2739165946944121652
-      bomb explode sprite sheet_5: -239122109986626560
-      bomb explode sprite sheet_6: 7519376458058583497
+      last place sprite_0: -2009982790292393982
+      last place sprite_1: -7227355457663817201
+      last place sprite_2: 3874049615114635052
+      last place sprite_3: 2755694802262655581
+      last place sprite_4: 923589295859486143
+      last place sprite_5: -2236919361587088552
+      last place sprite_6: 2223466991875301920
+      last place sprite_7: 1788210385040178455
+      last place sprite_8: 9200672005633223940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -431,6 +431,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9e87dcaf5a6194b10b4189e5208cc782, type: 3}
   - {fileID: 21300000, guid: 30ab66872e96440118af04e2b7f3311d, type: 3}
   - {fileID: 21300000, guid: 6d4e52996df674a00bc33be16d16f411, type: 3}
+  - {fileID: 21300000, guid: d9c60b33750ac4b54a4fd674db5a0c5a, type: 3}
+  - {fileID: 21300000, guid: efb1ead06160d4db59c6a362d93837a3, type: 3}
+  - {fileID: 21300000, guid: 9859244dc57394e85a59e618c0f7d468, type: 3}
+  - {fileID: 3874049615114635052, guid: fd4c582c22537468fb516cacca98d584, type: 3}
+  - {fileID: 2223466991875301920, guid: fd4c582c22537468fb516cacca98d584, type: 3}
   fadeAnimator: {fileID: 830037603}
   startSequence: {fileID: 0}
 --- !u!1 &905740237

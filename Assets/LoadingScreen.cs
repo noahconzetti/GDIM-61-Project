@@ -30,7 +30,6 @@ public class LoadingScreen : MonoBehaviour {
         coconutImage.color = data.PlayerColor;
         hatImage.sprite = data.PlayerHat;
         faceImage.sprite = coconutSpriteOptions[randomSprite];
-        Debug.Log("Player: " + randomIndex + " Face: " + randomSprite + " Face name: " + coconutSpriteOptions[randomSprite].name);
     }
 
     private IEnumerator LoadGameScene() {

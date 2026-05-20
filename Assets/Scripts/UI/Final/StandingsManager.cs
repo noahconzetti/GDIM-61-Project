@@ -40,6 +40,7 @@ namespace Final {
             }
             
             placePreviews[0].Winner();
+            placePreviews[3].Loser();
         }
 
         public void Restart() {

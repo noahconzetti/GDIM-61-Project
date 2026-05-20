@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 9e87dcaf5a6194b10b4189e5208cc782
+guid: 9859244dc57394e85a59e618c0f7d468
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1331439842333569084
-    second: Hat_Select_Smile_0
+      213: 7044027895129190773
+    second: Third_Place_0
   - first:
-      213: 4504929471466335419
-    second: Hat_Select_Smile_1
+      213: 1037812994883544938
+    second: Third_Place_1
   - first:
-      213: 424474733195119838
-    second: Hat_Select_Smile_2
+      213: -2385304174513512999
+    second: Third_Place_2
   - first:
-      213: -1171193790091343674
-    second: Hat_Select_Smile_3
+      213: -6543964385234263123
+    second: Third_Place_3
   - first:
-      213: 5419494501992259420
-    second: Hat_Select_Smile_4
+      213: 4113249973046238360
+    second: Third_Place_4
   - first:
-      213: -8769385708681513895
-    second: Hat_Select_Smile_5
+      213: -2715411593652693122
+    second: Third_Place_5
+  - first:
+      213: -6079948400925065682
+    second: Third_Place_6
+  - first:
+      213: -8614324894966185004
+    second: Third_Place_7
+  - first:
+      213: -3565711766594950592
+    second: Third_Place_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hat_Select_Smile_0
+      name: Third_Place_0
       rect:
         serializedVersion: 2
-        x: 444
-        y: 739
-        width: 408
-        height: 344
+        x: 420
+        y: 471
+        width: 461
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cfc7e58486c58de0800000000000000
-      internalID: -1331439842333569084
+      spriteID: 5713e1dbc0a61c160800000000000000
+      internalID: 7044027895129190773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat_Select_Smile_1
+      name: Third_Place_1
       rect:
         serializedVersion: 2
-        x: 476
-        y: 482
-        width: 240
-        height: 498
+        x: 428
+        y: 814
+        width: 351
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbc60f47c79b48e30800000000000000
-      internalID: 4504929471466335419
+      spriteID: a6761579b6d076e00800000000000000
+      internalID: 1037812994883544938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat_Select_Smile_2
+      name: Third_Place_2
       rect:
         serializedVersion: 2
-        x: 892
-        y: 702
-        width: 411
-        height: 379
+        x: 854
+        y: 834
+        width: 303
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edc4938558904e500800000000000000
-      internalID: 424474733195119838
+      spriteID: 9dd9ddcbd72b5eed0800000000000000
+      internalID: -2385304174513512999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat_Select_Smile_3
+      name: Third_Place_3
       rect:
         serializedVersion: 2
-        x: 924
-        y: 509
-        width: 245
-        height: 465
+        x: 883
+        y: 561
+        width: 380
+        height: 399
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c8467204751fbfe0800000000000000
-      internalID: -1171193790091343674
+      spriteID: da3ed43201b2f25a0800000000000000
+      internalID: -6543964385234263123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat_Select_Smile_4
+      name: Third_Place_4
       rect:
         serializedVersion: 2
-        x: 557
-        y: 160
-        width: 553
-        height: 339
+        x: 525
+        y: 425
+        width: 58
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5f5e6d2989e53b40800000000000000
-      internalID: 5419494501992259420
+      spriteID: 89c5ecbbe03351930800000000000000
+      internalID: 4113249973046238360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat_Select_Smile_5
+      name: Third_Place_5
       rect:
         serializedVersion: 2
-        x: 674
-        y: 488
-        width: 150
-        height: 174
+        x: 562
+        y: 397
+        width: 697
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +262,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 954b6aff822ec4680800000000000000
-      internalID: -8769385708681513895
+      spriteID: e779a5dda8be05ad0800000000000000
+      internalID: -2715411593652693122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_Place_6
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 447
+        width: 64
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e382e642faf9ba0800000000000000
+      internalID: -6079948400925065682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_Place_7
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 403
+        width: 92
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d38cbf0625c37880800000000000000
+      internalID: -8614324894966185004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_Place_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 338
+        width: 205
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a6dac4a0c048ec0800000000000000
+      internalID: -3565711766594950592
       vertices: []
       indices: 
       edges: []
@@ -273,12 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hat_Select_Smile_0: -1331439842333569084
-      Hat_Select_Smile_1: 4504929471466335419
-      Hat_Select_Smile_2: 424474733195119838
-      Hat_Select_Smile_3: -1171193790091343674
-      Hat_Select_Smile_4: 5419494501992259420
-      Hat_Select_Smile_5: -8769385708681513895
+      Third_Place_0: 7044027895129190773
+      Third_Place_1: 1037812994883544938
+      Third_Place_2: -2385304174513512999
+      Third_Place_3: -6543964385234263123
+      Third_Place_4: 4113249973046238360
+      Third_Place_5: -2715411593652693122
+      Third_Place_6: -6079948400925065682
+      Third_Place_7: -8614324894966185004
+      Third_Place_8: -3565711766594950592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

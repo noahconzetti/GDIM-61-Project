@@ -11,15 +11,29 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private LayerMask destroyLayer;
         private Coconut _ignore;
         private bool _exploded = false;
-        
+
+        private Animator _animator;
+        private Rigidbody2D _rb;
+
+        private void Awake() {
+            TryGetComponent(out _animator);
+            TryGetComponent(out _rb);
+        }
+
         public void Init(Coconut ignore) {
             _ignore = ignore;
         }
 
         private void OnCollisionEnter2D(Collision2D other) {
-            if (_exploded) return;
-            if (other.gameObject.TryGetComponent(out Coconut hitPlayer) && hitPlayer != _ignore) {
-                
+            if (_exploded) {
+                Physics2D.IgnoreCollision(other.collider, other.otherCollider);
+                return;
+            }
+            if (other.gameObject.TryGetComponent(out Coconut hitPlayer)) {
+                if (hitPlayer == _ignore) {
+                    Physics2D.IgnoreCollision(other.collider, other.otherCollider);
+                    return;
+                }
                 Explode();
             }
         }
@@ -30,7 +44,7 @@ namespace Gameplay.Abilities.Abilities {
 
             foreach (Collider2D collision in results) {
                 if (collision.TryGetComponent(out Coconut hitPlayer)) {
-                    StartCoroutine(HitPlayer(hitPlayer));
+                    hitPlayer.StartCoroutine(HitPlayer(hitPlayer));
                 } else {
                     if (collision.gameObject.layer == destroyLayer) { 
                         Destroy(collision.gameObject);
@@ -39,8 +53,8 @@ namespace Gameplay.Abilities.Abilities {
             }
 
             _exploded = true;
-            GetComponent<Collider2D>().enabled = false;
-            GetComponent<SpriteRenderer>().enabled = false;
+            _animator.SetTrigger("Explode");
+            // GetComponent<SpriteRenderer>().enabled = false;
         }
 
         private IEnumerator HitPlayer(Coconut player) {
@@ -48,6 +62,10 @@ namespace Gameplay.Abilities.Abilities {
             player.GetComponent<Rigidbody2D>().linearVelocity = explosionHitDir;
             yield return new WaitForSeconds(explosionHitTime);
             player.DeadList.Remove(this);
+        }
+
+        private void DestroySelf() {
+            Destroy(gameObject);
         }
     }
 }
