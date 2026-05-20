@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Gameplay.Environment {
@@ -9,9 +10,19 @@ namespace Gameplay.Environment {
 
         [SerializeField] private float rotationAmount = 20f;
         [SerializeField] private float rotationSpeed = 5f;
+        [SerializeField] private float coconutCooldownTime = .5f;
         private Coconut _coconut = null;
 
         private float _startRotation;
+
+        private Animator _animator;
+        private bool _launchAnimDone = false;
+
+        private static float[] _lastLaunchTimes = new float[4];
+
+        private void Awake() {
+            TryGetComponent(out _animator);
+        }
 
         private void Start() {
             _startRotation = transform.rotation.eulerAngles.z;
@@ -30,7 +41,8 @@ namespace Gameplay.Environment {
 
         private void OnTriggerEnter2D(Collider2D other) {
             if (_coconut != null) return;
-            if (other.TryGetComponent(out Coconut coconut)) {
+            if (other.TryGetComponent(out Coconut coconut) && 
+                Time.time - _lastLaunchTimes[coconut.PlayerID] > coconutCooldownTime) {
                 _coconut = coconut;
                 StartCoroutine(ShootPlayer());
             }
@@ -40,6 +52,7 @@ namespace Gameplay.Environment {
             _coconut.transform.position = transform.position;
             Rigidbody2D rb = _coconut.Rigidbody;
             Collider2D collider = _coconut.Collider;
+            _animator.SetTrigger("Rumble");
             
             rb.linearVelocity = Vector2.zero;
             rb.bodyType = RigidbodyType2D.Static;
@@ -47,9 +60,20 @@ namespace Gameplay.Environment {
             
             yield return new WaitForSeconds(waitTime);
             
+            _animator.SetTrigger("Launch");
+
+            yield return new WaitUntil(() => _launchAnimDone);
+            
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.linearVelocity = (transform.up * shootForce);
             collider.enabled = true;
+
+            _lastLaunchTimes[_coconut.PlayerID] = Time.time;
+            _coconut = null;
+        }
+
+        public void LaunchAnimDone() {
+            _launchAnimDone = true;
         }
     }
 }

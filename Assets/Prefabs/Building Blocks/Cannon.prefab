@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 2271576887690997761}
   - component: {fileID: 7873118750725046599}
   - component: {fileID: 2148597690585686146}
+  - component: {fileID: 4149510550101317612}
   m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
@@ -160,8 +161,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 2.0039062}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.5, y: 1.003418}
+    newSize: {x: 1.5, y: 1.003418}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -200,3 +201,25 @@ MonoBehaviour:
   randomizeObject: 0
   optionPrefabs: []
   weights: []
+--- !u!95 &4149510550101317612
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761531195487165837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9f1941cdb7024fb49f4b3989a0a8f0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
