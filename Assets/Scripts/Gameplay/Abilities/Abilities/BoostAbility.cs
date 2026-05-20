@@ -21,7 +21,7 @@ namespace Gameplay.Abilities.Abilities {
             for (int i = 0; i < numBoosts; i++) {
                 rb.linearVelocity += boostForce;
                 yield return new WaitForSeconds(betweenBoostsTime);
-                Instantiate(boostParticlesPrefab, player.transform.position, player.transform.rotation);
+                Instantiate(boostParticlesPrefab, player.transform.position, Quaternion.identity);
             }
             
             endCallback();
