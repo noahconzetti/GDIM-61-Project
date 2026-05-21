@@ -183,11 +183,7 @@ namespace Gameplay {
             float distToCenter = transform.position.x - avgX;
             Rigidbody.linearVelocityX += speedBuffByUnit.Evaluate(distToCenter);
         }
-
-        private float GetSlowEffects() {
-            return slowedEffects.Sum(x => x.slowSpeed);
-        }
-
+        
         private void HandleJumpInput(int id) {
             if (id != PlayerID) return;
             

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8817191456501321647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7232793478993314540}
+  - component: {fileID: 9169383321417657015}
+  m_Layer: 0
+  m_Name: Boost or Slowdown Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7232793478993314540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8817191456501321647}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.079024255, w: 0.9968727}
+  m_LocalPosition: {x: 28.75, y: -8.3, z: 0}
+  m_LocalScale: {x: 22.617632, y: 0.9103, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.065}
+--- !u!114 &9169383321417657015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8817191456501321647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c0cdeac6394876a0fe08776b9bbec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appearChance: 0.75
+  randomizeObject: 1
+  optionPrefabs:
+  - {fileID: 4463510834082954008, guid: 43d9e55142af14bcdb0c97a7b0fbe613, type: 3}
+  - {fileID: 7163018105572196825, guid: f407bf3da6e7641be9ce6ebabbe0883e, type: 3}
+  weights:
+  - 1
+  - 1
