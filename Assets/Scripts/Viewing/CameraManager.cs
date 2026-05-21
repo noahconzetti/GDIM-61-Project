@@ -10,13 +10,15 @@ namespace Viewing {
         [SerializeField] private Transform playerParent;
         [SerializeField] private float defaultRadius = 7f;
         private CinemachineTargetGroup _group;
-        public static event Action<Vector3> OnCameraMovement;
+        public static event Action<Vector3, float> OnCameraMovement;
 
         private Vector3 _lastPos;
+        private float _lastSize;
 
         private void Awake() {
             TryGetComponent(out _group);
             _lastPos = cam.transform.position;
+            _lastSize = cam.orthographicSize;
         }
 
         private void OnEnable() {
@@ -41,8 +43,10 @@ namespace Viewing {
 
         private void LateUpdate() {
             Vector3 newPos = cam.transform.position;
-            OnCameraMovement?.Invoke(newPos - _lastPos);
+            float newSize = cam.orthographicSize;
+            OnCameraMovement?.Invoke(newPos - _lastPos, newSize);
             _lastPos = newPos;
+            _lastSize = newSize;
         }
     }
 }

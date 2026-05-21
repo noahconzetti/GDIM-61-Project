@@ -104,6 +104,8 @@ namespace Gameplay {
         }
 
         private void FixedUpdate() {
+            if (Rigidbody.bodyType != RigidbodyType2D.Dynamic) return;
+            
             UpdateGrounded();
             ApplySpeedConstraints();
         }
