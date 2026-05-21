@@ -83,8 +83,7 @@ namespace TerrainGeneration {
                 yield return spriteShapeController.spline.GetPosition(i);
             }
         }
-
-
+        
         private IEnumerable<float3> PointsToKnots(List<Vector2> points) {
             return points.Select(p => p.ToFloat3());
         }
@@ -113,6 +112,7 @@ namespace TerrainGeneration {
             }
 
             controller.UpdateSpriteShapeParameters();
+            controller.BakeCollider();
         }
         
         private IEnumerable<Vector2> GetTerrainBlockSplinePoints(TerrainBlock block) {

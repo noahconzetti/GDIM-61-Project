@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6130544373780093743}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Temple E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 2102615168927969902}
   - component: {fileID: 5109948750110681303}
   - component: {fileID: 2874827042639933319}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7806755913772214936}
   - component: {fileID: 8712329734373723172}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

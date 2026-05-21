@@ -27,6 +27,7 @@ namespace Gameplay.Abilities {
             while (true) {
                 AbilityData ability = abilityData.abilityData[Random.Range(0, abilityData.AbilityCount)];
                 if (place == 0 && ability.GetType() == typeof(BoostAbility)) continue;
+                if (place == 3 && ability.GetType() == typeof(BombsAbility)) continue;
                 return ability;
             }
         }

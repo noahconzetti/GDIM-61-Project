@@ -146,7 +146,7 @@ namespace Gameplay {
             // Velocity
             if (_completedRace) {
                 if (Rigidbody.linearVelocityX > maxWaterSpeed) Rigidbody.linearVelocityX = maxWaterSpeed;
-                if (Rigidbody.linearVelocityY > maxWaterSpeed) Rigidbody.linearVelocityY = maxWaterSpeed;
+                // if (Rigidbody.linearVelocityY > maxWaterSpeed) Rigidbody.linearVelocityY = maxWaterSpeed;
                 return;
             }
             

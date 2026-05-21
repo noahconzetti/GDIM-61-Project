@@ -23,6 +23,7 @@ namespace Gameplay.Player {
                 _coconut.UsingAbility);
             _animator.SetBool("Grounded", _coconut.Grounded);
             _animator.SetBool("Dead", _coconut.Dead);
+            _animator.SetBool("Holding", _coconut.currentHeldAbility && !_coconut.UsingAbility);
         }
     }
 }
