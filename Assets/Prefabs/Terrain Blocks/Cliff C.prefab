@@ -301,6 +301,10 @@ PrefabInstance:
       value: Cliff C
       objectReference: {fileID: 0}
     - target: {fileID: 8159200048077359181, guid: 474c1265cbfc54089a38be06439f3f39, type: 3}
+      propertyPath: weight
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159200048077359181, guid: 474c1265cbfc54089a38be06439f3f39, type: 3}
       propertyPath: terrainCategory
       value: 2
       objectReference: {fileID: 0}
