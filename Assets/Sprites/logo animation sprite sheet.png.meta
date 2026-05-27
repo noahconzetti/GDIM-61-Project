@@ -1,0 +1,1713 @@
+fileFormatVersion: 2
+guid: 01378c79142fd45f3b98ca964b954baf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3670137596973722280
+    second: logo animation sprite sheet_0
+  - first:
+      213: 9164699376008030848
+    second: logo animation sprite sheet_1
+  - first:
+      213: -8657229475788839931
+    second: logo animation sprite sheet_2
+  - first:
+      213: -3633480608923171562
+    second: logo animation sprite sheet_3
+  - first:
+      213: -5943809495872344185
+    second: logo animation sprite sheet_4
+  - first:
+      213: -5235417209829763603
+    second: logo animation sprite sheet_5
+  - first:
+      213: -2700346212031714648
+    second: logo animation sprite sheet_6
+  - first:
+      213: 2372478490884608180
+    second: logo animation sprite sheet_7
+  - first:
+      213: -8532630221241972614
+    second: logo animation sprite sheet_8
+  - first:
+      213: 845683324084259668
+    second: logo animation sprite sheet_9
+  - first:
+      213: 2833400509762796590
+    second: logo animation sprite sheet_10
+  - first:
+      213: -3754013067521339797
+    second: logo animation sprite sheet_11
+  - first:
+      213: 5805726292651395525
+    second: logo animation sprite sheet_12
+  - first:
+      213: 7116570944251632618
+    second: logo animation sprite sheet_13
+  - first:
+      213: 2612780209686494575
+    second: logo animation sprite sheet_14
+  - first:
+      213: 6984639468281310001
+    second: logo animation sprite sheet_15
+  - first:
+      213: -5430847660951411543
+    second: logo animation sprite sheet_16
+  - first:
+      213: -2393663320708143202
+    second: logo animation sprite sheet_17
+  - first:
+      213: 1990274853959796284
+    second: logo animation sprite sheet_18
+  - first:
+      213: 7738730840516023112
+    second: logo animation sprite sheet_19
+  - first:
+      213: 301061357987407491
+    second: logo animation sprite sheet_20
+  - first:
+      213: 4189415608337923615
+    second: logo animation sprite sheet_21
+  - first:
+      213: -7893126159306213204
+    second: logo animation sprite sheet_22
+  - first:
+      213: -5883100874164890576
+    second: logo animation sprite sheet_23
+  - first:
+      213: 3697478951417754054
+    second: logo animation sprite sheet_24
+  - first:
+      213: 8908694850549962181
+    second: logo animation sprite sheet_25
+  - first:
+      213: 4927700889433494758
+    second: logo animation sprite sheet_26
+  - first:
+      213: 4844261069668211651
+    second: logo animation sprite sheet_27
+  - first:
+      213: 3836475950898768659
+    second: logo animation sprite sheet_28
+  - first:
+      213: 3960966726123465123
+    second: logo animation sprite sheet_29
+  - first:
+      213: -3950176586450520406
+    second: logo animation sprite sheet_30
+  - first:
+      213: 5617709871563255058
+    second: logo animation sprite sheet_31
+  - first:
+      213: 5950494846569173032
+    second: logo animation sprite sheet_32
+  - first:
+      213: -5242726657530022940
+    second: logo animation sprite sheet_33
+  - first:
+      213: -7106142080612289979
+    second: logo animation sprite sheet_34
+  - first:
+      213: 2926664716343062718
+    second: logo animation sprite sheet_35
+  - first:
+      213: 4320886084509734937
+    second: logo animation sprite sheet_36
+  - first:
+      213: -8839109177318084664
+    second: logo animation sprite sheet_37
+  - first:
+      213: -4685153185286554039
+    second: logo animation sprite sheet_38
+  - first:
+      213: 5930167602724081137
+    second: logo animation sprite sheet_39
+  - first:
+      213: 2383381641413565391
+    second: logo animation sprite sheet_40
+  - first:
+      213: 7114773836936956233
+    second: logo animation sprite sheet_41
+  - first:
+      213: -8997713187606216536
+    second: logo animation sprite sheet_42
+  - first:
+      213: 5322848420731715800
+    second: logo animation sprite sheet_43
+  - first:
+      213: 6719009642537050191
+    second: logo animation sprite sheet_44
+  - first:
+      213: 1531113419900065607
+    second: logo animation sprite sheet_45
+  - first:
+      213: 3950762540973288508
+    second: logo animation sprite sheet_46
+  - first:
+      213: -1004975846393063977
+    second: logo animation sprite sheet_47
+  - first:
+      213: 4887343813270499518
+    second: logo animation sprite sheet_48
+  - first:
+      213: -3621074957453887949
+    second: logo animation sprite sheet_49
+  - first:
+      213: -7788069836217393071
+    second: logo animation sprite sheet_50
+  - first:
+      213: -6758511777573812524
+    second: logo animation sprite sheet_51
+  - first:
+      213: -1244613047130768906
+    second: logo animation sprite sheet_52
+  - first:
+      213: -360189220523950824
+    second: logo animation sprite sheet_53
+  - first:
+      213: -2477256608883498909
+    second: logo animation sprite sheet_54
+  - first:
+      213: 7206058968530123830
+    second: logo animation sprite sheet_55
+  - first:
+      213: 6268467751983342526
+    second: logo animation sprite sheet_56
+  - first:
+      213: 1340710185698885352
+    second: logo animation sprite sheet_57
+  - first:
+      213: -6558752145658743562
+    second: logo animation sprite sheet_58
+  - first:
+      213: 6233343656398364131
+    second: logo animation sprite sheet_59
+  - first:
+      213: -7322233298172183094
+    second: logo animation sprite sheet_60
+  - first:
+      213: 8714982628514038201
+    second: logo animation sprite sheet_61
+  - first:
+      213: 8960411380343939384
+    second: logo animation sprite sheet_62
+  - first:
+      213: 1199634340810652142
+    second: logo animation sprite sheet_63
+  - first:
+      213: -2523417757159197323
+    second: logo animation sprite sheet_64
+  - first:
+      213: 1122037720859351405
+    second: logo animation sprite sheet_65
+  - first:
+      213: 7766870607501786565
+    second: logo animation sprite sheet_66
+  - first:
+      213: -2970996664089743178
+    second: logo animation sprite sheet_67
+  - first:
+      213: 5596362515602744215
+    second: logo animation sprite sheet_68
+  - first:
+      213: -9172760050739198232
+    second: logo animation sprite sheet_69
+  - first:
+      213: -3054332135231688834
+    second: logo animation sprite sheet_70
+  - first:
+      213: 2152109057185228533
+    second: logo animation sprite sheet_71
+  - first:
+      213: 4844702116396726716
+    second: logo animation sprite sheet_72
+  - first:
+      213: -5289068978492420221
+    second: logo animation sprite sheet_73
+  - first:
+      213: 5204138132441897060
+    second: logo animation sprite sheet_74
+  - first:
+      213: -8844998115104569039
+    second: logo animation sprite sheet_75
+  - first:
+      213: 1359456463344388727
+    second: logo animation sprite sheet_76
+  - first:
+      213: 5172002139039877946
+    second: logo animation sprite sheet_77
+  - first:
+      213: -7714520120532083048
+    second: logo animation sprite sheet_78
+  - first:
+      213: -8093376338259237126
+    second: logo animation sprite sheet_79
+  - first:
+      213: -5504016946633719293
+    second: logo animation sprite sheet_80
+  - first:
+      213: 5400254365567389319
+    second: logo animation sprite sheet_81
+  - first:
+      213: 3337595474685688811
+    second: logo animation sprite sheet_82
+  - first:
+      213: 3625837504820520722
+    second: logo animation sprite sheet_83
+  - first:
+      213: 7835202382038948092
+    second: logo animation sprite sheet_84
+  - first:
+      213: -7563045268974398223
+    second: logo animation sprite sheet_85
+  - first:
+      213: -3949999426313732378
+    second: logo animation sprite sheet_86
+  - first:
+      213: 475969576690493766
+    second: logo animation sprite sheet_87
+  - first:
+      213: 4161465822036533524
+    second: logo animation sprite sheet_88
+  - first:
+      213: 1025243097715289367
+    second: logo animation sprite sheet_89
+  - first:
+      213: -6110801866137094808
+    second: logo animation sprite sheet_90
+  - first:
+      213: 4039680953841072132
+    second: logo animation sprite sheet_91
+  - first:
+      213: 6221460056704413996
+    second: logo animation sprite sheet_92
+  - first:
+      213: -1033286399362281760
+    second: logo animation sprite sheet_93
+  - first:
+      213: 6675401271840011564
+    second: logo animation sprite sheet_94
+  - first:
+      213: -9002822438786866845
+    second: logo animation sprite sheet_95
+  - first:
+      213: -6047732735533603623
+    second: logo animation sprite sheet_96
+  - first:
+      213: 4335241164748699817
+    second: logo animation sprite sheet_97
+  - first:
+      213: 2054662662680979399
+    second: logo animation sprite sheet_98
+  - first:
+      213: 8141349749556952497
+    second: logo animation sprite sheet_99
+  - first:
+      213: -754817765307221985
+    second: logo animation sprite sheet_100
+  - first:
+      213: -2513176499498093993
+    second: logo animation sprite sheet_101
+  - first:
+      213: -1125905037902789147
+    second: logo animation sprite sheet_102
+  - first:
+      213: 6164403663893709665
+    second: logo animation sprite sheet_103
+  - first:
+      213: -9208231886705102827
+    second: logo animation sprite sheet_104
+  - first:
+      213: -3377094679834075044
+    second: logo animation sprite sheet_105
+  - first:
+      213: -2503311459424058989
+    second: logo animation sprite sheet_106
+  - first:
+      213: -1802756693120296749
+    second: logo animation sprite sheet_107
+  - first:
+      213: 5293199798652951076
+    second: logo animation sprite sheet_108
+  - first:
+      213: -4388457861672107363
+    second: logo animation sprite sheet_109
+  - first:
+      213: -6117056255666898146
+    second: logo animation sprite sheet_110
+  - first:
+      213: 7533214487431653539
+    second: logo animation sprite sheet_111
+  - first:
+      213: -4598436834320258886
+    second: logo animation sprite sheet_112
+  - first:
+      213: -3211047400721126212
+    second: logo animation sprite sheet_113
+  - first:
+      213: -2105237918479816150
+    second: logo animation sprite sheet_114
+  - first:
+      213: -7390336010329851359
+    second: logo animation sprite sheet_115
+  - first:
+      213: -8031411477875534291
+    second: logo animation sprite sheet_116
+  - first:
+      213: 2408851282000807615
+    second: logo animation sprite sheet_117
+  - first:
+      213: 7956385318422391923
+    second: logo animation sprite sheet_118
+  - first:
+      213: -6706376519998191068
+    second: logo animation sprite sheet_119
+  - first:
+      213: -3984491781295380662
+    second: logo animation sprite sheet_120
+  - first:
+      213: 8533838216173763553
+    second: logo animation sprite sheet_121
+  - first:
+      213: 529144650441655444
+    second: logo animation sprite sheet_122
+  - first:
+      213: 7258003000693008211
+    second: logo animation sprite sheet_123
+  - first:
+      213: -5923467067637684874
+    second: logo animation sprite sheet_124
+  - first:
+      213: 4953804625948720061
+    second: logo animation sprite sheet_125
+  - first:
+      213: 7181308519734894861
+    second: logo animation sprite sheet_126
+  - first:
+      213: 7694198617073135645
+    second: logo animation sprite sheet_127
+  - first:
+      213: 994225495258140031
+    second: logo animation sprite sheet_128
+  - first:
+      213: -6763094307125178786
+    second: logo animation sprite sheet_129
+  - first:
+      213: 6402598483653105566
+    second: logo animation sprite sheet_130
+  - first:
+      213: -240536045181078322
+    second: logo animation sprite sheet_131
+  - first:
+      213: -6668531713073369245
+    second: logo animation sprite sheet_132
+  - first:
+      213: 1119848432042447264
+    second: logo animation sprite sheet_133
+  - first:
+      213: -2385350443665048181
+    second: logo animation sprite sheet_134
+  - first:
+      213: -7492092533228277649
+    second: logo animation sprite sheet_135
+  - first:
+      213: -3559871833538336948
+    second: logo animation sprite sheet_136
+  - first:
+      213: -2810723953378294422
+    second: logo animation sprite sheet_137
+  - first:
+      213: -8985662492154432987
+    second: logo animation sprite sheet_138
+  - first:
+      213: -2359036937372571778
+    second: logo animation sprite sheet_139
+  - first:
+      213: -142801340759029537
+    second: logo animation sprite sheet_140
+  - first:
+      213: -7326537404873497269
+    second: logo animation sprite sheet_141
+  - first:
+      213: -2690145352444812518
+    second: logo animation sprite sheet_142
+  - first:
+      213: 3634177939329745104
+    second: logo animation sprite sheet_143
+  - first:
+      213: -4857719684761607701
+    second: logo animation sprite sheet_144
+  - first:
+      213: -2939874332595855426
+    second: logo animation sprite sheet_145
+  - first:
+      213: 4878975161554167163
+    second: logo animation sprite sheet_146
+  - first:
+      213: -111620511757870810
+    second: logo animation sprite sheet_147
+  - first:
+      213: 949525670832785599
+    second: logo animation sprite sheet_148
+  - first:
+      213: -1217871201500671039
+    second: logo animation sprite sheet_149
+  - first:
+      213: 769631686278097090
+    second: logo animation sprite sheet_150
+  - first:
+      213: 6986201089683699042
+    second: logo animation sprite sheet_151
+  - first:
+      213: -2460222006862349722
+    second: logo animation sprite sheet_152
+  - first:
+      213: -8869731243640684597
+    second: logo animation sprite sheet_153
+  - first:
+      213: 982864679349634736
+    second: logo animation sprite sheet_154
+  - first:
+      213: 3476647975564034809
+    second: logo animation sprite sheet_155
+  - first:
+      213: 8872502461034866104
+    second: logo animation sprite sheet_156
+  - first:
+      213: 7127757741024323949
+    second: logo animation sprite sheet_157
+  - first:
+      213: 8215636615518577083
+    second: logo animation sprite sheet_158
+  - first:
+      213: -8301078194422902172
+    second: logo animation sprite sheet_159
+  - first:
+      213: -864918616606175333
+    second: logo animation sprite sheet_160
+  - first:
+      213: 2896858464295166503
+    second: logo animation sprite sheet_161
+  - first:
+      213: -722381591762426541
+    second: logo animation sprite sheet_162
+  - first:
+      213: -3217954957973795167
+    second: logo animation sprite sheet_163
+  - first:
+      213: -9143275767825312083
+    second: logo animation sprite sheet_164
+  - first:
+      213: -1303847914454371123
+    second: logo animation sprite sheet_165
+  - first:
+      213: 5888082857375244144
+    second: logo animation sprite sheet_166
+  - first:
+      213: -1070545440750144857
+    second: logo animation sprite sheet_167
+  - first:
+      213: 2037863981970731683
+    second: logo animation sprite sheet_168
+  - first:
+      213: 614453181718422262
+    second: logo animation sprite sheet_169
+  - first:
+      213: -8188533896035707859
+    second: logo animation sprite sheet_170
+  - first:
+      213: -5457200126716573847
+    second: logo animation sprite sheet_171
+  - first:
+      213: 1521594509254405077
+    second: logo animation sprite sheet_172
+  - first:
+      213: -6365109517180333513
+    second: logo animation sprite sheet_173
+  - first:
+      213: -9129596237963608121
+    second: logo animation sprite sheet_174
+  - first:
+      213: 7863199410538519817
+    second: logo animation sprite sheet_175
+  - first:
+      213: 813832945126050454
+    second: logo animation sprite sheet_176
+  - first:
+      213: -3377618107694877319
+    second: logo animation sprite sheet_177
+  - first:
+      213: 8133648151568415118
+    second: logo animation sprite sheet_178
+  - first:
+      213: 7245709929814904940
+    second: logo animation sprite sheet_179
+  - first:
+      213: 575732923398285573
+    second: logo animation sprite sheet_180
+  - first:
+      213: -7446316650088724985
+    second: logo animation sprite sheet_181
+  - first:
+      213: -5515765602518426824
+    second: logo animation sprite sheet_182
+  - first:
+      213: 1606057500603632103
+    second: logo animation sprite sheet_183
+  - first:
+      213: -7670657638302861590
+    second: logo animation sprite sheet_184
+  - first:
+      213: 8676554687069588003
+    second: logo animation sprite sheet_185
+  - first:
+      213: 329185850298901202
+    second: logo animation sprite sheet_186
+  - first:
+      213: 160496695466886827
+    second: logo animation sprite sheet_187
+  - first:
+      213: 7661792795282328861
+    second: logo animation sprite sheet_188
+  - first:
+      213: -3169183923299479162
+    second: logo animation sprite sheet_189
+  - first:
+      213: -7274782729929633319
+    second: logo animation sprite sheet_190
+  - first:
+      213: 1483171564161845534
+    second: logo animation sprite sheet_191
+  - first:
+      213: 6175843802948428093
+    second: logo animation sprite sheet_192
+  - first:
+      213: -5395743622290637220
+    second: logo animation sprite sheet_193
+  - first:
+      213: -7530101870335319907
+    second: logo animation sprite sheet_194
+  - first:
+      213: 2390837518470617045
+    second: logo animation sprite sheet_195
+  - first:
+      213: 6145355604890658341
+    second: logo animation sprite sheet_196
+  - first:
+      213: -7943459068744824559
+    second: logo animation sprite sheet_197
+  - first:
+      213: -448200219250627626
+    second: logo animation sprite sheet_198
+  - first:
+      213: -4852881485562056891
+    second: logo animation sprite sheet_199
+  - first:
+      213: 8753665193166613357
+    second: logo animation sprite sheet_200
+  - first:
+      213: -4165704524822579541
+    second: logo animation sprite sheet_201
+  - first:
+      213: -9037177793968052607
+    second: logo animation sprite sheet_202
+  - first:
+      213: 6492388160155363124
+    second: logo animation sprite sheet_203
+  - first:
+      213: -1654300180039410355
+    second: logo animation sprite sheet_204
+  - first:
+      213: 8592738345188151166
+    second: logo animation sprite sheet_205
+  - first:
+      213: 4418964548657194080
+    second: logo animation sprite sheet_206
+  - first:
+      213: -7792309422339796492
+    second: logo animation sprite sheet_207
+  - first:
+      213: -8536275821590977569
+    second: logo animation sprite sheet_208
+  - first:
+      213: 6176430903988332321
+    second: logo animation sprite sheet_209
+  - first:
+      213: 132956761564540337
+    second: logo animation sprite sheet_210
+  - first:
+      213: 4659662003314606362
+    second: logo animation sprite sheet_211
+  - first:
+      213: -3817657341748102388
+    second: logo animation sprite sheet_212
+  - first:
+      213: -2000500448038162234
+    second: logo animation sprite sheet_213
+  - first:
+      213: -2785803751953828392
+    second: logo animation sprite sheet_214
+  - first:
+      213: 3042843307112395971
+    second: logo animation sprite sheet_215
+  - first:
+      213: -8621322354349483837
+    second: logo animation sprite sheet_216
+  - first:
+      213: 2683904671115817486
+    second: logo animation sprite sheet_217
+  - first:
+      213: -5205592099729691037
+    second: logo animation sprite sheet_218
+  - first:
+      213: -3122919652914734344
+    second: logo animation sprite sheet_219
+  - first:
+      213: -5293380358766782591
+    second: logo animation sprite sheet_220
+  - first:
+      213: 8656962051240749129
+    second: logo animation sprite sheet_221
+  - first:
+      213: 1239756648463421900
+    second: logo animation sprite sheet_222
+  - first:
+      213: 728569090611152632
+    second: logo animation sprite sheet_223
+  - first:
+      213: 4218397784517148242
+    second: logo animation sprite sheet_224
+  - first:
+      213: -3093907607215331263
+    second: logo animation sprite sheet_225
+  - first:
+      213: 967603402762016677
+    second: logo animation sprite sheet_226
+  - first:
+      213: -8261521002306773547
+    second: logo animation sprite sheet_227
+  - first:
+      213: -5768086776035539587
+    second: logo animation sprite sheet_228
+  - first:
+      213: -8586138462906120017
+    second: logo animation sprite sheet_229
+  - first:
+      213: 2905026169463240754
+    second: logo animation sprite sheet_230
+  - first:
+      213: 3283453862377403788
+    second: logo animation sprite sheet_231
+  - first:
+      213: 3020018095201378271
+    second: logo animation sprite sheet_232
+  - first:
+      213: -6539161908530758176
+    second: logo animation sprite sheet_233
+  - first:
+      213: 1426140567042733582
+    second: logo animation sprite sheet_234
+  - first:
+      213: 8597544316608818526
+    second: logo animation sprite sheet_235
+  - first:
+      213: -5147453235348786765
+    second: logo animation sprite sheet_236
+  - first:
+      213: 5303826567961925725
+    second: logo animation sprite sheet_237
+  - first:
+      213: -5755647013705337704
+    second: logo animation sprite sheet_238
+  - first:
+      213: -1299340306230998418
+    second: logo animation sprite sheet_239
+  - first:
+      213: -5895569458190994556
+    second: logo animation sprite sheet_240
+  - first:
+      213: 3713410295933811092
+    second: logo animation sprite sheet_241
+  - first:
+      213: 7424685498713377955
+    second: logo animation sprite sheet_242
+  - first:
+      213: -4774398230863013221
+    second: logo animation sprite sheet_243
+  - first:
+      213: 3023136655384385853
+    second: logo animation sprite sheet_244
+  - first:
+      213: 3790165155430745755
+    second: logo animation sprite sheet_245
+  - first:
+      213: 7066962683425562154
+    second: logo animation sprite sheet_246
+  - first:
+      213: -8590354891920601697
+    second: logo animation sprite sheet_247
+  - first:
+      213: -439744312506339326
+    second: logo animation sprite sheet_248
+  - first:
+      213: 6010377116975903892
+    second: logo animation sprite sheet_249
+  - first:
+      213: 6117485105707160450
+    second: logo animation sprite sheet_250
+  - first:
+      213: 5709528477110835383
+    second: logo animation sprite sheet_251
+  - first:
+      213: -1516526777944390979
+    second: logo animation sprite sheet_252
+  - first:
+      213: -8521120356303342710
+    second: logo animation sprite sheet_253
+  - first:
+      213: 7337708690509783391
+    second: logo animation sprite sheet_254
+  - first:
+      213: -5032628223802581039
+    second: logo animation sprite sheet_255
+  - first:
+      213: -6038508323290402003
+    second: logo animation sprite sheet_256
+  - first:
+      213: -341306860373886400
+    second: logo animation sprite sheet_257
+  - first:
+      213: -5972948305412914813
+    second: logo animation sprite sheet_258
+  - first:
+      213: 2852791195792280258
+    second: logo animation sprite sheet_259
+  - first:
+      213: 130792289551191223
+    second: logo animation sprite sheet_260
+  - first:
+      213: -3747604278205993501
+    second: logo animation sprite sheet_261
+  - first:
+      213: 8354908021894873495
+    second: logo animation sprite sheet_262
+  - first:
+      213: -1432219309453930979
+    second: logo animation sprite sheet_263
+  - first:
+      213: 7172649992423861653
+    second: logo animation sprite sheet_264
+  - first:
+      213: -5947375931404457805
+    second: logo animation sprite sheet_265
+  - first:
+      213: 13500950157507247
+    second: logo animation sprite sheet_266
+  - first:
+      213: 6338351819520242506
+    second: logo animation sprite sheet_267
+  - first:
+      213: 6768349808423995120
+    second: logo animation sprite sheet_268
+  - first:
+      213: 6443554978692971224
+    second: logo animation sprite sheet_269
+  - first:
+      213: 3147058820831769273
+    second: logo animation sprite sheet_270
+  - first:
+      213: 8121356756280591068
+    second: logo animation sprite sheet_271
+  - first:
+      213: -6606763908225540210
+    second: logo animation sprite sheet_272
+  - first:
+      213: -7138980453488471260
+    second: logo animation sprite sheet_273
+  - first:
+      213: 3720389359951505103
+    second: logo animation sprite sheet_274
+  - first:
+      213: 4165121281041003695
+    second: logo animation sprite sheet_275
+  - first:
+      213: 4320741928325914589
+    second: logo animation sprite sheet_276
+  - first:
+      213: 2750990085689129606
+    second: logo animation sprite sheet_277
+  - first:
+      213: -8019909521546429648
+    second: logo animation sprite sheet_278
+  - first:
+      213: 3381246600561360961
+    second: logo animation sprite sheet_279
+  - first:
+      213: 2575745597210499769
+    second: logo animation sprite sheet_280
+  - first:
+      213: -4423414537194338139
+    second: logo animation sprite sheet_281
+  - first:
+      213: 8896802277594259797
+    second: logo animation sprite sheet_282
+  - first:
+      213: -7458849766099112845
+    second: logo animation sprite sheet_283
+  - first:
+      213: 2461821713776909717
+    second: logo animation sprite sheet_284
+  - first:
+      213: -4818725320641630944
+    second: logo animation sprite sheet_285
+  - first:
+      213: -5969892492605575646
+    second: logo animation sprite sheet_286
+  - first:
+      213: 5520109556387403423
+    second: logo animation sprite sheet_287
+  - first:
+      213: -2576854381472431808
+    second: logo animation sprite sheet_288
+  - first:
+      213: -9061422122492593317
+    second: logo animation sprite sheet_289
+  - first:
+      213: -7948841699279421936
+    second: logo animation sprite sheet_290
+  - first:
+      213: 1379723465734187492
+    second: logo animation sprite sheet_291
+  - first:
+      213: 7337557308239044885
+    second: logo animation sprite sheet_292
+  - first:
+      213: 7265336599043962023
+    second: logo animation sprite sheet_293
+  - first:
+      213: 2114402508549839764
+    second: logo animation sprite sheet_294
+  - first:
+      213: -2699914304224528291
+    second: logo animation sprite sheet_295
+  - first:
+      213: -3132961021388800614
+    second: logo animation sprite sheet_296
+  - first:
+      213: 253413645693670516
+    second: logo animation sprite sheet_297
+  - first:
+      213: -7921246669005925600
+    second: logo animation sprite sheet_298
+  - first:
+      213: 6745852705391946147
+    second: logo animation sprite sheet_299
+  - first:
+      213: 6575485304471114143
+    second: logo animation sprite sheet_300
+  - first:
+      213: -5892819524909319174
+    second: logo animation sprite sheet_301
+  - first:
+      213: 8119815035204762986
+    second: logo animation sprite sheet_302
+  - first:
+      213: -2105532938320082285
+    second: logo animation sprite sheet_303
+  - first:
+      213: 7124374466878687688
+    second: logo animation sprite sheet_304
+  - first:
+      213: -7067514970842430924
+    second: logo animation sprite sheet_305
+  - first:
+      213: -6290563340102502455
+    second: logo animation sprite sheet_306
+  - first:
+      213: 3820642945130878413
+    second: logo animation sprite sheet_307
+  - first:
+      213: -4372332587457185663
+    second: logo animation sprite sheet_308
+  - first:
+      213: -8134155574296223775
+    second: logo animation sprite sheet_309
+  - first:
+      213: -975084563715986289
+    second: logo animation sprite sheet_310
+  - first:
+      213: 3669393178409730444
+    second: logo animation sprite sheet_311
+  - first:
+      213: 5266719380516468589
+    second: logo animation sprite sheet_312
+  - first:
+      213: -58215422102109302
+    second: logo animation sprite sheet_313
+  - first:
+      213: -3408476527029675347
+    second: logo animation sprite sheet_314
+  - first:
+      213: 38530790043438952
+    second: logo animation sprite sheet_315
+  - first:
+      213: -5331217995456260297
+    second: logo animation sprite sheet_316
+  - first:
+      213: -8902529779092440999
+    second: logo animation sprite sheet_317
+  - first:
+      213: -4146045802716623786
+    second: logo animation sprite sheet_318
+  - first:
+      213: 2046581487150839949
+    second: logo animation sprite sheet_319
+  - first:
+      213: -5264579210784714366
+    second: logo animation sprite sheet_320
+  - first:
+      213: 3444842848647276310
+    second: logo animation sprite sheet_321
+  - first:
+      213: 2862143100704369346
+    second: logo animation sprite sheet_322
+  - first:
+      213: -2568920273602486758
+    second: logo animation sprite sheet_323
+  - first:
+      213: 3700460260487167295
+    second: logo animation sprite sheet_324
+  - first:
+      213: -1623586996733681304
+    second: logo animation sprite sheet_325
+  - first:
+      213: 5887294394837061076
+    second: logo animation sprite sheet_326
+  - first:
+      213: 2684768785650007626
+    second: logo animation sprite sheet_327
+  - first:
+      213: -6097171690962229911
+    second: logo animation sprite sheet_328
+  - first:
+      213: -312148964255812756
+    second: logo animation sprite sheet_329
+  - first:
+      213: -6567613205845047933
+    second: logo animation sprite sheet_330
+  - first:
+      213: -4420594389815112985
+    second: logo animation sprite sheet_331
+  - first:
+      213: -8127084817834905616
+    second: logo animation sprite sheet_332
+  - first:
+      213: -3830539211662403693
+    second: logo animation sprite sheet_333
+  - first:
+      213: -2314118357659742237
+    second: logo animation sprite sheet_334
+  - first:
+      213: -4025585214417482204
+    second: logo animation sprite sheet_335
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo animation sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaac6003b2fee230800000000000000
+      internalID: 3670137596973722280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4800
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ae33c968d8f2f70800000000000000
+      internalID: 9164699376008030848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4800
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504a094e8a75bd780800000000000000
+      internalID: -8657229475788839931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4800
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6154dde13a8439dc0800000000000000
+      internalID: -3633480608923171562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4800
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f6fe151c8538da0800000000000000
+      internalID: -5943809495872344185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5512d39cf0857b0800000000000000
+      internalID: -5235417209829763603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa274d5d61768ad0800000000000000
+      internalID: -2700346212031714648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3600
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b09e661e9cbce020800000000000000
+      internalID: 2372478490884608180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3600
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a780c178502069980800000000000000
+      internalID: -8532630221241972614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3600
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b838ca0887cbb00800000000000000
+      internalID: 845683324084259668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c72da60c2425720800000000000000
+      internalID: 2833400509762796590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2400
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e4734310117ebc0800000000000000
+      internalID: -3754013067521339797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2400
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9c1a89d45129050800000000000000
+      internalID: 5805726292651395525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2400
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb1cfe819323c260800000000000000
+      internalID: 7116570944251632618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 2400
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6db882f1c5724420800000000000000
+      internalID: 2612780209686494575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ba417179c6ee060800000000000000
+      internalID: 6984639468281310001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4eab383d0c1a4b0800000000000000
+      internalID: -5430847660951411543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1200
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e972f4954eff7ced0800000000000000
+      internalID: -2393663320708143202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1200
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c368aab4f60ee9b10800000000000000
+      internalID: 1990274853959796284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1200
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8435159a2be756b60800000000000000
+      internalID: 7738730840516023112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386af62c5b59d2400800000000000000
+      internalID: 301061357987407491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e757f9c4bc32a30800000000000000
+      internalID: 4189415608337923615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8b533e39bf57290800000000000000
+      internalID: -7893126159306213204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0349c99cce60b5ea0800000000000000
+      internalID: -5883100874164890576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo animation sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 1800
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c13db72485105330800000000000000
+      internalID: 3697478951417754054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0631efba5f7304ecbb7c16da4a37b880
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logo animation sprite sheet_0: 3670137596973722280
+      logo animation sprite sheet_1: 9164699376008030848
+      logo animation sprite sheet_10: 2833400509762796590
+      logo animation sprite sheet_11: -3754013067521339797
+      logo animation sprite sheet_12: 5805726292651395525
+      logo animation sprite sheet_13: 7116570944251632618
+      logo animation sprite sheet_14: 2612780209686494575
+      logo animation sprite sheet_15: 6984639468281310001
+      logo animation sprite sheet_16: -5430847660951411543
+      logo animation sprite sheet_17: -2393663320708143202
+      logo animation sprite sheet_18: 1990274853959796284
+      logo animation sprite sheet_19: 7738730840516023112
+      logo animation sprite sheet_2: -8657229475788839931
+      logo animation sprite sheet_20: 301061357987407491
+      logo animation sprite sheet_21: 4189415608337923615
+      logo animation sprite sheet_22: -7893126159306213204
+      logo animation sprite sheet_23: -5883100874164890576
+      logo animation sprite sheet_24: 3697478951417754054
+      logo animation sprite sheet_3: -3633480608923171562
+      logo animation sprite sheet_4: -5943809495872344185
+      logo animation sprite sheet_5: -5235417209829763603
+      logo animation sprite sheet_6: -2700346212031714648
+      logo animation sprite sheet_7: 2372478490884608180
+      logo animation sprite sheet_8: -8532630221241972614
+      logo animation sprite sheet_9: 845683324084259668
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

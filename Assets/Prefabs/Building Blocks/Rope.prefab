@@ -428,8 +428,8 @@ Transform:
   m_GameObject: {fileID: 4148496574102242565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
-  m_LocalScale: {x: 0.23125, y: 0.21875, z: 1}
+  m_LocalPosition: {x: 10, y: -2, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7735650747319918775}
@@ -478,7 +478,7 @@ SpriteRenderer:
   m_SortingLayerID: 839173067
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1164934699063435451, guid: 7ed9060f89a3f49c1bc6cacdcabf8473, type: 3}
+  m_Sprite: {fileID: 7552560063552514191, guid: 1c9697c23c8b446419a5a430df733fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -531,7 +531,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
+  m_Anchor: {x: 0, y: 4}
   m_ConnectedAnchor: {x: 0.5, y: 0}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
@@ -569,8 +569,8 @@ Transform:
   m_GameObject: {fileID: 4784506746108559931}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
-  m_LocalScale: {x: 0.23125, y: 0.21875, z: 1}
+  m_LocalPosition: {x: -1.75, y: -2, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7735650747319918775}
@@ -619,7 +619,7 @@ SpriteRenderer:
   m_SortingLayerID: 839173067
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1164934699063435451, guid: 7ed9060f89a3f49c1bc6cacdcabf8473, type: 3}
+  m_Sprite: {fileID: 7552560063552514191, guid: 1c9697c23c8b446419a5a430df733fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1391,7 +1391,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.39999998, y: 0}
-  m_ConnectedAnchor: {x: 0.86486506, y: 0}
+  m_ConnectedAnchor: {x: -0.3399999, y: 0.78}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
