@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 839173067
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 120
   m_Sprite: {fileID: -1483665779731714255, guid: 2beacebdec3834a9ea38c595c33778a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -182,6 +182,9 @@ MonoBehaviour:
   destroyLayer:
     serializedVersion: 2
     m_Bits: 256
+  explosionSFX:
+    clip: {fileID: 8300000, guid: 7f720ccd8ec0f4d8cbb0f75e12f8796a, type: 3}
+    volume: 0.5
 --- !u!95 &2567672427255022347
 Animator:
   serializedVersion: 7

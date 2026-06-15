@@ -178,3 +178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minBounce: {x: 2, y: 5}
   maxYBounce: 22.5
+  bounceSound:
+    clip: {fileID: 8300000, guid: 5ba9151d055a54e389cc2dab65888ded, type: 3}
+    volume: 0.7

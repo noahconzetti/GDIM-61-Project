@@ -16,3 +16,6 @@ MonoBehaviour:
   expandTime: 1
   recoverTime: 1
   shockwavePrefab: {fileID: 5675106346426790902, guid: a3e9e21092c0c4e70bba4834df381996, type: 3}
+  shockwaveSFX:
+    clip: {fileID: 8300000, guid: 6b80c81e9807a4f1384ab07a99017c16, type: 3}
+    volume: 0.85

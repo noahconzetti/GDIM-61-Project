@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b2f536b1b94379841f5075e8d77786, type: 3}
   m_Name: Enlarge
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 21300000, guid: 179e77efe90b34a55bcb4ef17c5e121e, type: 3}
+  uiIcon: {fileID: 21300000, guid: fd1fd7f107159402ebdf8d0ee028608a, type: 3}
   sizeIncreasePercent: 3
   massIncreasePercent: 2
   timeIncreaseSize: 7
@@ -44,3 +44,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   enlargeParticles: {fileID: 1610440048279521084, guid: 722823f799e874941ab30e211ae9a0c2, type: 3}
+  inflateSFX:
+    clip: {fileID: 8300000, guid: 9e2979c42f02f4d8a84eef37eb511d1d, type: 3}
+    volume: 1

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Environment {
@@ -11,6 +12,8 @@ namespace Gameplay.Environment {
         [SerializeField] private float rotationAmount = 20f;
         [SerializeField] private float rotationSpeed = 5f;
         [SerializeField] private float coconutCooldownTime = .5f;
+        [SerializeField] private AudioData launchAudio;
+        
         private Coconut _coconut = null;
 
         private float _startRotation;
@@ -70,6 +73,7 @@ namespace Gameplay.Environment {
 
             _lastLaunchTimes[_coconut.PlayerID] = Time.time;
             _coconut = null;
+            launchAudio.Play();
         }
 
         public void LaunchAnimDone() {

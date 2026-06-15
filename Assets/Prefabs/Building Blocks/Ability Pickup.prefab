@@ -49,6 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityData: {fileID: 11400000, guid: 6df987d97cb784cf5bd449c3ad30f1b7, type: 2}
+  abilityPickupSFX:
+    clip: {fileID: 8300000, guid: 24075b6e8fa4340b3a8842195364744e, type: 3}
+    volume: 1
 --- !u!61 &1351741981105655570
 BoxCollider2D:
   m_ObjectHideFlags: 0

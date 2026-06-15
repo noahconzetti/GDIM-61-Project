@@ -13,6 +13,8 @@ namespace PlayerSelection {
         [SerializeField] private GameObject colorButtonPrefab;
         [SerializeField] private GameObject hatButtonPrefab;
         [SerializeField] private CoconutCustomizationViewPanel[] coconutTabs;
+        [SerializeField] private AudioData successfulSelectionSFX;
+        [SerializeField] private AudioData startGameSFX;
 
         public const int OPTION_COLOR = 1;
         public const int OPTION_HAT = 2;
@@ -85,11 +87,12 @@ namespace PlayerSelection {
                     Players[coconutIndex].PlayerHat = data.hats[optionIndex];
                     break;
             }
-            
+            successfulSelectionSFX.Play();
             OnOptionsUpdated?.Invoke(Players[coconutIndex], _activeColorIndexes);
         }
 
         public void LoadGameScene() {
+            startGameSFX.Play();
             CustomizationPersistantData.Instance.Players = Players;
             SceneManager.LoadScene(1);
         }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -13,6 +14,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float continualBoostForce = 0.1f;
         [SerializeField] private AnimationCurve enlargeCurve = AnimationCurve.EaseInOut(0, 0, .5f, 1);
         [SerializeField] private GameObject enlargeParticles;
+        [SerializeField] private AudioData inflateSFX;
 
         private Vector3 _ogScale;
         private float _ogMass;
@@ -31,6 +33,8 @@ namespace Gameplay.Abilities.Abilities {
             
             _rb.linearVelocity += (Vector2.right * boostForce);
             Instantiate(enlargeParticles, player.transform);
+            
+            inflateSFX.Play();
             
             player.StartCoroutine(IncreaseSize(endCallback, player));
         }

@@ -133,6 +133,9 @@ MonoBehaviour:
   projectileForce: 35
   coconutDeadTime: 3
   coconutDeadTimeVsEnlarged: 0.2
+  explosionSFX:
+    clip: {fileID: 8300000, guid: 7f720ccd8ec0f4d8cbb0f75e12f8796a, type: 3}
+    volume: 0.5
 --- !u!61 &8441252663731724695
 BoxCollider2D:
   m_ObjectHideFlags: 0

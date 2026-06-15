@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.RaceManagement {
     public class FinishLineTrigger : MonoBehaviour {
+        [SerializeField] private AudioData winSound;
+        
         private List<Coconut> _finishers = new();
 
         public static event Action<Coconut, int> OnPlayerFinished; //coconut, place
@@ -31,6 +34,7 @@ namespace Gameplay.RaceManagement {
             _finishers.Add(player);
             _numFinished++;
             OnPlayerFinished?.Invoke(player, _numFinished);
+            winSound.Play();
             
             if (_numFinished >= _numPlayers) {
                 OnStandingsFinalized?.Invoke(_finishers);

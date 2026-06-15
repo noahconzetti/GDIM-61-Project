@@ -47,6 +47,10 @@ namespace Gameplay {
         [Header("Debug")]
         [SerializeField] private GameObject slowIndicator;
         [SerializeField] private GameObject fastIndicator;
+
+        [Header("Sounds")] [SerializeField] private AudioData jumpSound;
+        [SerializeField] private AudioData landSound;
+        [SerializeField] private AudioData useAbilitySound;
         
         public Rigidbody2D Rigidbody { get; private set; }
         public CircleCollider2D Collider { get; private set; }
@@ -116,15 +120,19 @@ namespace Gameplay {
                 float currentAngle = minRaycastAngle + raycastAngleDifference * i;
                 Vector2 currentDirection = new Vector2(Mathf.Cos(currentAngle), Mathf.Sin(currentAngle));
                 float raycastDistance = (Collider.radius) *Collider.transform.lossyScale.magnitude + groundCastAddition;
-                RaycastHit2D hit = Physics2D.Raycast(
+                RaycastHit2D[] hits = Physics2D.RaycastAll(
                     Rigidbody.position,
                     currentDirection,
                     raycastDistance,
                     groundLayer.value);
-                if (hit.collider == null) continue;
-                if (hit.normal.y < 0) continue;
-                if (!bestHit.HasValue || hit.distance < bestHit.Value.distance) {
-                    bestHit = hit;
+                foreach (RaycastHit2D hit in hits) {
+                    if (hit.collider == null) continue;
+                    if (hit.collider.gameObject == gameObject) continue;
+                    if (hit.normal.y < 0) continue;
+                    if (!bestHit.HasValue || hit.distance < bestHit.Value.distance) {
+                        bestHit = hit;
+                        break;
+                    }
                 }
             }
 
@@ -204,6 +212,7 @@ namespace Gameplay {
             Rigidbody.linearVelocity = adjustedForce;
             _jumpBufferActive = false;
             OnJump?.Invoke(this);
+            jumpSound.Play();
         }
 
         private IEnumerator SaveJumpInput() {
@@ -220,6 +229,8 @@ namespace Gameplay {
             OnUseAbilityStart?.Invoke(this, currentHeldAbility);
             
             currentHeldAbility.UseOn(this, EndUseAbility);
+
+            useAbilitySound.Play();
         }
 
         private void EndUseAbility() {
@@ -239,6 +250,8 @@ namespace Gameplay {
         private void OnCollisionEnter2D(Collision2D other) {
             OnCollision?.Invoke(this, other);
             Coconut otherCoconut = other.gameObject.GetComponent<Coconut>();
+            
+            landSound?.Play();
             
             if (other.contacts[0].normal.x > 0 &&
                 otherCoconut != null && 

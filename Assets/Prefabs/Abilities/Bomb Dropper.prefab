@@ -48,3 +48,6 @@ MonoBehaviour:
   dropNumber: 5
   dropForce: 0
   bombPrefab: {fileID: 1442633393693458479, guid: c90b704e740104f62865396404600996, type: 3}
+  dropBombSound:
+    clip: {fileID: 8300000, guid: 7f70b12c56ec4430ca0d7ac70823b659, type: 3}
+    volume: 0.7

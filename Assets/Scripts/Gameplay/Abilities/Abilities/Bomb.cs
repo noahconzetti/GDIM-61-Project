@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -9,15 +10,18 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private Vector2 explosionHitDir = new(.3f, 5f);
         [SerializeField] private float explosionHitTime = 1f;
         [SerializeField] private LayerMask destroyLayer;
+        [SerializeField] private AudioData explosionSFX;
         private Coconut _ignore;
         private bool _exploded = false;
 
         private Animator _animator;
         private Rigidbody2D _rb;
+        private Collider2D _collider;
 
         private void Awake() {
             TryGetComponent(out _animator);
             TryGetComponent(out _rb);
+            TryGetComponent(out _collider);
         }
 
         public void Init(Coconut ignore) {
@@ -26,12 +30,12 @@ namespace Gameplay.Abilities.Abilities {
 
         private void OnCollisionEnter2D(Collision2D other) {
             if (_exploded) {
-                Physics2D.IgnoreCollision(other.collider, other.otherCollider);
+                Physics2D.IgnoreCollision(other.collider, _collider);
                 return;
             }
             if (other.gameObject.TryGetComponent(out Coconut hitPlayer)) {
                 if (hitPlayer == _ignore) {
-                    Physics2D.IgnoreCollision(other.collider, other.otherCollider);
+                    Physics2D.IgnoreCollision(other.collider, _collider);
                     return;
                 }
                 Explode();
@@ -54,7 +58,7 @@ namespace Gameplay.Abilities.Abilities {
 
             _exploded = true;
             _animator.SetTrigger("Explode");
-            // GetComponent<SpriteRenderer>().enabled = false;
+            explosionSFX.Play();
         }
 
         private IEnumerator HitPlayer(Coconut player) {

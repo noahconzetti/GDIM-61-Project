@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7addb9cb991146d384eb0d09d1df5ea0, type: 3}
   m_Name: Boost
   m_EditorClassIdentifier: 
-  uiIcon: {fileID: 21300000, guid: 07a0fcffe0bbe43609afce9f9d817095, type: 3}
+  uiIcon: {fileID: -621828613591478171, guid: 9874b0a7dbe7548d494c1b21eec484dd, type: 3}
   boostForce: {x: 5, y: 5}
   betweenBoostsTime: 0.5
   numBoosts: 4
   boostParticlesPrefab: {fileID: 4981041253867281385, guid: 467250194e1c641828c89f55e5327db1, type: 3}
+  boostSFX:
+    clip: {fileID: 8300000, guid: 4e5c2d756942a4b20aa1d49bb997d6fb, type: 3}
+    volume: 0.6

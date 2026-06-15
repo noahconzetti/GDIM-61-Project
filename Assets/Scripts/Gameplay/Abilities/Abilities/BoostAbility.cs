@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -9,6 +10,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] public float betweenBoostsTime = .5f;
         [SerializeField] public int numBoosts = 4;
         [SerializeField] public GameObject boostParticlesPrefab;
+        [SerializeField] public AudioData boostSFX;
         
         public override void UseOn(Coconut player, Action endCallback) {
             player.StartCoroutine(Boost(player, endCallback));
@@ -20,8 +22,9 @@ namespace Gameplay.Abilities.Abilities {
 
             for (int i = 0; i < numBoosts; i++) {
                 rb.linearVelocity += boostForce;
-                yield return new WaitForSeconds(betweenBoostsTime);
                 Instantiate(boostParticlesPrefab, player.transform.position, Quaternion.identity);
+                boostSFX?.Play();
+                yield return new WaitForSeconds(betweenBoostsTime);
             }
             
             endCallback();

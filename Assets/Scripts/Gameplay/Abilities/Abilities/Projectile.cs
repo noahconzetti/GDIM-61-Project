@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -7,6 +8,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float projectileForce = 1f;
         [SerializeField] private float coconutDeadTime = 1f;
         [SerializeField] private float coconutDeadTimeVsEnlarged = 0;
+        [SerializeField] private AudioData explosionSFX;
         private Coconut _target;
         private Rigidbody2D _rb;
         private Animator _animator;
@@ -37,6 +39,7 @@ namespace Gameplay.Abilities.Abilities {
             _animator.SetTrigger("Hit");
             _collider.enabled = false;
             _rb.linearVelocity = Vector2.zero;
+            explosionSFX.Play();
         }
 
         private IEnumerator HitByProjectile(Coconut c) {
@@ -49,6 +52,12 @@ namespace Gameplay.Abilities.Abilities {
 
         public void HitAnimationDone() {
             Destroy(gameObject);
+        }
+
+        public void DestroySelf() {
+            _animator.SetTrigger("Hit");
+            _collider.enabled = false;
+            explosionSFX.Play();
         }
     }
 }

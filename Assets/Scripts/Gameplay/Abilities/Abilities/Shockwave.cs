@@ -15,6 +15,10 @@ namespace Gameplay.Abilities.Abilities {
             if (other.TryGetComponent(out Coconut coconut) && coconut != ignore) {
                 coconut.StartCoroutine(HitCoconut(coconut));
             }
+
+            if (other.TryGetComponent(out Projectile projectile)) {
+                projectile.DestroySelf();
+            }
         }
 
         private IEnumerator HitCoconut(Coconut coconut) {

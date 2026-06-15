@@ -1,4 +1,5 @@
 using System;
+using AppCore;
 using Gameplay;
 using TMPro;
 using Unity.Cinemachine;
@@ -7,6 +8,7 @@ using UnityEngine;
 public class StartSequenceManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI numberText;
     [SerializeField] private CinemachineCamera startCamera;
+    [SerializeField] private AudioData countdownSFX;
 
     private Animator _animator;
     private RaceInfo _raceInfo;
@@ -31,6 +33,7 @@ public class StartSequenceManager : MonoBehaviour {
 
     public void StartTrigger() {
         _animator.SetTrigger("Start");
+        countdownSFX.Play();
     }
     
     public void AnimEnd() {

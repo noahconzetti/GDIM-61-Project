@@ -183,6 +183,15 @@ MonoBehaviour:
   squishTime: 2
   slowIndicator: {fileID: 1051885257810012032}
   fastIndicator: {fileID: 8278600018096794978}
+  jumpSound:
+    clip: {fileID: 0}
+    volume: 1
+  landSound:
+    clip: {fileID: 0}
+    volume: 1
+  useAbilitySound:
+    clip: {fileID: 0}
+    volume: 1
   squished: 0
   slowedEffects: []
   <Grounded>k__BackingField: 0

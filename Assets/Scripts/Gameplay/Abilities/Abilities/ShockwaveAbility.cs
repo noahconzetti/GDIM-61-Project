@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -9,6 +10,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float expandTime = 1f;
         [SerializeField] private float recoverTime = 2f;
         [SerializeField] private GameObject shockwavePrefab;
+        [SerializeField] private AudioData shockwaveSFX;
         
         public override void UseOn(Coconut player, Action endCallback) {
             player.StartCoroutine(Shockwave(player, endCallback));
@@ -17,6 +19,7 @@ namespace Gameplay.Abilities.Abilities {
         private IEnumerator Shockwave(Coconut player, Action endCallback) {
             GameObject shockwave = Instantiate(shockwavePrefab, player.transform.position, Quaternion.identity);
             shockwave.GetComponent<Shockwave>().Init(recoverTime, player);
+            shockwaveSFX.Play();
             yield return new WaitForSeconds(expandTime);
             endCallback();
         }

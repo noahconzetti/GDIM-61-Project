@@ -1,4 +1,5 @@
 using System;
+using AppCore;
 using Gameplay.Abilities.Abilities;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -6,6 +7,7 @@ using Random = UnityEngine.Random;
 namespace Gameplay.Abilities {
     public class AbilityPickup : MonoBehaviour {
         [SerializeField] private AbilityStorage abilityData;
+        [SerializeField] private AudioData abilityPickupSFX;
 
         private Animator _animator;
         private Collider2D _collider;
@@ -20,6 +22,7 @@ namespace Gameplay.Abilities {
             if (player.TryPickupAbility(ChooseRandomAbility(player.place))) {
                 _animator.SetTrigger("Collect");
                 _collider.enabled = false;
+                abilityPickupSFX.Play();
             }
         }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AppCore;
 using UnityEngine;
 
 namespace Gameplay.Abilities.Abilities {
@@ -8,6 +9,7 @@ namespace Gameplay.Abilities.Abilities {
         [SerializeField] private float dropNumber = 15f;
         [SerializeField] private float dropForce = 2f;
         [SerializeField] private GameObject bombPrefab;
+        [SerializeField] private AudioData dropBombSound;
         
         private Coconut ignore;
         public Action AllBombsDropped;
@@ -22,6 +24,7 @@ namespace Gameplay.Abilities.Abilities {
                 GameObject bomb = Instantiate(bombPrefab, transform.position, transform.rotation);
                 bomb.GetComponent<Bomb>().Init(ignore);
                 bomb.GetComponent<Rigidbody2D>().linearVelocityY = -dropForce;
+                dropBombSound?.Play();
                 yield return new WaitForSeconds(dropFrequency);
             }
 

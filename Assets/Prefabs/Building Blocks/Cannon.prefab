@@ -185,6 +185,10 @@ MonoBehaviour:
   shootForce: 30
   rotationAmount: 15
   rotationSpeed: 1
+  coconutCooldownTime: 0.5
+  launchAudio:
+    clip: {fileID: 8300000, guid: 5492943ad4bdb4708a17d2c4ed026dc1, type: 3}
+    volume: 1
 --- !u!114 &2148597690585686146
 MonoBehaviour:
   m_ObjectHideFlags: 0
