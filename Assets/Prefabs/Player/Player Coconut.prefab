@@ -165,7 +165,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   maxWaterSpeed: 3
   airGravity: 1.5
-  groundedGravity: 0.9
+  groundedGravity: 1.5
   jumpForce: 14
   forwardMomentumPreserved: 1
   jumpDirection: {x: 1, y: 0.3}
